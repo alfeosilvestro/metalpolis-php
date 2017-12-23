@@ -216,7 +216,6 @@
 		$db->insert('t_document', $dataArray);
 
 		$FinalClosingDate = date('Y-m-d', strtotime( $_GET['due_date']));
-		$FirstClosingDate =  date('Y-m-d', strtotime(  $_GET['due_date']));
 		$Remark = $_GET['remark'];
 		//t_requestforquotation
 
