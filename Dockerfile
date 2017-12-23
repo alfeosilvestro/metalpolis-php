@@ -25,7 +25,7 @@ EXPOSE 80
 
 # Copy this repo into place.
 #ADD www /var/www/site
-ADD ~/Users/aungmyatkhaing/Projects/Metalpolis_PHP /var/www/site
+ADD www /var/www/site
 
 # Update the default apache site with the config we created.
 ADD apache-config.conf /etc/apache2/sites-enabled/000-default.conf
