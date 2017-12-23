@@ -1,6 +1,6 @@
 <?php
     $database = "metalpolis_database";  // the name of the database.
-    $server = "localhost";  // server to connect to.
+    $server = "127.0.0.1";  // server to connect to.
     $db_user = "metal_dbuser";  // mysql username to access the database with.
     $db_pass = "vackertech2018";  // mysql password to access the database with.
 
