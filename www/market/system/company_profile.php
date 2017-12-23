@@ -389,8 +389,10 @@ if(isset($_SESSION['Company_Admin']) && isset($_SESSION['M_Company_Id'])){
                                               ?></td>
                                                 <td><?php
                                                 if($userid != $u_id){
-                                                  $out = '<button class="btn btn-success btn-sm" onclick="'.$btnAdminFun.'('.$u_id.');">'.$btnAdminText.'</button>';
-                                                  echo $out;
+                                                  if($btnAdminFun != ""){
+                                                    $out = '<button class="btn btn-success btn-sm" onclick="'.$btnAdminFun.'('.$u_id.');">'.$btnAdminText.'</button>';
+                                                    echo $out;
+                                                  }
                                                     $out = '<button class="btn btn-danger btn-sm" onclick="'.$btnDisableFun.'('.$u_id.');">'.$btnDisableText.'</button>';
                                                   echo $out;
                                                 }
