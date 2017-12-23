@@ -207,7 +207,7 @@
 											<div class="box-body">
 
 												<div class="form-group">
-													<label>Name</label>
+													<label>Full Name</label>
 
 													<input id="txt_user_name" name="user_name" type="text" class="form-control"
 														   data-bind="value: user_name, valueUpdate: 'blur'"
@@ -222,7 +222,7 @@
 												</div>
 
 												<div class="form-group">
-													<label>Email Address</label>
+													<label>Email Address [Login User Name]</label>
 													<input id="txt_email_addr" name="email_address" type="email"
 														   class="form-control"
 														   data-bind="value: email_address, valueUpdate: 'blur'"

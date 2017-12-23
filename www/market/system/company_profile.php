@@ -279,7 +279,7 @@ if(isset($_SESSION['Company_Admin']) && isset($_SESSION['M_Company_Id'])){
       						                             <th>Subject</th>
                                               <th>Created Date</th>
                                               <th>Status</th>
-                                              <th>Setting</th>
+                                              <th></th>
                                           </tr>
                             						</thead>
                             						<tbody>
@@ -331,7 +331,7 @@ if(isset($_SESSION['Company_Admin']) && isset($_SESSION['M_Company_Id'])){
                                                 <th>Job Title</th>
                                                 <th>Type</th>
                                                 <th>Status</th>
-                                                <th>Setting</th>
+                                                <th></th>
                                             </tr>
                                           </thead>
                                           <tbody>

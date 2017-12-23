@@ -6,8 +6,8 @@ if($_POST){
 
 
 /* Email Detials */
-  $mail_to = "galles.cs@gmail.com";
-  $from_mail = "info@metalpolis.com";
+  $mail_to = "info@metalpolis.com";
+  $from_mail = $email;
   $from_name = $name;
   $reply_to = $from_mail;
   $subject = "Contact";
@@ -36,7 +36,7 @@ if($_POST){
 
 
   // Send email
-  if (mail($mail_to, $subject, $header, $header)) {
+  if (mail($mail_to, $subject, $message, $header)) {
     echo "Sent";
   } else {
     echo "Error";

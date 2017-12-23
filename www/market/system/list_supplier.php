@@ -44,7 +44,7 @@
                             <th>Company Name</th>
 							              <th>Registration No.</th>
                             <th>Address</th>
-                            <th>Setting</th>
+                            <th></th>
                           </tr>
 						</thead>
 						<tbody>
