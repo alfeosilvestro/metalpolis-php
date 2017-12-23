@@ -1,4 +1,32 @@
+-- phpMyAdmin SQL Dump
+-- version 4.7.4
+-- https://www.phpmyadmin.net/
+--
+-- Host: localhost
+-- Generation Time: Dec 23, 2017 at 03:22 AM
+-- Server version: 5.6.32-78.1
+-- PHP Version: 7.0.26
 
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET AUTOCOMMIT = 0;
+START TRANSACTION;
+SET time_zone = "+00:00";
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8mb4 */;
+
+--
+-- Database: `ydbuedum_metal`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `company_notification`
+--
 
 CREATE TABLE `company_notification` (
   `Id` int(11) NOT NULL,
@@ -19,7 +47,42 @@ CREATE TABLE `company_notification` (
 -- Dumping data for table `company_notification`
 --
 
+INSERT INTO `company_notification` (`Id`, `Document`, `First_Opened_User`, `Receiving_Company`, `Message`, `Open_Status`, `Created_Date`, `Created_By`, `Modified_Date`, `Modified_By`, `Status`, `Type`) VALUES
+(1, 1, 3, 7, 'AAAAA has invited you to participate in RFQ, RFQ_Submitted_1', 22, '2017-11-19 11:18:57', '3', NULL, NULL, 1, 'Invited'),
+(2, 3, 8, 3, 'EEEEE has interested on your RFQ_Submitted_1.', 22, '2017-11-19 11:19:34', '8', NULL, NULL, 1, 'Create_Quotation	'),
+(3, 3, 8, 3, 'EEEEE has registered interest.', 22, '2017-11-19 11:20:13', '8', NULL, NULL, 1, 'Create_Quotation'),
+(4, 3, 8, 3, 'EEEEE has registered interest.', 22, '2017-11-19 11:29:13', '8', NULL, NULL, 1, 'Create_Quotation'),
+(5, 4, 12, 10, 'CHOON HIN STAINLESS STEEL PTE LTD has invited you to participate in RFQ, RFQ_Submitted_2', 22, '2017-11-20 10:31:03', '12', NULL, NULL, 1, 'Invited'),
+(6, 5, 11, 11, 'A1 STAINLESS STEEL INDUSTRIES PTE LTD has interested on your RFQ_Submitted_2.', 22, '2017-11-20 10:42:16', '11', NULL, NULL, 1, 'Create_Quotation	'),
+(7, 5, 11, 11, 'A1 STAINLESS STEEL INDUSTRIES PTE LTD has registered interest.', 22, '2017-11-20 10:47:56', '11', NULL, NULL, 1, 'Create_Quotation'),
+(8, 5, 12, 10, 'Your Quotation(5) has been awareded to your company.', 22, '2017-11-20 10:59:45', '12', NULL, NULL, 1, 'Accepted'),
+(9, 6, 12, 12, 'CHOON HIN STAINLESS STEEL PTE LTD has invited you to participate in RFQ, RFQ_Submitted_3', 22, '2017-11-21 08:50:45', '12', NULL, NULL, 1, 'Invited'),
+(10, 6, 12, 10, 'CHOON HIN STAINLESS STEEL PTE LTD has invited you to participate in RFQ, RFQ_Submitted_3', 22, '2017-11-21 08:50:45', '12', NULL, NULL, 1, 'Invited'),
+(11, 7, 13, 11, 'CHONG CHEONG FOUNDRY WORKS PTE LTD  has interested on your RFQ_Submitted_3.', 22, '2017-11-21 08:58:00', '13', NULL, NULL, 1, 'Create_Quotation	'),
+(12, 7, 13, 11, 'CHONG CHEONG FOUNDRY WORKS PTE LTD  has registered interest.', 22, '2017-11-21 09:13:45', '13', NULL, NULL, 1, 'Create_Quotation'),
+(13, 8, 3, 7, 'AAAAA has invited you to participate in RFQ, RFQ_Submitted_4', 22, '2017-11-21 13:24:33', '3', NULL, NULL, 1, 'Invited'),
+(14, 9, 8, 3, 'EEEEE has interested on your RFQ_Submitted_4.', 22, '2017-11-21 13:25:41', '8', NULL, NULL, 1, 'Create_Quotation	'),
+(15, 10, 3, 7, 'AAAAA has invited you to participate in RFQ, RFQ_Submitted_5', 22, '2017-11-22 04:32:22', '3', NULL, NULL, 1, 'Invited'),
+(16, 10, 3, 12, 'AAAAA has invited you to participate in RFQ, RFQ_Submitted_5', 22, '2017-11-22 04:32:22', '3', NULL, NULL, 1, 'Invited'),
+(17, 11, 13, 3, 'CHONG CHEONG FOUNDRY WORKS PTE LTD  has interested on your RFQ_Submitted_5.', 22, '2017-11-22 04:34:29', '13', NULL, NULL, 1, 'Create_Quotation	'),
+(18, 9, 8, 3, 'Demo Supplier 1 has registered interest.', 22, '2017-11-22 04:46:08', '8', NULL, NULL, 1, 'Create_Quotation'),
+(19, 12, 3, 13, 'Demo Buyer 2 has invited you to participate in RFQ, RFQ_Submitted_6', 22, '2017-11-28 03:17:33', '3', NULL, NULL, 1, 'Invited'),
+(20, 13, 15, 13, 'Sing Chow Metal Works (Pte) Ltd has invited you to participate in RFQ, RFQ_Submitted_7', 22, '2017-11-29 01:29:41', '15', NULL, NULL, 1, 'Invited'),
+(21, 13, 15, 12, 'Sing Chow Metal Works (Pte) Ltd has invited you to participate in RFQ, RFQ_Submitted_7', 22, '2017-11-29 01:29:41', '15', NULL, NULL, 1, 'Invited'),
+(22, 13, 15, 10, 'Sing Chow Metal Works (Pte) Ltd has invited you to participate in RFQ, RFQ_Submitted_7', 22, '2017-11-29 01:29:41', '15', NULL, NULL, 1, 'Invited'),
+(23, 14, 15, 13, 'Sing Chow Metal Works (Pte) Ltd has invited you to participate in RFQ, RFQ_Submitted_8', 22, '2017-12-01 05:56:04', '15', NULL, NULL, 1, 'Invited'),
+(24, 14, 15, 12, 'Sing Chow Metal Works (Pte) Ltd has invited you to participate in RFQ, RFQ_Submitted_8', 22, '2017-12-01 05:56:04', '15', NULL, NULL, 1, 'Invited'),
+(25, 15, 18, 13, 'Uniqlix has invited you to participate in RFQ, RFQ_Submitted_9', 22, '2017-12-12 06:36:19', '18', NULL, NULL, 1, 'Invited'),
+(26, 15, 18, 10, 'Uniqlix has invited you to participate in RFQ, RFQ_Submitted_9', 22, '2017-12-12 06:36:19', '18', NULL, NULL, 1, 'Invited'),
+(27, 15, 18, 12, 'Uniqlix has invited you to participate in RFQ, RFQ_Submitted_9', 22, '2017-12-12 06:36:19', '18', NULL, NULL, 1, 'Invited'),
+(28, 15, 17, 13, 'Fortunea has invited you to participate in RFQ, RFQ_Submitted_10', 22, '2017-12-15 01:10:51', '17', NULL, NULL, 1, 'Invited'),
+(29, 17, 19, 23, 'Sunlink Engineering Pte Ltd has interested on your RFQ_Submitted_10.', 22, '2017-12-15 01:59:36', '19', NULL, NULL, 1, 'Create_Quotation	'),
+(30, 17, 19, 23, 'Sunlink Engineering Pte Ltd has registered interest.', 22, '2017-12-19 01:29:22', '19', NULL, NULL, 1, 'Create_Quotation'),
+(31, 17, 17, 13, 'Your Quotation(17) has been awareded to your company.', 22, '2017-12-19 02:24:57', '17', NULL, NULL, 1, 'Accepted'),
+(32, 18, 21, 13, 'TOPMAST ENGINEERING PTE. LTD. has invited you to participate in RFQ, RFQ_Submitted_11', 22, '2017-12-19 03:17:57', '21', NULL, NULL, 1, 'Invited'),
+(33, 18, 21, 24, 'TOPMAST ENGINEERING PTE. LTD. has invited you to participate in RFQ, RFQ_Submitted_11', 22, '2017-12-19 03:17:57', '21', NULL, NULL, 1, 'Invited');
 
+-- --------------------------------------------------------
 
 --
 -- Table structure for table `c_codecategory`
@@ -121,7 +184,7 @@ CREATE TABLE `c_tags` (
 
 INSERT INTO `c_tags` (`Id`, `TagName`, `CreatedDate`, `CreatedBy`, `ModifiedDate`, `ModifiedBy`, `Status`, `Version`) VALUES
 (1, 'Metal', '2017-11-01 00:00:00', 'system', '2017-11-01 00:00:00', 'system', 1, NULL),
-(2, 'Singapore', '2017-11-01 00:00:00', 'system', '2017-11-01 00:00:00', 'system', 1, NULL);
+(2, 'ABC', '2017-11-01 00:00:00', 'system', '2017-11-01 00:00:00', 'system', 1, NULL);
 
 -- --------------------------------------------------------
 
@@ -140,7 +203,28 @@ CREATE TABLE `document_number` (
 
 --
 -- Dumping data for table `document_number`
+--
 
+INSERT INTO `document_number` (`Id`, `Name`, `Prefix`, `Suffix`, `Format`, `Running_Number`) VALUES
+(1, 'RFQ', 'Draft', 'RFQ', 'RFQ', 1),
+(2, 'RFQ', 'Draft', 'RFQ', 'RFQ', 2),
+(3, 'RFQ', 'Submitted', 'RFQ', 'RFQ', 1),
+(4, 'RFQ', 'Draft', 'RFQ', 'RFQ', 3),
+(5, 'RFQ', 'Submitted', 'RFQ', 'RFQ', 2),
+(6, 'RFQ', 'Draft', 'RFQ', 'RFQ', 4),
+(7, 'RFQ', 'Submitted', 'RFQ', 'RFQ', 3),
+(8, 'RFQ', 'Draft', 'RFQ', 'RFQ', 5),
+(9, 'RFQ', 'Submitted', 'RFQ', 'RFQ', 4),
+(10, 'RFQ', 'Submitted', 'RFQ', 'RFQ', 5),
+(11, 'RFQ', 'Submitted', 'RFQ', 'RFQ', 6),
+(12, 'RFQ', 'Submitted', 'RFQ', 'RFQ', 7),
+(13, 'RFQ', 'Submitted', 'RFQ', 'RFQ', 8),
+(14, 'RFQ', 'Submitted', 'RFQ', 'RFQ', 9),
+(15, 'RFQ', 'Draft', 'RFQ', 'RFQ', 6),
+(16, 'RFQ', 'Submitted', 'RFQ', 'RFQ', 10),
+(17, 'RFQ', 'Submitted', 'RFQ', 'RFQ', 11);
+
+-- --------------------------------------------------------
 
 --
 -- Table structure for table `md_companyrating`
@@ -163,7 +247,14 @@ CREATE TABLE `md_companyrating` (
   `Description` varchar(60000) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+--
+-- Dumping data for table `md_companyrating`
+--
 
+INSERT INTO `md_companyrating` (`Id`, `Company_Id`, `User_Id`, `SpeedOfQuotation`, `SpeedofDelivery`, `ServiceQuality`, `Price`, `SpeedofProcessing`, `Payment`, `Status`, `Created`, `CreatedBy`, `Title`, `Description`) VALUES
+(6, 13, 17, 4, 4, 4, 4, NULL, NULL, 1, '2017-12-15 02:12:57', '17', 'Very Good Supplier', 'Very good');
+
+-- --------------------------------------------------------
 
 --
 -- Table structure for table `md_serviceparameter`
@@ -206,7 +297,462 @@ CREATE TABLE `md_supplierservices` (
   `M_Company_Id` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+--
+-- Dumping data for table `md_supplierservices`
+--
 
+INSERT INTO `md_supplierservices` (`Id`, `M_Services_Id`, `M_Company_Id`) VALUES
+(1, 6, 2),
+(2, 7, 2),
+(3, 4, 4),
+(4, 5, 4),
+(5, 6, 4),
+(6, 4, 6),
+(7, 5, 6),
+(8, 6, 6),
+(9, 11, 7),
+(10, 12, 7),
+(11, 13, 7),
+(12, 17, 7),
+(13, 31, 7),
+(14, 34, 7),
+(15, 56, 7),
+(16, 57, 7),
+(17, 58, 7),
+(18, 63, 7),
+(19, 125, 7),
+(20, 128, 7),
+(21, 129, 7),
+(22, 130, 7),
+(23, 11, 9),
+(24, 12, 9),
+(25, 13, 9),
+(26, 14, 9),
+(27, 15, 9),
+(28, 16, 9),
+(29, 30, 9),
+(30, 48, 9),
+(31, 50, 9),
+(32, 51, 9),
+(33, 56, 9),
+(34, 57, 9),
+(35, 58, 9),
+(36, 59, 9),
+(37, 11, 10),
+(38, 12, 10),
+(39, 13, 10),
+(40, 18, 10),
+(41, 19, 10),
+(42, 20, 10),
+(43, 21, 10),
+(44, 14, 10),
+(45, 22, 10),
+(46, 23, 10),
+(47, 24, 10),
+(48, 25, 10),
+(49, 15, 10),
+(50, 26, 10),
+(51, 27, 10),
+(52, 28, 10),
+(53, 29, 10),
+(54, 16, 10),
+(55, 17, 10),
+(56, 31, 10),
+(57, 36, 10),
+(58, 37, 10),
+(59, 38, 10),
+(60, 39, 10),
+(61, 32, 10),
+(62, 40, 10),
+(63, 41, 10),
+(64, 42, 10),
+(65, 43, 10),
+(66, 34, 10),
+(67, 35, 10),
+(68, 30, 10),
+(69, 48, 10),
+(70, 49, 10),
+(71, 50, 10),
+(72, 51, 10),
+(73, 52, 10),
+(74, 53, 10),
+(75, 54, 10),
+(76, 55, 10),
+(77, 125, 10),
+(78, 128, 10),
+(79, 129, 10),
+(80, 130, 10),
+(81, 131, 10),
+(82, 132, 10),
+(83, 133, 10),
+(84, 134, 10),
+(85, 135, 10),
+(86, 136, 10),
+(87, 137, 10),
+(88, 138, 10),
+(89, 139, 10),
+(90, 140, 10),
+(91, 141, 10),
+(92, 142, 10),
+(93, 143, 10),
+(94, 144, 10),
+(95, 145, 10),
+(96, 146, 10),
+(97, 147, 10),
+(98, 148, 10),
+(99, 149, 10),
+(100, 150, 10),
+(101, 151, 10),
+(102, 152, 10),
+(103, 153, 10),
+(104, 154, 10),
+(105, 155, 10),
+(106, 156, 10),
+(107, 157, 10),
+(108, 158, 10),
+(109, 159, 10),
+(110, 160, 10),
+(111, 161, 10),
+(112, 162, 10),
+(113, 163, 10),
+(114, 164, 10),
+(115, 165, 10),
+(116, 166, 10),
+(117, 167, 10),
+(118, 168, 10),
+(119, 169, 10),
+(120, 170, 10),
+(121, 171, 10),
+(122, 172, 10),
+(123, 173, 10),
+(124, 174, 10),
+(125, 175, 10),
+(126, 176, 10),
+(127, 177, 10),
+(128, 11, 12),
+(129, 12, 12),
+(130, 13, 12),
+(131, 18, 12),
+(132, 19, 12),
+(133, 20, 12),
+(134, 21, 12),
+(135, 14, 12),
+(136, 22, 12),
+(137, 23, 12),
+(138, 24, 12),
+(139, 25, 12),
+(140, 15, 12),
+(141, 26, 12),
+(142, 27, 12),
+(143, 28, 12),
+(144, 29, 12),
+(145, 16, 12),
+(146, 17, 12),
+(147, 31, 12),
+(148, 36, 12),
+(149, 37, 12),
+(150, 38, 12),
+(151, 39, 12),
+(152, 32, 12),
+(153, 40, 12),
+(154, 41, 12),
+(155, 42, 12),
+(156, 43, 12),
+(157, 33, 12),
+(158, 44, 12),
+(159, 45, 12),
+(160, 46, 12),
+(161, 47, 12),
+(162, 34, 12),
+(163, 35, 12),
+(164, 30, 12),
+(165, 48, 12),
+(166, 49, 12),
+(167, 50, 12),
+(168, 51, 12),
+(169, 52, 12),
+(170, 53, 12),
+(171, 54, 12),
+(172, 55, 12),
+(173, 125, 12),
+(174, 128, 12),
+(175, 129, 12),
+(176, 130, 12),
+(177, 131, 12),
+(178, 132, 12),
+(179, 133, 12),
+(180, 134, 12),
+(181, 135, 12),
+(182, 136, 12),
+(183, 137, 12),
+(184, 138, 12),
+(185, 139, 12),
+(186, 140, 12),
+(187, 141, 12),
+(188, 142, 12),
+(189, 143, 12),
+(190, 144, 12),
+(191, 145, 12),
+(192, 146, 12),
+(193, 147, 12),
+(194, 148, 12),
+(195, 149, 12),
+(196, 150, 12),
+(197, 151, 12),
+(198, 152, 12),
+(199, 153, 12),
+(200, 154, 12),
+(201, 155, 12),
+(202, 156, 12),
+(203, 157, 12),
+(204, 158, 12),
+(205, 159, 12),
+(206, 160, 12),
+(207, 161, 12),
+(208, 162, 12),
+(209, 163, 12),
+(210, 164, 12),
+(211, 165, 12),
+(212, 166, 12),
+(213, 167, 12),
+(214, 168, 12),
+(215, 169, 12),
+(216, 170, 12),
+(217, 171, 12),
+(218, 172, 12),
+(219, 173, 12),
+(220, 174, 12),
+(221, 175, 12),
+(222, 176, 12),
+(223, 177, 12),
+(224, 0, 13),
+(225, 0, 13),
+(226, 11, 24),
+(227, 12, 24),
+(228, 13, 24),
+(229, 18, 24),
+(230, 19, 24),
+(231, 20, 24),
+(232, 21, 24),
+(233, 14, 24),
+(234, 22, 24),
+(235, 23, 24),
+(236, 24, 24),
+(237, 25, 24),
+(238, 15, 24),
+(239, 26, 24),
+(240, 27, 24),
+(241, 28, 24),
+(242, 29, 24),
+(243, 16, 24),
+(244, 17, 24),
+(245, 31, 24),
+(246, 36, 24),
+(247, 37, 24),
+(248, 38, 24),
+(249, 39, 24),
+(250, 32, 24),
+(251, 40, 24),
+(252, 41, 24),
+(253, 42, 24),
+(254, 33, 24),
+(255, 44, 24),
+(256, 45, 24),
+(257, 46, 24),
+(258, 47, 24),
+(259, 34, 24),
+(260, 35, 24),
+(261, 30, 24),
+(262, 48, 24),
+(263, 49, 24),
+(264, 50, 24),
+(265, 51, 24),
+(266, 52, 24),
+(267, 53, 24),
+(268, 54, 24),
+(269, 55, 24),
+(270, 56, 24),
+(271, 57, 24),
+(272, 58, 24),
+(273, 59, 24),
+(274, 60, 24),
+(275, 61, 24),
+(276, 62, 24),
+(277, 63, 24),
+(278, 64, 24),
+(279, 65, 24),
+(280, 66, 24),
+(281, 67, 24),
+(282, 68, 24),
+(283, 69, 24),
+(284, 70, 24),
+(285, 71, 24),
+(286, 72, 24),
+(287, 73, 24),
+(288, 74, 24),
+(289, 75, 24),
+(290, 76, 24),
+(291, 77, 24),
+(292, 78, 24),
+(293, 79, 24),
+(294, 80, 24),
+(295, 81, 24),
+(296, 82, 24),
+(297, 83, 24),
+(298, 84, 24),
+(299, 85, 24),
+(300, 86, 24),
+(301, 87, 24),
+(302, 88, 24),
+(303, 89, 24),
+(304, 90, 24),
+(305, 91, 24),
+(306, 92, 24),
+(307, 93, 24),
+(308, 94, 24),
+(309, 95, 24),
+(310, 96, 24),
+(311, 97, 24),
+(312, 98, 24),
+(313, 99, 24),
+(314, 100, 24),
+(315, 101, 24),
+(316, 102, 24),
+(317, 103, 24),
+(318, 104, 24),
+(319, 105, 24),
+(320, 106, 24),
+(321, 107, 24),
+(322, 108, 24),
+(323, 109, 24),
+(324, 110, 24),
+(325, 111, 24),
+(326, 112, 24),
+(327, 113, 24),
+(328, 114, 24),
+(329, 115, 24),
+(330, 116, 24),
+(331, 117, 24),
+(332, 118, 24),
+(333, 119, 24),
+(334, 120, 24),
+(335, 121, 24),
+(336, 122, 24),
+(337, 123, 24),
+(338, 124, 24),
+(339, 125, 24),
+(340, 128, 24),
+(341, 129, 24),
+(342, 130, 24),
+(343, 131, 24),
+(344, 132, 24),
+(345, 133, 24),
+(346, 134, 24),
+(347, 135, 24),
+(348, 136, 24),
+(349, 137, 24),
+(350, 138, 24),
+(351, 139, 24),
+(352, 140, 24),
+(353, 141, 24),
+(354, 142, 24),
+(355, 143, 24),
+(356, 144, 24),
+(357, 145, 24),
+(358, 146, 24),
+(359, 147, 24),
+(360, 148, 24),
+(361, 149, 24),
+(362, 150, 24),
+(363, 151, 24),
+(364, 152, 24),
+(365, 153, 24),
+(366, 154, 24),
+(367, 155, 24),
+(368, 156, 24),
+(369, 157, 24),
+(370, 158, 24),
+(371, 159, 24),
+(372, 160, 24),
+(373, 161, 24),
+(374, 162, 24),
+(375, 163, 24),
+(376, 164, 24),
+(377, 165, 24),
+(378, 166, 24),
+(379, 167, 24),
+(380, 168, 24),
+(381, 169, 24),
+(382, 170, 24),
+(383, 171, 24),
+(384, 172, 24),
+(385, 173, 24),
+(386, 174, 24),
+(387, 175, 24),
+(388, 176, 24),
+(389, 177, 24),
+(390, 178, 24),
+(391, 179, 24),
+(392, 183, 24),
+(393, 184, 24),
+(394, 185, 24),
+(395, 186, 24),
+(396, 187, 24),
+(397, 180, 24),
+(398, 188, 24),
+(399, 189, 24),
+(400, 190, 24),
+(401, 191, 24),
+(402, 192, 24),
+(403, 181, 24),
+(404, 193, 24),
+(405, 194, 24),
+(406, 195, 24),
+(407, 196, 24),
+(408, 197, 24),
+(409, 182, 24),
+(410, 198, 24),
+(411, 199, 24),
+(412, 200, 24),
+(413, 201, 24),
+(414, 202, 24),
+(415, 203, 24),
+(416, 204, 24),
+(417, 205, 24),
+(418, 206, 24),
+(419, 207, 24),
+(420, 208, 24),
+(421, 209, 24),
+(422, 210, 24),
+(423, 211, 24),
+(424, 212, 24),
+(425, 213, 24),
+(426, 214, 24),
+(427, 215, 24),
+(428, 220, 24),
+(429, 221, 24),
+(430, 222, 24),
+(431, 216, 24),
+(432, 223, 24),
+(433, 224, 24),
+(434, 225, 24),
+(435, 226, 24),
+(436, 227, 24),
+(437, 217, 24),
+(438, 228, 24),
+(439, 218, 24),
+(440, 229, 24),
+(441, 230, 24),
+(442, 231, 24),
+(443, 232, 24),
+(444, 233, 24),
+(445, 219, 24),
+(446, 234, 24),
+(447, 235, 24),
+(448, 236, 24),
+(449, 237, 24);
+
+-- --------------------------------------------------------
 
 --
 -- Table structure for table `md_suppliertags`
@@ -218,8 +764,21 @@ CREATE TABLE `md_suppliertags` (
   `C_Tags_Id` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+--
+-- Dumping data for table `md_suppliertags`
+--
 
+INSERT INTO `md_suppliertags` (`Id`, `M_User_Id`, `C_Tags_Id`) VALUES
+(1, 4, 1),
+(2, 4, 2),
+(3, 7, 1),
+(4, 7, 2),
+(5, 8, 1),
+(6, 10, 1),
+(7, 13, 1),
+(8, 19, 1);
 
+-- --------------------------------------------------------
 
 --
 -- Table structure for table `md_userrating`
@@ -265,7 +824,37 @@ CREATE TABLE `m_company` (
   `Code` varchar(45) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+--
+-- Dumping data for table `m_company`
+--
 
+INSERT INTO `m_company` (`Id`, `Name`, `Address`, `Domain`, `Reg_No`, `Code`) VALUES
+(1, 'Demo Buyer 3', 'Singapore', 'abc.com.sg', 'SG123456', 'ABC'),
+(2, 'Demo Supplier 2', 'Singapore', 'def.com.sg', 'Sup12345', 'DEF'),
+(3, 'Demo Buyer 2', '', '', '11111', ''),
+(4, 'Demo Supplier 3', '', '', '22222', ''),
+(5, 'Demo Buyer 4', '', '', '33333', ''),
+(6, 'Demo Supplier  4', '', '', '44444', ''),
+(7, 'Demo Supplier 1', '', '', '999999', ''),
+(8, 'Demo Buyer 1', '', '', '7777', ''),
+(9, 'Demo Supplier 5', '', '', '8888', ''),
+(10, 'A1 STAINLESS STEEL INDUSTRIES PTE LTD', '', '', '198200238', ''),
+(11, 'CHOON HIN STAINLESS STEEL PTE LTD', '', '', '199305976', ''),
+(12, 'CHONG CHEONG FOUNDRY WORKS PTE LTD ', '', '', '198703939', ''),
+(13, 'Sunlink Engineering Pte Ltd', '', '', '123123123S', ''),
+(14, 'Sing Chow Metal Works (Pte) Ltd', '', '', '197501206', ''),
+(15, 'Mr IT', '', '', '123456789a', ''),
+(16, 'Metalpolis Pte ltd', '', '', '201705340C', ''),
+(17, 'Metalpolis', '', '', '201705340A', ''),
+(18, 'Uniqlix', '', '', '201712345A', ''),
+(19, 'YLC', '', '', '201612345B', ''),
+(20, 'Test Company', '', '', '123456789S', ''),
+(21, 'dfdafsd', '', '', '123456789c', ''),
+(22, 'ddsfasdfsadf', '', '', '454354534w', ''),
+(23, 'Fortunea', '', '', '981298123A', ''),
+(24, 'Metal Bending Company Pte ltd', '', '', '201823237A', ''),
+(25, 'TOPMAST ENGINEERING PTE. LTD.', '', '', '200915138K', ''),
+(26, 'AICTSS Myanmar Co., Ltd', '', '', '112325679S', '');
 
 -- --------------------------------------------------------
 
@@ -1122,7 +1711,33 @@ CREATE TABLE `m_user` (
   `Company_Admin` int(11) NOT NULL DEFAULT '0'
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+--
+-- Dumping data for table `m_user`
+--
 
+INSERT INTO `m_user` (`Id`, `EmailAddress`, `Password`, `UserName`, `C_UserType`, `CreatedDate`, `CreatedBy`, `ModifiedBy`, `ModifiedDate`, `Status`, `RfqCount`, `QuoteCount`, `Version`, `Title`, `ContactNumbers`, `M_Company_Id`, `Confirmed`, `Company_Admin`) VALUES
+(1, 'galles.cs@gmail.com', '12345678', 'galles', 3, '2017-10-13 00:00:00', 'system', 'system', '2017-10-13 00:00:00', 1, 0, '0', NULL, NULL, '123459876', 1, 1, 0),
+(3, 'manager@aaaaa.com', 'nnhhyy66', 'buyer_demo', 3, '2017-11-18 07:26:38', 'system', 'system', '2017-11-18 07:26:38', 1, 0, '0', NULL, 'manag', '123456', 3, 1, 0),
+(4, 'manger@bbb.com', 'nnhhyy66', 'bbb_manager', 2, '2017-11-18 07:33:57', 'system', 'system', '2017-11-18 07:33:57', 1, 0, '0', NULL, 'Manager', '123435', 4, 1, 0),
+(5, 'staff@aaaa.com', 'nnhhyy66', 'aaaaa_staff', 3, '2017-11-18 07:39:51', 'system', 'system', '2017-11-18 07:39:51', 1, 0, '0', NULL, 'staff', '123456', 3, 1, 0),
+(6, 'manager@ccc.com', 'nnhhyy66', 'ccc_manager', 3, '2017-11-18 09:26:55', 'system', 'system', '2017-11-18 09:26:55', 1, 0, '0', NULL, 'Manager', '75857', 5, 1, 0),
+(7, 'staff@ddd.com', 'nnhhyy66', 'ddd_staff', 2, '2017-11-18 09:28:03', 'system', 'system', '2017-11-18 09:28:03', 1, 0, '0', NULL, 'staff', '94847', 6, 1, 0),
+(8, 'staff@eee.com', 'nnhhyy66', 'supplier_demo', 2, '2017-11-18 10:17:54', 'system', 'system', '2017-11-18 10:17:54', 1, 0, '0', NULL, 'staff', '98765', 7, 1, 0),
+(9, 'staff@rrr.com', 'nnhhyy66', 'rrr_staff', 3, '2017-11-18 11:26:40', 'system', 'system', '2017-11-18 11:26:40', 1, 0, '0', NULL, 'staff', '484940', 8, 1, 0),
+(10, 'manager@ttt.com', 'nnhhyy66', 'ttt_manager', 2, '2017-11-18 11:27:49', 'system', 'system', '2017-11-18 11:27:49', 1, 0, '0', NULL, 'manager', '0987', 9, 1, 0),
+(11, 'mail@a1ss.com', '12345678', 'Business Development', 2, '2017-11-20 08:29:37', 'system', 'system', '2017-11-20 08:29:37', 1, 0, '0', NULL, 'BDM', '6288 9920', 10, 1, 0),
+(12, 'info@choonhingroup.com', '12345678', 'choonhin', 3, '2017-11-20 10:13:53', 'system', 'system', '2017-11-20 10:13:53', 1, 0, '0', NULL, 'BDM', '6442 8080', 11, 1, 0),
+(13, 'ccfwpl@singnet.com.sg', '12345678', 'chongcheong', 2, '2017-11-21 08:42:24', 'system', 'system', '2017-11-21 08:42:24', 1, 0, '0', NULL, 'BDM', '6861 0770', 12, 1, 0),
+(15, '123@yahoo.com', '12345678', 'singchow', 3, '2017-11-29 01:20:50', 'system', 'system', '2017-11-29 01:20:50', 1, 0, '0', NULL, '', '', 14, 1, 0),
+(16, 'thantsinaung@mritmyanmar.com', 'nnhhyy66', 'Peter', 2, '2017-12-09 04:03:48', 'system', 'system', '2017-12-09 04:03:48', 1, 0, '0', NULL, 'MD', 'dsfadf', 21, 1, 0),
+(17, 'alfeo.silvestro@live.com', 'pass123', 'Alfonso Dante', 3, '2017-12-12 01:11:57', 'system', 'system', '2017-12-12 01:11:57', 1, 0, '0', NULL, 'Buyer', '98764563', 23, 1, 0),
+(18, 'yinloong@uniqlix.com', 'password', 'Hello', 3, '2017-12-12 02:54:38', 'system', 'system', '2017-12-12 02:54:38', 1, 0, '0', NULL, 'Chief Hello Officer', '92730333', 18, 1, 0),
+(19, 'aung.myatkhaing@omdg.biz', 'pass123', 'Soe San Win', 2, '2017-12-15 01:30:52', 'system', 'system', '2017-12-15 01:30:52', 1, 0, '0', NULL, 'Account Manager', '654342546', 13, 1, 0),
+(20, 'william.chao@ylcconsultants.com', 'password', 'Chaw Chaw', 2, '2017-12-15 04:13:24', 'system', 'system', '2017-12-15 04:13:24', 1, 0, '0', NULL, 'Chief Metal Rollder', '94209202', 24, 1, 0),
+(21, 'info@metalpolis.com', '12345678', 'topmast', 3, '2017-12-19 02:38:32', 'system', 'system', '2017-12-19 02:38:32', 1, 0, '0', NULL, 'BDM', '12345', 25, 1, 0),
+(22, 'kyawhtutlin@bbccdddee.net', '11223344', 'Kyaw Htut Lin', 3, '2017-12-22 15:05:52', 'system', 'system', '2017-12-22 15:05:52', 1, 0, '0', NULL, 'TT', '222333333', 26, 0, 0);
+
+-- --------------------------------------------------------
 
 --
 -- Table structure for table `td_requiredservices`
@@ -1185,7 +1800,20 @@ CREATE TABLE `t_clarifications` (
   `make_public` int(11) NOT NULL DEFAULT '0'
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+--
+-- Dumping data for table `t_clarifications`
+--
 
+INSERT INTO `t_clarifications` (`Id`, `ClarificationQuestion`, `ClarificationAnswer`, `AnswerType`, `M_Asking_Person_Id`, `T_Document_Id`, `Version`, `CreatedDate`, `CreatedBy`, `Status`, `make_public`) VALUES
+(1, 'hello', NULL, NULL, 12, 5, NULL, '2017-11-20 10:51:23', 'system', 1, 0),
+(2, 'What price u want?', NULL, NULL, 11, 4, NULL, '2017-11-20 10:54:27', 'system', 1, 0),
+(3, 'I would like to clarify that, xxx is the correct measurement', 'Yes, it is the correct measurement.', NULL, 8, 10, NULL, '2017-11-22 04:40:33', 'system', 1, 0),
+(4, 'Please confirm, transport is provided', 'Yes, it covers in our quote', NULL, 3, 9, NULL, '2017-11-22 04:48:02', 'system', 1, 0),
+(5, 'How soon you need this?', 'by 5th Dec', NULL, 13, 13, NULL, '2017-11-29 01:32:46', 'system', 1, 0),
+(6, 'Please provide dimensions', '1000mmx1000mmx500mm', NULL, 13, 14, NULL, '2017-12-01 05:57:09', 'system', 1, 0),
+(7, 'Test clarifications ', 'Test', NULL, 19, 16, NULL, '2017-12-15 01:33:50', 'system', 1, 1),
+(8, 'abc', 'def', NULL, 17, 17, NULL, '2017-12-19 01:32:35', 'system', 1, 0),
+(9, 'Test public clarifications', NULL, NULL, 17, 16, NULL, '2017-12-19 01:36:02', 'system', 1, 1);
 
 -- --------------------------------------------------------
 
@@ -1214,7 +1842,31 @@ CREATE TABLE `t_document` (
   `ContactPersonLName` varchar(255) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+--
+-- Dumping data for table `t_document`
+--
 
+INSERT INTO `t_document` (`Id`, `Title`, `C_DocumentType`, `ShortDescription`, `LongDescription`, `SubmissionDate`, `C_QuotationStatus`, `C_RfqStatus`, `CreatedDate`, `CreatedBy`, `ModifiedDate`, `ModifiedBy`, `Status`, `Version`, `M_User_Id`, `DocumentNo`, `ContactPersonFName`, `ContactPersonLName`) VALUES
+(1, 'P1', 6, '', '', NULL, 8, 10, '2017-11-19 11:18:57', '3', NULL, NULL, 1, NULL, 3, 'RFQ_Submitted_1', 'Jame', 'Smith'),
+(2, '', 6, '', '', NULL, 8, 14, '2017-11-19 11:17:27', '3', '2017-11-19 11:17:37', '3', 1, NULL, 3, 'RFQ_Draft_2', 'Peter', ''),
+(3, '', 7, '', '', NULL, 20, 8, '2017-11-19 11:19:34', '8', '2017-11-20 13:49:35', '8', 1, NULL, 8, 'RFQ_Submitted_1', '', ''),
+(4, 'Test1', 6, '', '', NULL, 8, 12, '2017-11-20 10:31:03', '12', '2017-11-20 10:59:45', '12', 1, NULL, 12, 'RFQ_Submitted_2', 'TT', 'F'),
+(5, '', 7, '', '', NULL, 18, 8, '2017-11-20 10:42:16', '11', '2017-11-20 10:59:45', '12', 1, NULL, 11, 'RFQ_Submitted_2', 'business', 'business'),
+(6, 'RFQ 123', 6, '', '', NULL, 8, 10, '2017-11-21 08:50:45', '12', NULL, NULL, 1, NULL, 12, 'RFQ_Submitted_3', 'TT', 'ABC'),
+(7, '', 7, '', '', NULL, 16, 8, '2017-11-21 08:58:00', '13', '2017-11-21 09:13:45', '13', 1, NULL, 13, 'RFQ_Submitted_3', 'AA', 'AA'),
+(8, '', 6, '', '', NULL, 8, 10, '2017-11-21 13:24:33', '3', NULL, NULL, 1, NULL, 3, 'RFQ_Submitted_4', 'OMG', 'User'),
+(9, '', 7, '', '', NULL, 16, 8, '2017-11-21 13:25:41', '8', '2017-11-22 04:46:08', '8', 1, NULL, 8, 'RFQ_Submitted_4', 'TT', 'Foo'),
+(10, '', 6, '', '', NULL, 8, 10, '2017-11-22 04:32:22', '3', NULL, NULL, 1, NULL, 3, 'RFQ_Submitted_5', 'Test Person', 'Test Person'),
+(11, '', 7, '', '', NULL, 15, 8, '2017-11-22 04:34:29', '13', NULL, NULL, 1, NULL, 13, 'RFQ_Submitted_5', '', ''),
+(12, 'Tru-Marine', 6, '', '', NULL, 8, 10, '2017-11-28 03:17:33', '3', NULL, NULL, 1, NULL, 3, 'RFQ_Submitted_6', 'Yih', 'Loong'),
+(13, 'I want metal', 6, '', '', NULL, 8, 10, '2017-11-29 01:29:41', '15', NULL, NULL, 1, NULL, 15, 'RFQ_Submitted_7', 'TT', 'F'),
+(14, 'Skid Work', 6, '', '', NULL, 8, 10, '2017-12-01 05:56:04', '15', NULL, NULL, 1, NULL, 15, 'RFQ_Submitted_8', 'Pau', 'Lee'),
+(15, 'Buying some services for my metal working par', 6, '', '', NULL, 8, 10, '2017-12-12 06:36:19', '18', NULL, NULL, 1, NULL, 18, 'RFQ_Submitted_9', 'Hello', 'Hello'),
+(16, 'Milling', 6, '', '', NULL, 8, 12, '2017-12-15 01:10:51', '17', '2017-12-19 02:24:57', '17', 1, NULL, 17, 'RFQ_Submitted_10', 'Alfonso Dante', 'Alfonso Dante'),
+(17, '', 7, '', '', NULL, 18, 8, '2017-12-15 01:59:36', '19', '2017-12-19 02:24:57', '17', 1, NULL, 19, 'RFQ_Submitted_10', '', ''),
+(18, 'Top project', 6, '', '', NULL, 8, 10, '2017-12-19 03:17:57', '21', NULL, NULL, 1, NULL, 21, 'RFQ_Submitted_11', 'topmast', 'topmast');
+
+-- --------------------------------------------------------
 
 --
 -- Table structure for table `t_fileattachments`
@@ -1235,7 +1887,33 @@ CREATE TABLE `t_fileattachments` (
   `Message` varchar(5000) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
--
+--
+-- Dumping data for table `t_fileattachments`
+--
+
+INSERT INTO `t_fileattachments` (`Id`, `T_Document_Id`, `FileName`, `FileBinary`, `CreatedDate`, `CreatedBy`, `ModifiedDate`, `ModifiedBy`, `Status`, `Version`, `Subject`, `Message`) VALUES
+(1, 1, '20171119111849_AttendanceReport-26122016161619.xls', '', '2017-11-19 11:18:57', '3', NULL, NULL, 1, NULL, 'S1', 'M2'),
+(2, 3, '20171119111954_AttendanceReport-26122016152438.xls', '', '2017-11-19 11:20:13', '8', NULL, NULL, 0, NULL, 'S3', 'M3'),
+(3, 3, '20171119111954_AttendanceReport-26122016152438.xls', '', '2017-11-19 11:29:13', '8', NULL, NULL, 1, NULL, 'S3', 'M3'),
+(4, 5, '20171120104457_', '', '2017-11-20 10:47:27', '11', NULL, NULL, 0, NULL, 'Price Quote from A1', 'please review attached quotation'),
+(5, 5, '20171120104556_how-to-start-a-startup-as-told-by-PG-infographic.png', '', '2017-11-20 10:47:27', '11', NULL, NULL, 0, NULL, '', ''),
+(6, 5, '20171120104457_', '', '2017-11-20 10:47:56', '11', NULL, NULL, 1, NULL, 'Price Quote from A1', 'please review attached quotation'),
+(7, 5, '20171120104556_how-to-start-a-startup-as-told-by-PG-infographic.png', '', '2017-11-20 10:47:56', '11', NULL, NULL, 1, NULL, '', ''),
+(8, 6, '20171121084844_ICT_Impact+of+AI+on+Singapore.pdf', '', '2017-11-21 08:49:42', '12', NULL, NULL, 0, NULL, 'RFQ', 'Please refer to attached and quote asap'),
+(9, 6, '20171121084844_ICT_Impact+of+AI+on+Singapore.pdf', '', '2017-11-21 08:50:45', '12', NULL, NULL, 1, NULL, 'RFQ', 'Please refer to attached and quote asap'),
+(10, 7, '20171121090253_How to be Wise_funder&founder.png', '', '2017-11-21 09:07:39', '13', NULL, NULL, 0, NULL, 'See my quote', 'let me know if u need any further info'),
+(11, 7, '20171121090253_How to be Wise_funder&founder.png', '', '2017-11-21 09:13:45', '13', NULL, NULL, 1, NULL, 'See my quote', 'let me know if u need any further info'),
+(12, 9, '20171122044528_setup.sh', '', '2017-11-22 04:46:08', '8', NULL, NULL, 1, NULL, 'Quotation Pricing', 'All Pricing information'),
+(13, 12, '20171128031708_11Sep2017.txt', '', '2017-11-28 03:17:33', '3', NULL, NULL, 1, NULL, '', 'this is a diagram of a turbine part'),
+(14, 13, '20171129012919_Request for Metal Railing.pdf', '', '2017-11-29 01:29:41', '15', NULL, NULL, 1, NULL, 'Pix', 'Picture of railing'),
+(15, 14, '20171201055517_skid sample.jpg', '', '2017-12-01 05:56:04', '15', NULL, NULL, 1, NULL, 'Skid', 'Please see attached picture'),
+(16, 15, '20171212063520_UniQlix.png', '', '2017-12-12 06:36:19', '18', NULL, NULL, 1, NULL, '', 'This is my logo. can it be made by using metal ?'),
+(17, 16, '20171215005144_18450B83-B920-49CF-88B1-4036CA1F9D7E.jpeg', '', '2017-12-15 00:51:49', '17', NULL, NULL, 0, NULL, '', ''),
+(18, 16, '20171215005144_18450B83-B920-49CF-88B1-4036CA1F9D7E.jpeg', '', '2017-12-15 01:05:58', '17', NULL, NULL, 0, NULL, '', ''),
+(19, 16, '20171215005144_18450B83-B920-49CF-88B1-4036CA1F9D7E.jpeg', '', '2017-12-15 01:10:51', '17', NULL, NULL, 1, NULL, '', ''),
+(20, 17, '20171219012800_10_Penguins-Of-Madagascar.jpg', '', '2017-12-19 01:28:22', '19', NULL, NULL, 0, NULL, '', ''),
+(21, 18, '20171219024223_skid sample.jpg', '', '2017-12-19 03:17:57', '21', NULL, NULL, 1, NULL, '', 'Skid Diagram');
+
 -- --------------------------------------------------------
 
 --
@@ -1258,6 +1936,25 @@ CREATE TABLE `t_requestforquotation` (
   `Remark` varchar(500) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+--
+-- Dumping data for table `t_requestforquotation`
+--
+
+INSERT INTO `t_requestforquotation` (`Document_Id`, `Title`, `FinalClosingDate`, `FirstClosingDate`, `RevisedClosingDate1`, `RevisedClosingDate2`, `TotalSubmittedQuotes`, `RequireServiceTags`, `IsSelected`, `PreferredPaymentTerms`, `Supplier_Provide_Material`, `Supplier_Provide_Transport`, `Remark`) VALUES
+(1, 'P1', '2017-12-19 00:00:00', '2017-12-19 00:00:00', NULL, NULL, 0, NULL, NULL, NULL, 1, 1, 'Remark test'),
+(2, '', '2017-12-19 00:00:00', '2017-12-19 00:00:00', NULL, NULL, 0, NULL, NULL, NULL, 0, 0, ''),
+(4, 'Test1', '2017-12-20 00:00:00', '2017-12-20 00:00:00', NULL, NULL, 0, NULL, NULL, NULL, 1, 1, 'Send asap'),
+(6, 'RFQ 123', '2017-12-21 00:00:00', '2017-12-21 00:00:00', NULL, NULL, 0, NULL, NULL, NULL, 1, 1, 'Send me quote'),
+(8, '', '2017-12-21 00:00:00', '2017-12-21 00:00:00', NULL, NULL, 0, NULL, NULL, NULL, 1, 1, ''),
+(10, '', '2017-12-22 00:00:00', '2017-12-22 00:00:00', NULL, NULL, 0, NULL, NULL, NULL, 1, 1, ''),
+(12, 'Tru-Marine', '2017-11-30 00:00:00', '2017-11-30 00:00:00', NULL, NULL, 0, NULL, NULL, NULL, 1, 1, 'I need a turbine part very urgently'),
+(13, 'I want metal', '2017-12-29 00:00:00', '2017-12-29 00:00:00', NULL, NULL, 0, NULL, NULL, NULL, 1, 1, 'please get back asap'),
+(14, 'Skid Work', '2017-12-09 00:00:00', '2017-12-09 00:00:00', NULL, NULL, 0, NULL, NULL, NULL, 1, 1, 'Please quote me asap, very very urgent'),
+(15, 'Buying some services for my metal working parts', '2017-12-31 00:00:00', '2017-12-31 00:00:00', NULL, NULL, 0, NULL, NULL, NULL, 1, 1, 'Hello i need metal services!'),
+(16, 'Milling', '2017-12-22 00:00:00', '2017-12-22 00:00:00', NULL, NULL, 0, NULL, NULL, NULL, 1, 1, ''),
+(18, 'Top project', '2017-12-26 00:00:00', '2017-12-26 00:00:00', NULL, NULL, 0, NULL, NULL, NULL, 1, 1, 'Please get back asap\r\nmndaj\r\nsdnakdaj\r\nadjakfhkh\r\najfahf\r\n');
+
+-- --------------------------------------------------------
 
 --
 -- Table structure for table `t_supplierquotation`
@@ -1272,7 +1969,17 @@ CREATE TABLE `t_supplierquotation` (
   `Comments` varchar(500) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+--
+-- Dumping data for table `t_supplierquotation`
+--
 
+INSERT INTO `t_supplierquotation` (`Document_Id`, `T_Rfq_Id`, `QuotedFigure`, `ValidToDate`, `RevisionNo`, `Comments`) VALUES
+(3, 1, '0.00', '2017-11-19 00:00:00', 3, 'OK					'),
+(5, 4, '2000.00', '2017-11-20 00:00:00', 4, 'let us know the result asap					'),
+(7, 6, '5000.00', '2017-11-21 00:00:00', 4, 'Please move fast					'),
+(9, 8, '50000.00', '2017-11-21 00:00:00', 4, 'Please feel free to let us know, if you should require any clarifications regards to our quote.'),
+(11, 10, '0.00', '2017-11-22 00:00:00', 1, ''),
+(17, 16, '10000.00', '2017-12-15 00:00:00', 4, 'BACKBONE OF MANUFACTURING\r\nPrecision engineering is the crucial enabler for industries as diverse as aerospace, oil & gas, medical devices and electronics. It is the essential ingredient in the manufacturing of the smallest semiconductor chips, to the most cutting-edge of medical devices, and the largest drill bits used in oil exploration.\r\n\r\nSingapore’s precision engineering activities began in the 1970s to support the first manufacturing investments. Today, there are some 2,700 companies, rang');
 
 -- --------------------------------------------------------
 
@@ -1289,6 +1996,32 @@ CREATE TABLE `t_targetedsuppliers` (
 --
 -- Dumping data for table `t_targetedsuppliers`
 --
+
+INSERT INTO `t_targetedsuppliers` (`Id`, `T_Document_Id`, `M_Company_Id`) VALUES
+(1, 1, 7),
+(2, 4, 10),
+(3, 4, 10),
+(4, 6, 12),
+(5, 6, 10),
+(6, 6, 12),
+(7, 6, 10),
+(8, 8, 7),
+(9, 8, 7),
+(10, 10, 7),
+(11, 10, 12),
+(12, 12, 13),
+(13, 13, 13),
+(14, 13, 12),
+(15, 13, 10),
+(16, 14, 13),
+(17, 14, 12),
+(18, 15, 13),
+(19, 15, 10),
+(20, 15, 12),
+(21, 16, 13),
+(22, 16, 13),
+(23, 18, 13),
+(24, 18, 24);
 
 --
 -- Indexes for dumped tables
@@ -1468,56 +2201,67 @@ ALTER TABLE `t_targetedsuppliers`
 --
 ALTER TABLE `company_notification`
   MODIFY `Id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=34;
+
 --
 -- AUTO_INCREMENT for table `c_tags`
 --
 ALTER TABLE `c_tags`
   MODIFY `Id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+
 --
 -- AUTO_INCREMENT for table `document_number`
 --
 ALTER TABLE `document_number`
   MODIFY `Id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
+
 --
 -- AUTO_INCREMENT for table `md_companyrating`
 --
 ALTER TABLE `md_companyrating`
   MODIFY `Id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+
 --
 -- AUTO_INCREMENT for table `md_serviceparameter`
 --
 ALTER TABLE `md_serviceparameter`
   MODIFY `Id` int(11) NOT NULL AUTO_INCREMENT;
+
 --
 -- AUTO_INCREMENT for table `md_supplierserviceparameter`
 --
 ALTER TABLE `md_supplierserviceparameter`
   MODIFY `Id` int(11) NOT NULL AUTO_INCREMENT;
+
 --
 -- AUTO_INCREMENT for table `md_userrating`
 --
 ALTER TABLE `md_userrating`
   MODIFY `Id` int(11) NOT NULL AUTO_INCREMENT;
+
 --
 -- AUTO_INCREMENT for table `m_user`
 --
 ALTER TABLE `m_user`
   MODIFY `Id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=23;
+
 --
 -- AUTO_INCREMENT for table `td_requiredservices`
 --
 ALTER TABLE `td_requiredservices`
   MODIFY `Id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
+
 --
 -- AUTO_INCREMENT for table `t_clarifications`
 --
 ALTER TABLE `t_clarifications`
   MODIFY `Id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+
 --
 -- AUTO_INCREMENT for table `t_targetedsuppliers`
 --
 ALTER TABLE `t_targetedsuppliers`
   MODIFY `Id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=25;
+
 --
 -- Constraints for dumped tables
 --
@@ -1594,3 +2338,8 @@ ALTER TABLE `t_requestforquotation`
 ALTER TABLE `t_supplierquotation`
   ADD CONSTRAINT `fk_SupplierQuote_Document1` FOREIGN KEY (`Document_Id`) REFERENCES `t_document` (`Id`) ON DELETE NO ACTION ON UPDATE NO ACTION,
   ADD CONSTRAINT `fk_SupplierQuote_Document2` FOREIGN KEY (`T_Rfq_Id`) REFERENCES `t_document` (`Id`) ON DELETE NO ACTION ON UPDATE NO ACTION;
+COMMIT;
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
