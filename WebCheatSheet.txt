@@ -1,0 +1,17 @@
+INSERT INTO mysql.user (User,Host,Password) VALUES(�metal_dbuser�,�localhost�,�vackertech2018�);
+
+database: metalpolis_database
+user : metal_dbuser
+password : vackertech2018
+
+docker build -t metalpolis .
+docker rm <container-id>
+docker ps -a
+docker stop <container-id>
+docker run -p 80:80 -d metalpolis
+docker run --name metalpolis_web --net=host -p 80:80 -d metalpolis
+
+git pull https://github.com/alfeosilvestro/metalpolis-php.git
+
+
+http://35.198.239.233
