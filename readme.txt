@@ -7,4 +7,7 @@ docker build -t metalpolis .
 
 
 ### Step 3
-docker run -p 8080:80 -d metalpolis
+docker run --net=host -p 8080:80 --name metalpolis_web -d metalpolis
+
+
+
