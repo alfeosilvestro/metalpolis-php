@@ -193,7 +193,7 @@
 							<th>Subject</th>
                             <th>Created Date</th>
                             <th>Status</th>
-                            <th>Setting</th>
+                            <th></th>
                         </tr>
 						</thead>
 						<tbody>
@@ -257,7 +257,7 @@
 							<th>Subject</th>
                             <th>Created Date</th>
                             <th>Status</th>
-                            <th>Setting</th>
+                            <th></th>
                         </tr>
 						</thead>
 						<tbody>
@@ -323,7 +323,7 @@
 							<th>Subject</th>
                             <th>Created Date</th>
                             <th>Status</th>
-                            <th>Setting</th>
+                            <th></th>
                         </tr>
 						</thead>
 						<tbody>

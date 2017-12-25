@@ -165,7 +165,7 @@
              <tr>
                <th>File</th>
                <th>File Description</th>
-               <th>Setting</th>
+               <th></th>
              </tr>
            </thead>
            <tbody>

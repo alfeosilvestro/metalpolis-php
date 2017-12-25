@@ -181,11 +181,13 @@ $("#yesbtn").click(function (e) {
   }
   xmlhttp.onreadystatechange = function() {
   if (this.readyState == 4 && this.status == 200) {
+    sessionStorage.clear();
    }
   };
   xmlhttp.open("GET","market.php?user_id=<?php echo $userid;?>&function=changeaccounttype&type_id=<?php echo $changetypeid;?>",true);
   xmlhttp.send();
-window.location.href="index.php?rdp=dashboard";
+  <?php session_destroy(); ?>
+  window.location.href="../";
 // location.reload();
 		});
 </script>
