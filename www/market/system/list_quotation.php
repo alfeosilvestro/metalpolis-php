@@ -69,17 +69,14 @@
 									<td><?php echo date('d-m-Y', strtotime($row["CreatedDate"]));?></td>
 									<td><?php echo $row["Status"];?></td>
 									<td><?php
-
-						$out = '<a href="index.php?rdp=view_quotation&id=' . $row["Id"] .'" class="btn btn-warning btn-xs"><span class="icon-pencil"></span>View</a> ';
-						echo $out;
+        					$out = '<a href="index.php?rdp=view_quotation&id=' . $row["Id"] .'" class="btn btn-warning btn-xs"><span class="icon-pencil"></span>View</a> ';
+        					echo $out;
 						?></td>
 								</tr>
-
 								<?php
 							}
 						}
 						?>
-
                         </tbody>
                     </table>
                 </div>

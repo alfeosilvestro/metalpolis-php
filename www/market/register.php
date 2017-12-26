@@ -170,12 +170,17 @@
 
 												<div class="form-group">
 													<label>Contact Number</label>
-													<input id="txt_contact_number" name="contact_number" type="text"
+													<input id="txt_contact_number" name="contact_number" type="number"
 														   class="form-control"
 														   data-bind="value: contact_number, valueUpdate: 'blur'"
-														   placeholder="Number for suppliers to reach you" >
+														   placeholder="Number for suppliers to reach you"  max="99999999">
 												</div>
 
+												<div class="form-group">
+													<label>Address</label>
+													<textarea id="txt_address" class="form-control" name="address" rows="4" cols="80"></textarea>
+
+												</div>
 
 												<div id="selTags" class="form-group">
 													<label>Tag</label>
@@ -466,16 +471,34 @@ $(document).ready(function () {
 						 // code for IE6, IE5
 						 xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
 				 }
-		 xmlhttp.onreadystatechange = function() {
-	 if (this.readyState == 4 && this.status == 200) {
-		 $("#messageforsupplier").append(this.responseText);
-		 if(this.responseText != ""){
-			$("input[id='txt_company_name']").val(this.responseText);
-		 }
+		 	 	xmlhttp.onreadystatechange = function() {
+				 if (this.readyState == 4 && this.status == 200) {
+					 $("#messageforsupplier").append(this.responseText);
+					 if(this.responseText != ""){
+						$("input[id='txt_company_name']").val(this.responseText);
+					 }
 				 }
 		 };
 		 xmlhttp.open("GET","market.php?company_uen="+company_uen+"&function=getcompanyname",true);
 		 xmlhttp.send();
+
+		 if (window.XMLHttpRequest) {
+			// code for IE7+, Firefox, Chrome, Opera, Safari
+			xmlhttp = new XMLHttpRequest();
+			} else {
+					// code for IE6, IE5
+					xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+			}
+		 xmlhttp.onreadystatechange = function() {
+			if (this.readyState == 4 && this.status == 200) {
+				$("#messageforsupplier").append(this.responseText);
+				if(this.responseText != ""){
+				 $("textarea[id='txt_address']").val(this.responseText);
+				}
+			}
+	};
+	xmlhttp.open("GET","market.php?company_uen="+company_uen+"&function=getcompanyaddress",true);
+	xmlhttp.send();
 
 			}else{
 				message = message + "Company UEN field is invalid format! (eg.123456789s)";
@@ -510,12 +533,21 @@ $("input[id='txt_company_name']").blur(function() {
 	}
 
 });
+$("input[id='txt_contact_number']").keyup(function () {
+var contact_number = $("input[id='txt_contact_number']").val();
+var tweet_length = $("input[id='txt_contact_number']").val().length;
+if(tweet_length > 8) {
+		$("input[id='txt_contact_number']").val(contact_number.substring(0,8));
+}
+});
 
 $("input[id='txt_contact_number']").blur(function() {
 	var contact_number = $("input[id='txt_contact_number']").val();
 	var message = "";
 	if(contact_number == ""){
 		message = message + "Contact Number field is required!";
+	}else{
+
 	}
 	if(message != ""){
 		$("input[id='txt_contact_number']").select();
@@ -571,13 +603,34 @@ $("input[id='txt_email_addr']").blur(function() {
 	}else{
 		var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 		if(re.test(email)){
-			var yahoo_re = /@yahoo.com\s*$/;
-			var gmail_re = /@gmail.com\s*$/;
-			if(yahoo_re.test(email) || gmail_re.test(email)){
-				message = message + "Please enter company email!";
-			}
+			//var yahoo_re = /@yahoo.com\s*$/;
+			//var gmail_re = /@gmail.com\s*$/;
+			//if(yahoo_re.test(email) || gmail_re.test(email)){
+			//}
+			if (window.XMLHttpRequest) {
+ 			// code for IE7+, Firefox, Chrome, Opera, Safari
+		 			xmlhttp = new XMLHttpRequest();
+		 			} else {
+		 					// code for IE6, IE5
+		 					xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+		 			}
+		 		 xmlhttp.onreadystatechange = function() {
+		 			if (this.readyState == 4 && this.status == 200) {
+		 				if(this.responseText != ""){
+		 				 message = message + "Please drop email to info@metalpolis.com with photo id and business card to help create user account in our system!";
+						 $("input[id='txt_email_addr']").select();
+						$("#notify .message").html("<strong>" + message + "</strong>");
+						$("#notify").show();
+						$("#notify").removeClass("alert-success").addClass("alert-danger").fadeIn();
+						$("html, body").animate({scrollTop: $('#notify').offset().top}, 1000);
+		 				}
+		 			}
+		 	};
+		 	xmlhttp.open("GET","market.php?email="+email+"&function=checkEmail",true);
+		 	xmlhttp.send();
+
 		}else{
-			message = message + "Email field is invalid format! Please drop email to info@metalpolis.com with photo id and business card to help create user account in our system";
+			message = message + "Email field is invalid format!";
 		}
 	}
 	if(message != ""){

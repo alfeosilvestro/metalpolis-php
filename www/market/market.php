@@ -20,7 +20,17 @@
 		$result = $conn->query($sql);
 		if (isset($result)){
 			if ($result->num_rows > 0) {
-				$returntext = "Services are already existed under this company.";
+				$company_name = "";
+				$sql1 = "SELECT Name FROM `m_company` WHERE `Reg_No` = '$company_uen'";
+				$result1 = $conn->query($sql1);
+				if (isset($result1)){
+					if ($result1->num_rows > 0) {
+						while($row1 = $result1->fetch_assoc()) {
+							$company_name = $row1["Name"];
+						}
+					}
+				}
+				$returntext = $company_name. " profile is already in our system. The company services profile can be change only by user with administrative rights. Please contact your company administrator for more details.";
 			}
 		}
 		echo $returntext;
@@ -34,6 +44,36 @@
 			if ($result->num_rows > 0) {
 				while($row = $result->fetch_assoc()) {
 					$returntext = $row["Name"];
+				}
+			}
+		}
+		echo $returntext;
+	}elseif ($function == "getcompanyaddress"){
+		$company_uen = $_GET["company_uen"];
+		$c = 0;
+		$returntext = "";
+		$sql = "SELECT Address FROM `m_company` WHERE `Reg_No` = '$company_uen'";
+		$result = $conn->query($sql);
+		if (isset($result)){
+			if ($result->num_rows > 0) {
+				while($row = $result->fetch_assoc()) {
+					$returntext = $row["Address"];
+				}
+			}
+		}
+		echo $returntext;
+	}elseif ($function == "checkEmail"){
+		$email = $_GET["email"];
+		$c = 0;
+		$returntext = "";
+		$sql = "SELECT domain FROM `public_email`";
+		$result = $conn->query($sql);
+		if (isset($result)){
+			if ($result->num_rows > 0) {
+				while($row = $result->fetch_assoc()) {
+					if(strpos($email, $row["domain"])>0){
+						$returntext = $row["domain"];
+					}
 				}
 			}
 		}
@@ -568,6 +608,7 @@
 		$company_name =$_GET['company_name'];
 		$title =$_GET['title'];
 		$contact_number =$_GET['contact_number'];
+		$address =$_GET['address'];
 		$user_name =$_GET['user_name'];
 		$email_address =$_GET['email_address'];
 		$password =$_GET['password'];
@@ -592,7 +633,7 @@
 				}else{
 					$c_id = 1;
 				}
-				$dataArray = array('Id' => $c_id, 'Name' => $company_name, 'Address' => "", 'Domain' => "", 'Reg_No' => $company_uen, 'Code' => "");
+				$dataArray = array('Id' => $c_id, 'Name' => $company_name, 'Address' => $address, 'Domain' => "", 'Reg_No' => $company_uen, 'Code' => "");
 				$db->insert('m_company', $dataArray);
 				$Company_Admin = 1;
 			}
@@ -619,6 +660,7 @@
 		$company_name =$_GET['company_name'];
 		$title =$_GET['title'];
 		$contact_number =$_GET['contact_number'];
+		$address =$_GET['address'];
 		$user_name =$_GET['user_name'];
 		$email_address =$_GET['email_address'];
 		$password =$_GET['password'];
@@ -645,7 +687,7 @@
 					}else{
 						$c_id = 1;
 					}
-					$dataArray = array('Id' => $c_id, 'Name' => $company_name, 'Address' => "", 'Domain' => "", 'Reg_No' => $company_uen, 'Code' => "");
+					$dataArray = array('Id' => $c_id, 'Name' => $company_name, 'Address' => $address, 'Domain' => "", 'Reg_No' => $company_uen, 'Code' => "");
 					$db->insert('m_company', $dataArray);
 					$Company_Admin = 1;
 				}

@@ -390,7 +390,14 @@
                    Reject
                 </a>
 				<?php
-				}
+      }elseif(($rfq_owner == "yes") && ($q_statusid == 17) ){
+    ?>
+            <a href="#" id="btnrate" class="btn btn-info"  onclick="rateSupplier()">
+                <i class="fa fa-pencil-square-o"></i>
+               Rate
+            </a>
+    <?php
+  }
 			}?>
 
             </div>
@@ -998,12 +1005,11 @@ $(document).ready(function(){
 
 	function accept_quotation(id){
 		      $.ajax({
-
                 url: 'market.php?function=UpdateStatus&type=q&Status=18&ModifiedBy='+<?php echo $userid;?>+'&rfq_id='+<?php echo $rfq_id;?>+'&id='+id,
                 type: 'GET',
 				dataType: 'json',
                 success: function (data) {
-				              $('#ratebox').modal('show');
+
                       $('#btnaccept').hide();
                       $('#btnreject').hide();
                 },
@@ -1014,6 +1020,9 @@ $(document).ready(function(){
             });
 
 	}
+  function rateSupplier(){
+    $('#ratebox').modal('show');
+  }
 
 	function reject_quotation(id){
 		$.ajax({
