@@ -1,0 +1,49 @@
+version: '3'
+
+services:
+
+  metalpolis-db:
+    build: 
+      context: ./mysql
+    environment:
+      DB_USER: metal_dbuser
+      DB_PASS: vackertech2018
+      DB_NAME: metalpolis_database
+      MYSQL_CHARSET: utf8mb4
+      MYSQL_COLLATION: utf8mb4_unicode_ci
+      DB_IMPORT_FILE: /home/dbsetup.sql
+    hostname: metalpolis-db
+    ports:
+      - 3306:3306
+  
+  metalpolis-web:
+    build: 
+      context: .
+    volumes:
+      - ./www:/home/metalpolis/web
+    hostname: metalpolis-web
+    ports:
+      - 8080:80
+    links:
+      - metalpolis-db
+    depends_on:
+      - metalpolis-db
+    # networks:
+    #   driver: host
+
+
+  # metalpolis-db:
+  #   build: 
+  #     context: ./mysql
+  #     args:
+  #       DB_USER: metal_dbuser
+  #       DB_PASS: vackertech2018
+  #       DB_NAME: metalpolis_database
+  #       MYSQL_CHARSET: utf8mb4
+  #       MYSQL_COLLATION: utf8mb4_unicode_ci
+  #       DB_IMPORT_FILE: /home/dbsetup.sql
+  #   ports:
+  #     - 3306:3306
+  #   networks:
+  #     driver: host
+  
