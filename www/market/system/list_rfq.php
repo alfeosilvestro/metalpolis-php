@@ -198,7 +198,7 @@
 						</thead>
 						<tbody>
 						<?php
-            $query = "Update t_document SET C_RfqStatus = 11 Where Id IN (SELECT Document_Id FROM t_requestforquotation Where FinalClosingDate < '" . date("Y-m-d") . "')";
+            $query = "Update t_document SET C_RfqStatus = 11 Where C_RfqStatus = 10  and  Id IN (SELECT Document_Id FROM t_requestforquotation Where FinalClosingDate < '" . date("Y-m-d") . "')";
             $db->pdoQuery($query);
 						if(($_SESSION['usertype'] == 'Buyer')){
 							$query = "SELECT t1.Id, t1.DocumentNo, t1.Title, t1.CreatedDate, t2.Name as Status FROM t_document t1 Inner Join c_codetable t2 on t2.Id = t1.C_RfqStatus Where C_DocumentType = 6 and t1.C_RfqStatus = 11 and t1.M_User_Id = ". $userid;

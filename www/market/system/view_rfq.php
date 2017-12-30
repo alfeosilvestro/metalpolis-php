@@ -466,6 +466,7 @@
                             <th>Ref No.</th>
 							<th>Company</th>
 							<th>Address</th>
+              <th>Tags</th>
                         </tr>
 						</thead>
 						<tbody>
@@ -476,13 +477,28 @@
 							$count = 0;
 							foreach ($results as $row) {
 								$count = $count+1;
+                $tags = "";
+      					$sql1 = "SELECT * FROM `c_tags` WHERE `Id` IN (SELECT `C_Tags_Id` FROM `md_suppliertags` WHERE `M_User_Id` in (".$row["Id"] ."))";
+      					$result1 = $conn->query($sql1);
+      					if (isset($result1)){
+      						if ($result1->num_rows > 0) {
+      							// output data of each row
+      							while($row_tag = $result1->fetch_assoc()) {
+      								if($tags == "" ){
+      									$tags = $row_tag["TagName"];
+      								}else{
+      									$tags = $tags . "," .  $row_tag["TagName"];
+      								}
+      								}
+      							}
+      						}
 								?>
 								<tr>
 									<td><?php echo $count; ?></td>
 									<td><?php echo $row["Reg_No"];?></td>
 									<td><?php echo $row["Name"];?></td>
 									<td><?php echo $row["Address"];?></td>
-
+                  <td><?php echo $tags;?></td>
 								</tr>
 
 								<?php

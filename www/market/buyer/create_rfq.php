@@ -356,6 +356,7 @@
 				<tr>
                     <th>Company Name</th>
                     <th>Address</th>
+                      <th>Tags</th>
                     <th>Status</th>
                     <th>&nbsp;</th>
                 </tr>
@@ -376,6 +377,7 @@
 				<tr>
                     <th>Company Name</th>
                     <th>Address</th>
+                    <th>Tags</th>
                     <th>Verified</th>
                     <th>&nbsp;</th>
                 </tr>
