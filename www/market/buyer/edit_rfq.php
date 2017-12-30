@@ -460,6 +460,7 @@
 				<tr>
                     <th>Company Name</th>
                     <th>Address</th>
+                    <th>Tags</th>
                     <th>Status</th>
                     <th>&nbsp;</th>
                 </tr>
@@ -476,6 +477,7 @@
 				<tr>
                     <th>Company Name</th>
                     <th>Address</th>
+                    <th>Tags</th>
                     <th>Verified</th>
                     <th>&nbsp;</th>
                 </tr>
@@ -490,10 +492,25 @@
 					if ($result->num_rows > 0) {
 						// output data of each row
 						while($row = $result->fetch_assoc()) {
-
+              $tags = "";
+    					$sql1 = "SELECT * FROM `c_tags` WHERE `Id` IN (SELECT `C_Tags_Id` FROM `md_suppliertags` WHERE `M_User_Id` in (".$row["Id"] ."))";
+    					$result1 = $conn->query($sql1);
+    					if (isset($result1)){
+    						if ($result1->num_rows > 0) {
+    							// output data of each row
+    							while($row_tag = $result1->fetch_assoc()) {
+    								if($tags == "" ){
+    									$tags = $row_tag["TagName"];
+    								}else{
+    									$tags = $tags . "," .  $row_tag["TagName"];
+    								}
+    								}
+    							}
+    						}
 							echo "<tr id='trsupplier_".$row["Id"]."'>
 									<td>".$row["Name"]."(Registration No. ".$row["Reg_No"].")<input type='hidden' value='".$row["Id"]."' name='selected_supplier_id[]'> <input type='hidden' value='0' name='search_supplier_id[]'></td>
 									<td>".$row["Address"]."</td>
+                  <td>".$tags."</td>
 									<td><span class='label label-success'>Verified</span></td>
 									<td>
 									   <button type='button' value='".$row["Id"]."' class='btn btn-sm btn-info' Onclick='ViewProfile(this);'>              View Profile       </button>
