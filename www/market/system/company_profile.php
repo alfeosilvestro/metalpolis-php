@@ -1,34 +1,4 @@
-<style>
-/* Rating Star Widgets Style */
-.rating-stars ul {
-  list-style-type:none;
-  padding:0;
 
-  -moz-user-select:none;
-  -webkit-user-select:none;
-}
-.rating-stars ul > li.star {
-  display:inline-block;
-
-}
-
-/* Idle State of the stars */
-.rating-stars ul > li.star > i.fa {
-  font-size:2em; /* Change the size of the stars */
-  color:#ccc; /* Color on idle state */
-}
-
-/* Hover state of the stars */
-.rating-stars ul > li.star.hover > i.fa {
-  color:#FFCC36;
-}
-
-/* Selected state of the stars */
-.rating-stars ul > li.star.selected > i.fa {
-  color:#FF912C;
-}
-
-</style>
 <?php
  include_once('lib/pdowrapper/class.pdowrapper.php');
 	 $dbConfig = array("host" => $server, "dbname" => $database, "username" => $db_user, "password" => $db_pass);
@@ -65,6 +35,7 @@ if(isset($_SESSION['Company_Admin']) && isset($_SESSION['M_Company_Id'])){
 				$company_name = $row["Name"];
 				$reg_no = $row["Reg_No"];
 				$Address = $row["Address"];
+        $About = $row["About"];
 			}
 		}
 	}
@@ -164,7 +135,7 @@ if(isset($_SESSION['Company_Admin']) && isset($_SESSION['M_Company_Id'])){
 
                         if($rfq_count != 0){
                             ?>
-                          <li class="active"><a href="#rfqList" data-toggle="tab">RFQ List</a></li>
+                          <li><a href="#rfqList" data-toggle="tab">RFQ List</a></li>
 
                           <?php
                         }
@@ -183,6 +154,28 @@ if(isset($_SESSION['Company_Admin']) && isset($_SESSION['M_Company_Id'])){
                       if($supplier_services != 0){
                         ?>
                         <div class="active tab-pane" id="activity">
+                          <div>
+                            <h4>
+                              About Company
+                            </h4>
+                            <p><?php echo $About;?></p>
+                            <?php
+
+                          if($company_admin == 1){
+                              ?>
+                              <a href="#" id="btnEditAbout" class="btn btn-info"  onclick="EditAbout()">
+                                  <i class="fa fa-pencil-square-o"></i>
+                                Edit About
+                              </a>
+                            <?php
+                          }
+
+                          ?>
+                          </div>
+                          <hr>
+                          <h4>
+                            Services
+                          </h4>
 							              <ul>
                             <?php
               							$sql = "SELECT t1.`M_Services_Id`, t2.ServiceName FROM `md_supplierservices` t1 INNER JOIN m_services t2 ON t1.`M_Services_Id` = t2.Id Where t2.Status = 1 and t2.M_Parent_Services_Id is null and t1.`M_Company_Id` = ".$companyid;
@@ -270,7 +263,7 @@ if(isset($_SESSION['Company_Admin']) && isset($_SESSION['M_Company_Id'])){
                           <?php
                           if($rfq_count != 0){
                               ?>
-                              <div class="active tab-pane" id="rfqList">
+                              <div class="tab-pane" id="rfqList">
                                 <table id="rfq" class="table table-bordered table-striped">
                   					           <thead>
                                           <tr>
@@ -420,7 +413,28 @@ if(isset($_SESSION['Company_Admin']) && isset($_SESSION['M_Company_Id'])){
         </div>
         <!-- /.row -->
     </section>
-
+    <div class="modal fade" id="aboutbox" role="dialog">
+      <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">About Company</h4>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <div class="form-group col-md-9">
+                <textarea name="txt_about" id="txt_about"  class="form-control" rows="5" cols="50"><?php echo $About;?></textarea>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary" id="btnSubmit" >Save</button>
+            <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+          </div>
+        </div>
+      </div>
+      </div>
     <script>
     $(function () {
       $('#rfq').DataTable({
@@ -431,7 +445,23 @@ if(isset($_SESSION['Company_Admin']) && isset($_SESSION['M_Company_Id'])){
         'info'        : true,
         'autoWidth'   : false
       });
-
+      $('#btnSubmit').on('click', function(){
+        var about = $('#txt_about').val();
+        $.ajax({
+               type: "GET",
+               url: "market.php?function=EditAbout&companyid=<?php echo $companyid;?>&about=" + about,
+               dataType: "json",
+               success: function (response) {
+                   location.reload();
+               },
+               failure: function (response) {
+                   alert(response);
+               },
+               error: function (response) {
+                   alert(response);
+               }
+           });
+      });
     });
 
     function MakeAdmin(id){
@@ -490,4 +520,10 @@ if(isset($_SESSION['Company_Admin']) && isset($_SESSION['M_Company_Id'])){
 
       });
   	}
+
+    function EditAbout(){
+      $('#aboutbox').modal('show');
+    }
+
+
  </script>

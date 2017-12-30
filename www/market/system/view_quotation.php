@@ -390,13 +390,21 @@
                    Reject
                 </a>
 				<?php
-      }elseif(($rfq_owner == "yes") && ($q_statusid == 17) ){
-    ?>
-            <a href="#" id="btnrate" class="btn btn-info"  onclick="rateSupplier()">
-                <i class="fa fa-pencil-square-o"></i>
-               Rate
-            </a>
-    <?php
+      }elseif(($rfq_owner == "yes") && ($q_statusid == 18) ){
+        $sql5 = "SELECT * FROM `md_companyrating` t1 where t1.Ref_Document_Id = ".$q_id;
+          $result5 = $conn->query($sql5);
+      	if (isset($result5)){
+      		if ($result5->num_rows > 0) {
+      		}else{
+            ?>
+                    <a href="#" id="btnrate" class="btn btn-info"  onclick="rateSupplier()">
+                        <i class="fa fa-pencil-square-o"></i>
+                       Rate this Company
+                    </a>
+            <?php
+          }
+      	}
+
   }
 			}?>
 
@@ -939,9 +947,10 @@ $(document).ready(function(){
     var priceRating = $('input[id=txt_price]').val();
     var title = $('input[id=txt_title]').val();
     var description = $('#txt_desc').val();
+
     $.ajax({
            type: "GET",
-           url: "market.php?user_id=<?php echo $userid;?>&function=SaveRatingforSupplier&companyid=<?php echo $companyid;?>&serviceRating=" + serviceRating + "&quotationRating=" + quotationRating + "&deliveryRating=" + deliveryRating + "&priceRating="+ priceRating +"&title="+ title +"&description="+ description ,
+           url: "market.php?user_id=<?php echo $userid;?>&function=SaveRatingforSupplier&companyid=<?php echo $companyid;?>&serviceRating=" + serviceRating + "&quotationRating=" + quotationRating + "&deliveryRating=" + deliveryRating + "&priceRating="+ priceRating +"&title="+ title +"&description="+ description +"&document_id=<?php echo $id;?>",
            dataType: "json",
            success: function (response) {
                location.reload();
@@ -1009,14 +1018,13 @@ $(document).ready(function(){
                 type: 'GET',
 				dataType: 'json',
                 success: function (data) {
-
                       $('#btnaccept').hide();
                       $('#btnreject').hide();
+                      location.reload();
                 },
                 error: function (data) {
                     location.reload();
                 }
-
             });
 
 	}
@@ -1026,19 +1034,16 @@ $(document).ready(function(){
 
 	function reject_quotation(id){
 		$.ajax({
+          url: 'market.php?function=UpdateStatus&type=q&Status=19&ModifiedBy='+<?php echo $userid;?>+'&rfq_id='+<?php echo $rfq_id;?>+'&id='+id,
+          type: 'GET',
+	dataType: 'json',
+          success: function (data) {
+	  location.reload();
+          },
+          error: function (data) {
+              location.reload();
+          }
 
-                url: 'market.php?function=UpdateStatus&type=q&Status=19&ModifiedBy='+<?php echo $userid;?>+'&rfq_id='+<?php echo $rfq_id;?>+'&id='+id,
-                type: 'GET',
-				dataType: 'json',
-                success: function (data) {
-				  location.reload();
-                },
-                error: function (data) {
-                    location.reload();
-                }
-
-            });
+      });
 	}
-
-
 	</script>

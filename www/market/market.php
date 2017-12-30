@@ -203,12 +203,8 @@
 			}
 			}
 
-
-
 			$dataArray = array('Name' => "RFQ", 'Prefix' => 'Submitted', 'Suffix' => 'RFQ','Format' => 'RFQ', 'Running_Number' => $running_number);
 			$dt = $db->insert('document_number', $dataArray);
-
-
 
 		}
 
@@ -262,7 +258,7 @@
 		if($_GET['due_date'] == ""){
 			$dataArray = array('Document_Id' => $Id, 'Title' => $title, 'Supplier_Provide_Material' => $Supplier_Provide_Material, 'Supplier_Provide_Transport' => $Supplier_Provide_Transport, 'Remark' => $Remark);
 		}else{
-			$dataArray = array('Document_Id' => $Id, 'Title' => $title, 'FinalClosingDate' => $FinalClosingDate, 'FirstClosingDate' => $FirstClosingDate, 'Supplier_Provide_Material' => $Supplier_Provide_Material, 'Supplier_Provide_Transport' => $Supplier_Provide_Transport, 'Remark' => $Remark);
+			$dataArray = array('Document_Id' => $Id, 'Title' => $title, 'FinalClosingDate' => $FinalClosingDate, 'FirstClosingDate' => $FinalClosingDate, 'Supplier_Provide_Material' => $Supplier_Provide_Material, 'Supplier_Provide_Transport' => $Supplier_Provide_Transport, 'Remark' => $Remark);
 		}
 		$db->insert('t_requestforquotation', $dataArray);
 
@@ -595,7 +591,7 @@
 					}
 				}
 			}
-			$Message = "$company_name has registered interest.";
+			$Message = "$company_name has submitted quotation on $rfq_ref.";
 			$dataArray = array('Document' => $Id, 'First_Opened_User' => $CreatedBy, 'Receiving_Company' => $buyer_id, 'Message' => $Message ,'Open_Status' => '22', 'Created_Date' => $CreatedDate, 'Created_By' => $CreatedBy,'Status' => "1", 'Type' => 'Create_Quotation');
 			$dt = $db->insert('company_notification', $dataArray);
 		}
@@ -956,6 +952,7 @@
 		echo json_encode($message);
 	}elseif ($function == "SaveRatingforSupplier"){
 		 $message = array();
+		 $document_id =$_GET['document_id'];
 		$user_id =$_GET['user_id'];
 		$companyid =$_GET['companyid'];
 		$serviceRating =$_GET['serviceRating'];
@@ -967,8 +964,20 @@
 
 		$CreatedDate = date('Y-m-d H:i:s');
 
-		$dataArray = array('Company_Id' => $companyid, 'User_Id' => $user_id, 'ServiceQuality' => $serviceRating, 'SpeedOfQuotation' =>$quotationRating, 'SpeedofDelivery' => $deliveryRating, 'Price' =>$priceRating, 'Title' =>$title, 'Description' =>$description, 'Status' => 1, 'Created' =>$CreatedDate, 'CreatedBy' =>$user_id);
+		$dataArray = array('Company_Id' => $companyid, 'User_Id' => $user_id, 'ServiceQuality' => $serviceRating, 'SpeedOfQuotation' =>$quotationRating, 'SpeedofDelivery' => $deliveryRating, 'Price' =>$priceRating, 'Title' =>$title, 'Description' =>$description, 'Ref_Document_Id' =>$document_id, 'Status' => 1, 'Created' =>$CreatedDate, 'CreatedBy' =>$user_id);
 		$db->insert('md_companyrating', $dataArray);
+		$message['success'] = true;
+		echo json_encode($message);
+	}elseif ($function == "EditAbout"){
+		 $message = array();
+		$companyid =$_GET['companyid'];
+		$about =$_GET['about'];
+
+		$where = array('Id' => $companyid);
+		$dataArray = array( 'About' => $about);
+		$db->update('m_company', $dataArray,$where);
+
+		
 		$message['success'] = true;
 		echo json_encode($message);
 	}
