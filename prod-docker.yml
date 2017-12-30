@@ -1,0 +1,18 @@
+version: '3'
+
+services:
+
+  ####### Production Environment #######
+    metalpolis-web:
+      build: 
+        context: .
+      volumes:
+        - "./www:/var/www/site:rw"
+        - "./php.ini:/etc/php/7.0/cli/php.ini"
+      hostname: metalpolis-web
+      ports:
+        - 80:80
+    
+  
+  
+  
