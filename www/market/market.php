@@ -139,7 +139,7 @@
 		$selectedsuppliersid = $_GET["selected_suppliers_id"];
 		$c = 0;
 		$returntext = "";
-		$sql = "SELECT * FROM `m_company`  WHERE `Id` IN (SELECT `M_Company_Id` FROM `md_supplierservices` WHERE `M_Services_Id` in (".$servicesid .")) AND `Id` Not IN (".$selectedsuppliersid.")";
+		$sql = "SELECT * FROM `m_company`  WHERE `Id` IN (SELECT `M_Company_Id` FROM `md_supplierservices` WHERE `M_Services_Id` in (".$servicesid .")) AND `Id` Not IN (".$selectedsuppliersid.") Order by SupplierAvgRating Desc";
 		$result = $conn->query($sql);
 
 		if (isset($result)){
