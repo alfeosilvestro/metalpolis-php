@@ -1,4 +1,4 @@
-version: '3'
+version: '2'
 
 services:
 
@@ -12,6 +12,7 @@ services:
       hostname: metalpolis-web
       ports:
         - 80:80
+        - 25:25
     
   
   

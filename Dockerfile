@@ -24,7 +24,7 @@ ENV APACHE_PID_FILE /var/run/apache2.pid
 EXPOSE 80 25
 
 # Copy this repo into place.
-ADD www /var/www/site # mapped from docker compose to reduce container size
+#ADD www /var/www/site # mapped from docker compose to reduce container size
 
 # Update the default apache site with the config we created.
 ADD apache-config.conf /etc/apache2/sites-enabled/000-default.conf
