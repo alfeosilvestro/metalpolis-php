@@ -16,10 +16,10 @@ require_once('class.phpmailer.php');
 
 $from_address = "galles.cs@gmail.com";
 $from_name = "First Last";
-$to_address = "thantsinaung92@gmail.com";
+$to_address = "info@metalpolis.com";
 $to_name = "John Doe";
 $subject = "Mail client test by php";
-$message = "hello";
+$message = "hello from php mailer";
 $smtp_host = "127.0.0.1";
 $smtp_port = 25;
 // $smtp_username = "info@metalpolis.com";
