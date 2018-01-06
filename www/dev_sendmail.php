@@ -14,35 +14,45 @@ date_default_timezone_set('America/Toronto');
 require_once('class.phpmailer.php');
 //include("class.smtp.php"); // optional, gets called from within class.phpmailer.php if not already loaded
 
+$from_address = "galles.cs@gmail.com";
+$from_name = "First Last";
+$to_address = "thantsinaung92@gmail.com";
+$to_name = "John Doe";
+$subject = "";
+$message = "hello";
+$smtp_host = "127.0.0.1";
+$smtp_port = 25;
+$smtp_username = "info@metalpolis.com";
+$smtp_password = "12345678";
+$smtp_debug = 2;
+
 $mail             = new PHPMailer();
 
-//$body             = file_get_contents('contents.html');
-//$body             = eregi_replace("[\]",'',$body);
-$body =   "a";
-echo $body;
+//$message             = file_get_contents('contents.html');
+//$message             = eregi_replace("[\]",'',$message);
+echo $message;
 $mail->IsSMTP(); // telling the class to use SMTP
-$mail->Host       = "127.0.0.1"; // SMTP server
-$mail->SMTPDebug  = 2;                     // enables SMTP debug information (for testing)
+$mail->Host       = $smtp_host; // SMTP server
+$mail->SMTPDebug  = $smtp_debug;                     // enables SMTP debug information (for testing)
                                            // 1 = errors and messages
                                            // 2 = messages only
 $mail->SMTPAuth   = true;                  // enable SMTP authentication
 //$mail->Host       = "mail.mritmyanmar.com"; // sets the SMTP server
-$mail->Port       = 25;                    // set the SMTP port for the GMAIL server
-$mail->Username   = "info@metalpolis.com"; // SMTP account username
-//$mail->Password   = "Qwer@123";        // SMTP account password
+$mail->Port       = $smtp_port;                    // set the SMTP port for the GMAIL server
+$mail->Username   = $smtp_username; // SMTP account username
+$mail->Password   = $smtp_password;        // SMTP account password
 
-$mail->SetFrom('galles.cs@gmail.com', 'First Last');
+$mail->SetFrom($from_address, $from_name);
 
-$mail->AddReplyTo("galles.cs@gmail.com","First Last");
+$mail->AddReplyTo($from_address, $from_name);
 
-$mail->Subject    = "PHPMailer Test Subject via smtp, basic with authentication";
+$mail->Subject    = $subject;
 
-$mail->AltBody    = "To view the message, please use an HTML compatible email viewer!"; // optional, comment out and test
+$mail->AltBody    = $message; // optional, comment out and test
 
-$mail->MsgHTML($body);
+$mail->MsgHTML($message);
 
-$address = "thantsinaung92@gmail.com";
-$mail->AddAddress($address, "John Doe");
+$mail->AddAddress($to_address, $to_name);
 
 //$mail->AddAttachment("images/phpmailer.gif");      // attachment
 //$mail->AddAttachment("images/phpmailer_mini.gif"); // attachment
