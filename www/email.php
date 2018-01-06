@@ -34,8 +34,6 @@ if($_POST){
   $header .= "--".$boundary.PHP_EOL;
 
 
-
-  // Send email
   if (mail($mail_to, $subject, $message, $header)) {
     echo "Sent";
   } else {
