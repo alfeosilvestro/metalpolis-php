@@ -1013,7 +1013,7 @@
 		$verify_link = "http://35.198.239.233/market/verify.php?a=".$email_encode. "&b=".$date_encode;
 		$message1 .= $verify_link;
 
-		error_reporting(E_STRICT);
+		//error_reporting(E_STRICT);
 
 		date_default_timezone_set('America/Toronto');
 
