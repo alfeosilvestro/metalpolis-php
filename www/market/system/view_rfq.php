@@ -12,8 +12,8 @@
 	if(isset($_GET["rfq_ref"])){
 		$rfq_ref = $_GET["rfq_ref"];
 	}
-
-
+$rfq_id = 0;
+$FinalClosingDate = "";
 	$sql = "SELECT * FROM `t_document` t1 where Status = 1 and C_DocumentType = 6 and t1.DocumentNo = '".$rfq_ref."'";
     $result = $conn->query($sql);
 	if (isset($result)){
@@ -261,6 +261,18 @@
 							echo date('d-m-Y', strtotime($FinalClosingDate));
 						}
 						 ?>
+             <?php
+
+           if($rfq_statusid == 10){
+               ?>
+              &nbsp;  <a href="#" id="btnEditDueDate" class="btn btn-info"  onclick="editFinalDate()">
+                   <i class="fa fa-pencil-square-o"></i>
+                 Edit Due Date
+               </a>
+             <?php
+           }
+
+           ?>
 						</div>
 					  </div>
                     </div>
@@ -882,9 +894,48 @@ if(($rfq_statusid == '10')){?>
 	}?>
 
 
+  <div class="modal fade" id="editFinalDatebox" role="dialog">
+    <div class="modal-dialog">
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Due Date</h4>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="input-group date col-sm-5">
+						  <div class="input-group-addon">
+							<i class="fa fa-calendar"></i>
+						  </div>
+						  <input type="text" name="due_date" class="form-control pull-right" id="due_datepicker" value="<?php
+						  if ($FinalClosingDate != ""){
+							echo date('d-m-Y', strtotime($FinalClosingDate));
+						     }
 
+						  ?>">
+						</div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" id="btnSubmit" >Save</button>
+          <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+        </div>
+      </div>
+    </div>
+    </div>
 	 <script>
+
+
   $(function () {
+
+    $('#due_datepicker').datepicker({
+
+       format: "dd-mm-yyyy",
+       autoclose: true,
+      todayHighlight: true
+      });
+
 	  $('[data-toggle="collapse"]').on('click', function() {
     var $this = $(this),
             $parent = typeof $this.data('parent')!== 'undefined' ? $($this.data('parent')) : undefined;
@@ -927,7 +978,24 @@ $("#btn_Send").click(function (e) {
 		});
 
 
-
+    $('#btnSubmit').on('click', function(){
+      var due_date = $('input[name=due_date]').val();
+      alert(due_date);
+      $.ajax({
+             type: "GET",
+             url: "market.php?function=EditDueDate&rfq_id=<?php echo $rfq_id;?>&due_date=" + due_date,
+             dataType: "json",
+             success: function (response) {
+                 location.reload();
+             },
+             failure: function (response) {
+                 alert(response);
+             },
+             error: function (response) {
+                 alert(response);
+             }
+         });
+    });
 
 
     $('#quotations').DataTable({
@@ -1005,4 +1073,8 @@ $("#btn_Send").click(function (e) {
 
             });
 	}
+
+  function editFinalDate(){
+    $('#editFinalDatebox').modal('show');
+  }
 	</script>

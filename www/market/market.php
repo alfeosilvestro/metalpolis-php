@@ -322,8 +322,6 @@
 
 				$db->insert('td_requiredservices', $dataArray);
 
-
-
 		}
 	}
 		//selected supplier
@@ -346,6 +344,19 @@
 						$Message = "$company_name has invited you to participate in RFQ, $rfq_ref";
 						$dataArray = array('Document' => $doc_id, 'First_Opened_User' => $M_User_Id, 'Receiving_Company' => $selected_supplier_id, 'Message' => $Message ,'Open_Status' => '22', 'Created_Date' => $CreatedDate, 'Created_By' => $CreatedBy,'Status' => "1", 'Type' => 'Invited');
 						$dt = $db->insert('company_notification', $dataArray);
+
+						// $email = "";
+						// $sql = "SELECT * FROM `m_user` t1 where Id = " . $M_User_Id;
+						// $result = $conn->query($sql);
+						// if (isset($result)){
+						// 	if ($result->num_rows > 0) {
+						// 		// output data of each row
+						// 		while($row = $result->fetch_assoc()) {
+						// 			$email = $row["EmailAddress"];
+						// 		}
+						// 	}
+						// }
+						// sendEmailforNotification($email,$Message, $Message);
 					}
 				}
 			}
@@ -523,6 +534,19 @@
 						$Message = "$company_name has invited you to participate in RFQ, $rfq_ref";
 						$dataArray = array('Document' => $doc_id, 'First_Opened_User' => $M_User_Id, 'Receiving_Company' => $selected_supplier_id, 'Message' => $Message ,'Open_Status' => '22', 'Created_Date' => $CreatedDate, 'Created_By' => $CreatedBy,'Status' => "1", 'Type' => 'Invited');
 						$dt = $db->insert('company_notification', $dataArray);
+
+						$email = "";
+						$sql = "SELECT * FROM `m_user` t1 where Id = " . $M_User_Id;
+						$result = $conn->query($sql);
+						if (isset($result)){
+							if ($result->num_rows > 0) {
+								// output data of each row
+								while($row = $result->fetch_assoc()) {
+									$email = $row["EmailAddress"];
+								}
+							}
+						}
+						sendEmailforNotification($email,$Message, $Message);
 					}
 				}
 			}
@@ -610,6 +634,8 @@
 			$Message = "$company_name has submitted quotation on $rfq_ref.";
 			$dataArray = array('Document' => $Id, 'First_Opened_User' => $CreatedBy, 'Receiving_Company' => $buyer_id, 'Message' => $Message ,'Open_Status' => '22', 'Created_Date' => $CreatedDate, 'Created_By' => $CreatedBy,'Status' => "1", 'Type' => 'Create_Quotation');
 			$dt = $db->insert('company_notification', $dataArray);
+
+
 		}
 
 		header('Content-Type: application/json');
@@ -996,6 +1022,18 @@
 
 		$message['success'] = true;
 		echo json_encode($message);
+	}elseif ($function == "EditDueDate"){
+		 $message = array();
+		$rfq_id =$_GET['rfq_id'];
+		$due_date = date('Y-m-d', strtotime( $_GET['due_date']));
+
+		$where = array('Document_Id' => $rfq_id);
+		$dataArray = array( 'FinalClosingDate' => $due_date);
+		$db->update('t_requestforquotation', $dataArray,$where);
+
+
+		$message['success'] = true;
+		echo json_encode($message);
 	}
 
 	function sendEmailtoverify($email){
@@ -1013,7 +1051,7 @@
 		$verify_link = "http://35.198.239.233/market/verify.php?a=".$email_encode. "&b=".$date_encode;
 		$message1 .= $verify_link;
 
-		//error_reporting(E_STRICT);
+		error_reporting(E_STRICT);
 
 		date_default_timezone_set('Asia/Singapore');
 
@@ -1125,5 +1163,76 @@
 		} else {
 
 		}
+	}
+
+	function sendEmailforNotification($email,$subject, $message){
+		$mail_to = $email;
+		error_reporting(E_STRICT);
+
+		date_default_timezone_set('Asia/Singapore');
+
+		require_once('../class.phpmailer.php');
+		//include("class.smtp.php"); // optional, gets called from within class.phpmailer.php if not already loaded
+
+		$from_address = 		$from_mail = "info@metalpolis.com";
+		$from_name = "Metalpolis";
+		$to_address = $email;
+		$to_name = "Info";
+		//$subject = "Verification for registeration at Metalpolis";
+		//$message = $message;
+		$smtp_host = "127.0.0.1";
+		$smtp_port = 25;
+		// $smtp_username = "info@metalpolis.com";
+		// $smtp_password = "12345678";
+		$smtp_username = "";
+		$smtp_password = "";
+		//$smtp_debug = 2;
+
+		$mail             = new PHPMailer();
+
+		//$message             = file_get_contents('contents.html');
+		//$message             = eregi_replace("[\]",'',$message);
+
+		$mail->IsSMTP(); // telling the class to use SMTP
+		$mail->Host       = $smtp_host; // SMTP server
+		//$mail->SMTPDebug  = $smtp_debug;                     // enables SMTP debug information (for testing)
+																							 // 1 = errors and messages
+																							 // 2 = messages only
+		$mail->SMTPAuth   = false;                  // enable SMTP authentication
+		$mail->Port       = $smtp_port;                    // set the SMTP port for the GMAIL server
+		//$mail->Username   = $smtp_username;       // SMTP account username
+		//$mail->Password   = $smtp_password;        // SMTP account password
+
+		$mail->SetFrom($from_address, $from_name);
+
+		$mail->AddReplyTo($from_address, $from_name);
+
+		$mail->Subject    = $subject;
+
+		$mail->AltBody    = $message; // optional, comment out and test
+
+		$mail->MsgHTML($message);
+
+		$mail->AddAddress($to_address, $to_name);
+
+		//$mail->AddAttachment("images/phpmailer.gif");      // attachment
+		//$mail->AddAttachment("images/phpmailer_mini.gif"); // attachment
+
+
+
+		try {
+
+			if(!$mail->Send()) {
+
+			} else {
+
+			}
+		}
+		catch(Exception $e) {
+
+		}
+
+
+
 	}
 ?>
