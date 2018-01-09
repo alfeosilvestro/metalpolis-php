@@ -345,18 +345,19 @@
 						$dataArray = array('Document' => $doc_id, 'First_Opened_User' => $M_User_Id, 'Receiving_Company' => $selected_supplier_id, 'Message' => $Message ,'Open_Status' => '22', 'Created_Date' => $CreatedDate, 'Created_By' => $CreatedBy,'Status' => "1", 'Type' => 'Invited');
 						$dt = $db->insert('company_notification', $dataArray);
 
-						// $email = "";
-						// $sql = "SELECT * FROM `m_user` t1 where Id = " . $M_User_Id;
-						// $result = $conn->query($sql);
-						// if (isset($result)){
-						// 	if ($result->num_rows > 0) {
-						// 		// output data of each row
-						// 		while($row = $result->fetch_assoc()) {
-						// 			$email = $row["EmailAddress"];
-						// 		}
-						// 	}
-						// }
-						// sendEmailforNotification($email,$Message, $Message);
+						$email = "";
+						$sql = "SELECT * FROM `m_user` t1 where Status = 1 and Confirmed = 1 AND M_Company_Id = " . $selected_supplier_id;
+						$result = $conn->query($sql);
+						if (isset($result)){
+							if ($result->num_rows > 0) {
+							// output data of each row
+						 		while($row = $result->fetch_assoc()) {
+									$email = $email .  $row["EmailAddress"].";";
+								}
+								sendEmailforNotification($email,$Message, $Message);
+							}
+						 }
+
 					}
 				}
 			}
@@ -536,17 +537,17 @@
 						$dt = $db->insert('company_notification', $dataArray);
 
 						$email = "";
-						$sql = "SELECT * FROM `m_user` t1 where Id = " . $M_User_Id;
+						$sql = "SELECT * FROM `m_user` t1 where Status = 1 and Confirmed = 1 AND M_Company_Id = " . $selected_supplier_id;
 						$result = $conn->query($sql);
 						if (isset($result)){
 							if ($result->num_rows > 0) {
-								// output data of each row
+							// output data of each row
 								while($row = $result->fetch_assoc()) {
-									$email = $row["EmailAddress"];
+									$email = $email .  $row["EmailAddress"].";";
 								}
+								sendEmailforNotification($email,$Message, $Message);
 							}
-						}
-						sendEmailforNotification($email,$Message, $Message);
+						 }
 					}
 				}
 			}
@@ -635,6 +636,18 @@
 			$dataArray = array('Document' => $Id, 'First_Opened_User' => $CreatedBy, 'Receiving_Company' => $buyer_id, 'Message' => $Message ,'Open_Status' => '22', 'Created_Date' => $CreatedDate, 'Created_By' => $CreatedBy,'Status' => "1", 'Type' => 'Create_Quotation');
 			$dt = $db->insert('company_notification', $dataArray);
 
+			$email = "";
+			$sql = "SELECT * FROM `m_user` t1 where Status = 1 and Confirmed = 1 AND M_Company_Id = " . $buyer_id;
+			$result = $conn->query($sql);
+			if (isset($result)){
+				if ($result->num_rows > 0) {
+				// output data of each row
+					while($row = $result->fetch_assoc()) {
+						$email = $email .  $row["EmailAddress"].";";
+					}
+					sendEmailforNotification($email,$Message, $Message);
+				}
+			 }
 
 		}
 
@@ -854,6 +867,19 @@
 				$Message = "$company_name has sent you a clarification on your document.";
 				$dataArray = array('Document' => $rfq_id, 'First_Opened_User' => $askinguser_id, 'Receiving_Company' => $document_owner_companyid, 'Message' => $Message ,'Open_Status' => '22', 'Created_Date' => $CreatedDate, 'Created_By' => $CreatedBy,'Status' => "1", 'Type' => 'Comment');
 				$dt = $db->insert('company_notification', $dataArray);
+
+				$email = "";
+				$sql = "SELECT * FROM `m_user` t1 where Status = 1 and Confirmed = 1 AND M_Company_Id = " . $document_owner_companyid;
+				$result = $conn->query($sql);
+				if (isset($result)){
+					if ($result->num_rows > 0) {
+					// output data of each row
+						while($row = $result->fetch_assoc()) {
+							$email = $email .  $row["EmailAddress"].";";
+						}
+						sendEmailforNotification($email,$Message, $Message);
+					}
+				 }
 			}else{
 				$error = "1";
 				$message['error'] = "Enter Comment";
@@ -868,6 +894,19 @@
 			$Message = "$company_name has replied on your comment.";
 			$dataArray = array('Document' => $rfq_id, 'First_Opened_User' => $askinguser_id, 'Receiving_Company' => $document_owner_companyid, 'Message' => $Message ,'Open_Status' => '22', 'Created_Date' => $CreatedDate, 'Created_By' => $CreatedBy,'Status' => "1", 'Type' => 'Reply');
 			$dt = $db->insert('company_notification', $dataArray);
+
+			$email = "";
+			$sql = "SELECT * FROM `m_user` t1 where Status = 1 and Confirmed = 1 AND M_Company_Id = " . $document_owner_companyid;
+			$result = $conn->query($sql);
+			if (isset($result)){
+				if ($result->num_rows > 0) {
+				// output data of each row
+					while($row = $result->fetch_assoc()) {
+						$email = $email .  $row["EmailAddress"].";";
+					}
+					sendEmailforNotification($email,$Message, $Message);
+				}
+			 }
 
 			$message['success'] = true;
 		}elseif($act == "del"){
@@ -931,6 +970,19 @@
 							$Message = $company_name." has withdrawn in RFQ, $rfq_ref. All Quotation will be automatically locked.";
 							$dataArray = array('Document' => $Id, 'First_Opened_User' => $ModifiedBy, 'Receiving_Company' => $selected_supplier_id, 'Message' => $Message ,'Open_Status' => '22', 'Created_Date' => $ModifiedDate, 'Created_By' => $ModifiedBy,'Status' => "1", 'Type' => 'Withdrawn');
 							$dt = $db->insert('company_notification', $dataArray);
+
+							$email = "";
+							$sql1 = "SELECT * FROM `m_user` t1 where Status = 1 and Confirmed = 1 AND M_Company_Id = " . $selected_supplier_id;
+							$result1 = $conn->query($sql1);
+							if (isset($result1)){
+								if ($result1->num_rows > 0) {
+								// output data of each row
+							 		while($row1 = $result1->fetch_assoc()) {
+										$email = $email .  $row1["EmailAddress"].";";
+									}
+									sendEmailforNotification($email,$Message, $Message);
+								}
+							 }
 						}
 					}
 				}
@@ -962,6 +1014,20 @@
 				$Message = "Your Quotation($Id) has been awareded to your company.";
 				$dataArray = array('Document' => $Id, 'First_Opened_User' => $ModifiedBy, 'Receiving_Company' => $selected_supplier_id, 'Message' => $Message ,'Open_Status' => '22', 'Created_Date' => $ModifiedDate, 'Created_By' => $ModifiedBy,'Status' => "1", 'Type' => 'Accepted');
 				$dt = $db->insert('company_notification', $dataArray);
+
+				$email = "";
+				$sql = "SELECT * FROM `m_user` t1 where Status = 1 and Confirmed = 1 AND M_Company_Id = " . $selected_supplier_id;
+				$result = $conn->query($sql);
+				if (isset($result)){
+					if ($result->num_rows > 0) {
+					// output data of each row
+						while($row = $result->fetch_assoc()) {
+							$email = $email .  $row["EmailAddress"].";";
+						}
+						sendEmailforNotification($email,$Message, $Message);
+					}
+				 }
+
 			}elseif($Status == 19){
 				$dataArray = array( 'C_QuotationStatus' => $Status,'ModifiedDate' => $ModifiedDate,'ModifiedBy' => $ModifiedBy);
 				$db->update('t_document', $dataArray,$where);
@@ -969,6 +1035,20 @@
 				$Message = "After careful consideration, Quotation no. $Id has been rejected.";
 				$dataArray = array('Document' => $Id, 'First_Opened_User' => $ModifiedBy, 'Receiving_Company' => $selected_supplier_id, 'Message' => $Message ,'Open_Status' => '22', 'Created_Date' => $ModifiedDate, 'Created_By' => $ModifiedBy,'Status' => "1", 'Type' => 'Rejected');
 				$dt = $db->insert('company_notification', $dataArray);
+
+				$email = "";
+				$sql = "SELECT * FROM `m_user` t1 where Status = 1 and Confirmed = 1 AND M_Company_Id = " . $selected_supplier_id;
+				$result = $conn->query($sql);
+				if (isset($result)){
+					if ($result->num_rows > 0) {
+					// output data of each row
+						while($row = $result->fetch_assoc()) {
+							$email = $email .  $row["EmailAddress"].";";
+						}
+						sendEmailforNotification($email,$Message, $Message);
+					}
+				 }
+
 			}elseif($Status == 20){
 				$dataArray = array( 'C_QuotationStatus' => $Status,'ModifiedDate' => $ModifiedDate,'ModifiedBy' => $ModifiedBy);
 				$db->update('t_document', $dataArray,$where);
@@ -986,6 +1066,20 @@
 				$Message = "$company_name has withdrawn quotation.";
 				$dataArray = array('Document' => $Id, 'First_Opened_User' => $ModifiedBy, 'Receiving_Company' => $buyer_id, 'Message' => $Message ,'Open_Status' => '22', 'Created_Date' => $ModifiedDate, 'Created_By' => $ModifiedBy,'Status' => "1", 'Type' => 'Withdrawn');
 				$dt = $db->insert('company_notification', $dataArray);
+
+				$email = "";
+				$sql = "SELECT * FROM `m_user` t1 where Status = 1 and Confirmed = 1 AND M_Company_Id = " . $buyer_id;
+				$result = $conn->query($sql);
+				if (isset($result)){
+					if ($result->num_rows > 0) {
+					// output data of each row
+						while($row = $result->fetch_assoc()) {
+							$email = $email .  $row["EmailAddress"].";";
+						}
+						sendEmailforNotification($email,$Message, $Message);
+					}
+				 }
+
 			}
 
 		}
