@@ -91,7 +91,7 @@
           if ($result->num_rows > 0) {
           // output data of each row
             while($row = $result->fetch_assoc()) {
-              $email = $email .  $row["EmailAddress"].";";
+              $email = $email .  $row["EmailAddress"];
             }
             sendEmailforNotification($email,$Message, $Message);
           }
@@ -381,6 +381,8 @@
 		$rfq_ref = "";
 	}
 
+  
+
   function sendEmailforNotification($email,$subject, $message){
 		$mail_to = $email;
 		error_reporting(E_STRICT);
@@ -390,7 +392,7 @@
 		require_once('../../class.phpmailer.php');
 		//include("class.smtp.php"); // optional, gets called from within class.phpmailer.php if not already loaded
 
-		$from_address = 		$from_mail = "info@metalpolis.com";
+		$from_mail = "info@metalpolis.com";
 		$from_name = "Metalpolis";
 		$to_address = $email;
 		$to_name = "Info";
@@ -447,8 +449,5 @@
 		catch(Exception $e) {
 
 		}
-
-
-
 	}
 ?>

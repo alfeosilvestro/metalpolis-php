@@ -352,7 +352,7 @@
 							if ($result->num_rows > 0) {
 							// output data of each row
 						 		while($row = $result->fetch_assoc()) {
-									$email = $email .  $row["EmailAddress"].";";
+									$email = $email .  $row["EmailAddress"];
 								}
 								sendEmailforNotification($email,$Message, $Message);
 							}
@@ -543,7 +543,7 @@
 							if ($result->num_rows > 0) {
 							// output data of each row
 								while($row = $result->fetch_assoc()) {
-									$email = $email .  $row["EmailAddress"].";";
+									$email = $email .  $row["EmailAddress"];
 								}
 								sendEmailforNotification($email,$Message, $Message);
 							}
@@ -643,7 +643,7 @@
 				if ($result->num_rows > 0) {
 				// output data of each row
 					while($row = $result->fetch_assoc()) {
-						$email = $email .  $row["EmailAddress"].";";
+						$email = $email .  $row["EmailAddress"];
 					}
 					sendEmailforNotification($email,$Message, $Message);
 				}
@@ -875,7 +875,7 @@
 					if ($result->num_rows > 0) {
 					// output data of each row
 						while($row = $result->fetch_assoc()) {
-							$email = $email .  $row["EmailAddress"].";";
+							$email = $email .  $row["EmailAddress"];
 						}
 						sendEmailforNotification($email,$Message, $Message);
 					}
@@ -902,7 +902,7 @@
 				if ($result->num_rows > 0) {
 				// output data of each row
 					while($row = $result->fetch_assoc()) {
-						$email = $email .  $row["EmailAddress"].";";
+						$email = $email .  $row["EmailAddress"];
 					}
 					sendEmailforNotification($email,$Message, $Message);
 				}
@@ -1022,7 +1022,7 @@
 					if ($result->num_rows > 0) {
 					// output data of each row
 						while($row = $result->fetch_assoc()) {
-							$email = $email .  $row["EmailAddress"].";";
+							$email = $email .  $row["EmailAddress"];
 						}
 						sendEmailforNotification($email,$Message, $Message);
 					}
@@ -1043,7 +1043,7 @@
 					if ($result->num_rows > 0) {
 					// output data of each row
 						while($row = $result->fetch_assoc()) {
-							$email = $email .  $row["EmailAddress"].";";
+							$email = $email .  $row["EmailAddress"];
 						}
 						sendEmailforNotification($email,$Message, $Message);
 					}
@@ -1074,7 +1074,7 @@
 					if ($result->num_rows > 0) {
 					// output data of each row
 						while($row = $result->fetch_assoc()) {
-							$email = $email .  $row["EmailAddress"].";";
+							$email = $email .  $row["EmailAddress"];
 						}
 						sendEmailforNotification($email,$Message, $Message);
 					}
@@ -1152,7 +1152,7 @@
 		require_once('../class.phpmailer.php');
 		//include("class.smtp.php"); // optional, gets called from within class.phpmailer.php if not already loaded
 
-		$from_address = 		$from_mail = "info@metalpolis.com";
+		$from_mail = "info@metalpolis.com";
 		$from_name = "Metalpolis";
 		$to_address = $email;
 		$to_name = "Info";
@@ -1213,51 +1213,9 @@
 
 	}
 
-	function sendEmailtoverify1($email){
-		$mail_to = $email;
-		//$mail_to = "galles.cs@gmail.com";
-		$from_mail = "info@metalpolis.com";
-		$from_name = "Metalpolis";
-		$reply_to ="info@metalpolis.com";
-		$subject = "Verification for registeration at Metalpolis";
-		$message1 = "Click the following link to verify your account at Metalpolis".PHP_EOL;
-		$date = date('Y-m-d', strtotime("+2 days"));
-
-		$email_encode = base64_encode($email);
-		$date_encode = base64_encode($date);
-		$verify_link = "http://metal.mritmyanmar.com/market/verify.php?a=".$email_encode. "&b=".$date_encode;
-		$message1 .= $verify_link;
 
 
-	/* Set the email header */
-	  // Generate a boundary
-	  $boundary = md5(uniqid(time()));
 
-	  // Email header
-	  $header = "From: ".$from_name." <".$from_mail.">".PHP_EOL;
-	  $header .= "Reply-To: ".$reply_to.PHP_EOL;
-	  $header .= "MIME-Version: 1.0".PHP_EOL;
-
-	  // Multipart wraps the Email Content and Attachment
-	  $header .= "Content-Type: multipart/mixed; boundary=\"".$boundary."\"".PHP_EOL;
-	  $header .= "This is a multi-part message in MIME format.".PHP_EOL;
-	  $header .= "--".$boundary.PHP_EOL;
-
-	  // Email content
-	  // Content-type can be text/plain or text/html
-	  $header .= "Content-type:text/plain; charset=iso-8859-1".PHP_EOL;
-	  $header .= "Content-Transfer-Encoding: 7bit".PHP_EOL;
-	  $header .= $message1.PHP_EOL;
-	  $header .= $verify_link.PHP_EOL;
-	  $header .= "--".$boundary.PHP_EOL;
-
-		// Send email
-		if (mail($mail_to, $subject,$message1, $header)) {
-
-		} else {
-
-		}
-	}
 
 	function sendEmailforNotification($email,$subject, $message){
 		$mail_to = $email;
@@ -1268,7 +1226,7 @@
 		require_once('../class.phpmailer.php');
 		//include("class.smtp.php"); // optional, gets called from within class.phpmailer.php if not already loaded
 
-		$from_address = 		$from_mail = "info@metalpolis.com";
+		$from_mail = "info@metalpolis.com";
 		$from_name = "Metalpolis";
 		$to_address = $email;
 		$to_name = "Info";
@@ -1325,8 +1283,5 @@
 		catch(Exception $e) {
 
 		}
-
-
-
 	}
 ?>

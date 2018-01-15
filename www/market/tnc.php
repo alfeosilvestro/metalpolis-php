@@ -11,9 +11,648 @@ xmlns="http://www.w3.org/TR/REC-html40">
 <meta name=Generator content="Microsoft Word 15">
 <meta name=Originator content="Microsoft Word 15">
 <base href=www.simmondsstewart.com>
-
+<link rel=File-List
+href="file:///C:/Users/galle/Downloads/Metalpolis%20website-terms-of-use_files/filelist.xml">
 <title>Website Terms of Use Template</title>
-
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Subject>Website Terms</o:Subject>
+  <o:Author>TT</o:Author>
+  <o:Keywords>Contract Template, Website Terms of Use Contract, Legal Disclaimer Contract, Technology Contract, Agreement Template, Free</o:Keywords>
+  <o:Description>These are simple website terms of use that may be used for a website that describes a business and the team behind the business.&#10;&#10;Use of this document is subject to the terms and conditions set out at www.simmondsstewart.com/templates.</o:Description>
+  <o:LastAuthor>Peter Wang</o:LastAuthor>
+  <o:Revision>2</o:Revision>
+  <o:TotalTime>4125</o:TotalTime>
+  <o:LastPrinted>2016-09-15T03:21:00Z</o:LastPrinted>
+  <o:Created>2018-01-15T13:43:00Z</o:Created>
+  <o:LastSaved>2018-01-15T13:43:00Z</o:LastSaved>
+  <o:Pages>1</o:Pages>
+  <o:Words>1564</o:Words>
+  <o:Characters>8920</o:Characters>
+  <o:Category>Simmonds Stewart Template Document</o:Category>
+  <o:Company>Simmonds Stewart</o:Company>
+  <o:Lines>74</o:Lines>
+  <o:Paragraphs>20</o:Paragraphs>
+  <o:CharactersWithSpaces>10464</o:CharactersWithSpaces>
+  <o:Version>16.00</o:Version>
+ </o:DocumentProperties>
+ <o:CustomDocumentProperties>
+  <o:DEF_DM_DESCRIPTION dt:dt="string">Software Licence Agreement</o:DEF_DM_DESCRIPTION>
+  <o:DEF_DM_TYPE dt:dt="string"></o:DEF_DM_TYPE>
+  <o:DM_PRECEDENT dt:dt="string"></o:DM_PRECEDENT>
+  <o:DM_INSERTFOOTER dt:dt="float">0</o:DM_INSERTFOOTER>
+  <o:DM_FOOTER1STPAGE dt:dt="float">0</o:DM_FOOTER1STPAGE>
+  <o:DM_DISPVERSIONINFOOTER dt:dt="float">0</o:DM_DISPVERSIONINFOOTER>
+  <o:DM_AFTYDOCID dt:dt="float">35776</o:DM_AFTYDOCID>
+  <o:DM_DESCRIPTION dt:dt="string">Website Ts of U v1.1_clean for ADS review</o:DM_DESCRIPTION>
+  <o:DM_VERSION dt:dt="float">1</o:DM_VERSION>
+  <o:DM_PROMPTFORVERSION dt:dt="float">0</o:DM_PROMPTFORVERSION>
+ </o:CustomDocumentProperties>
+</xml><![endif]-->
+<link rel=dataStoreItem
+href="file:///C:/Users/galle/Downloads/Metalpolis%20website-terms-of-use_files/item0001.xml"
+target="file:///C:\Users\galle\Downloads\Metalpolis%20website-terms-of-use_files\props002.xml">
+<link rel=themeData
+href="file:///C:/Users/galle/Downloads/Metalpolis%20website-terms-of-use_files/themedata.thmx">
+<link rel=colorSchemeMapping
+href="file:///C:/Users/galle/Downloads/Metalpolis%20website-terms-of-use_files/colorschememapping.xml">
+<!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:TrackMoves>false</w:TrackMoves>
+  <w:TrackFormatting>false</w:TrackFormatting>
+  <w:PunctuationKerning/>
+  <w:ValidateAgainstSchemas/>
+  <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>
+  <w:IgnoreMixedContent>false</w:IgnoreMixedContent>
+  <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>
+  <w:DoNotPromoteQF/>
+  <w:LidThemeOther>EN-NZ</w:LidThemeOther>
+  <w:LidThemeAsian>ZH-CN</w:LidThemeAsian>
+  <w:LidThemeComplexScript>MY</w:LidThemeComplexScript>
+  <w:Compatibility>
+   <w:BreakWrappedTables/>
+   <w:SnapToGridInCell/>
+   <w:WrapTextWithPunct/>
+   <w:UseAsianBreakRules/>
+   <w:DontGrowAutofit/>
+   <w:SplitPgBreakAndParaMark/>
+   <w:EnableOpenTypeKerning/>
+   <w:DontFlipMirrorIndents/>
+   <w:OverrideTableStyleHps/>
+  </w:Compatibility>
+  <m:mathPr>
+   <m:mathFont m:val="Cambria Math"/>
+   <m:brkBin m:val="before"/>
+   <m:brkBinSub m:val="&#45;-"/>
+   <m:smallFrac m:val="off"/>
+   <m:dispDef/>
+   <m:lMargin m:val="0"/>
+   <m:rMargin m:val="0"/>
+   <m:defJc m:val="centerGroup"/>
+   <m:wrapIndent m:val="1440"/>
+   <m:intLim m:val="subSup"/>
+   <m:naryLim m:val="undOvr"/>
+  </m:mathPr></w:WordDocument>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:LatentStyles DefLockedState="false" DefUnhideWhenUsed="false"
+  DefSemiHidden="false" DefQFormat="false" LatentStyleCount="375">
+  <w:LsdException Locked="false" QFormat="true" Name="Normal"/>
+  <w:LsdException Locked="false" QFormat="true" Name="heading 1"/>
+  <w:LsdException Locked="false" QFormat="true" Name="heading 2"/>
+  <w:LsdException Locked="false" QFormat="true" Name="heading 3"/>
+  <w:LsdException Locked="false" QFormat="true" Name="heading 4"/>
+  <w:LsdException Locked="false" QFormat="true" Name="heading 5"/>
+  <w:LsdException Locked="false" QFormat="true" Name="heading 6"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   QFormat="true" Name="heading 7"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   QFormat="true" Name="heading 8"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   QFormat="true" Name="heading 9"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 6"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 7"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 8"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 9"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="toc 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="toc 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="toc 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="toc 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="toc 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="toc 6"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="toc 7"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="toc 8"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="toc 9"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Normal Indent"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="footnote text"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="annotation text"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="header"/>
+  <w:LsdException Locked="false" Priority="99" SemiHidden="true"
+   UnhideWhenUsed="true" Name="footer"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index heading"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   QFormat="true" Name="caption"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="table of figures"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="envelope address"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="envelope return"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="footnote reference"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="annotation reference"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="line number"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="page number"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="endnote reference"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="endnote text"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="table of authorities"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="macro"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="toa heading"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Bullet"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Bullet 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Bullet 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Bullet 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Bullet 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Number 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Number 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Number 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Number 5"/>
+  <w:LsdException Locked="false" QFormat="true" Name="Title"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Closing"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Signature"/>
+  <w:LsdException Locked="false" Priority="1" SemiHidden="true"
+   UnhideWhenUsed="true" Name="Default Paragraph Font"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text Indent"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Continue"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Continue 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Continue 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Continue 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Continue 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Message Header"/>
+  <w:LsdException Locked="false" QFormat="true" Name="Subtitle"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text First Indent 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Note Heading"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text Indent 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text Indent 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Block Text"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Hyperlink"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="FollowedHyperlink"/>
+  <w:LsdException Locked="false" QFormat="true" Name="Strong"/>
+  <w:LsdException Locked="false" QFormat="true" Name="Emphasis"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Document Map"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Plain Text"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="E-mail Signature"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Top of Form"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Bottom of Form"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Normal (Web)"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Acronym"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Address"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Cite"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Code"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Definition"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Keyboard"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Preformatted"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Sample"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Typewriter"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Variable"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Normal Table"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="annotation subject"/>
+  <w:LsdException Locked="false" Priority="99" SemiHidden="true"
+   UnhideWhenUsed="true" Name="No List"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Outline List 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Outline List 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Outline List 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Simple 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Simple 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Simple 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Classic 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Classic 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Classic 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Classic 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Colorful 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Colorful 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Colorful 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Columns 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Columns 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Columns 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Columns 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Columns 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 6"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 7"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 8"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 6"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 7"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 8"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table 3D effects 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table 3D effects 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table 3D effects 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Contemporary"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Elegant"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Professional"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Subtle 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Subtle 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Web 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Web 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Web 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Balloon Text"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Theme"/>
+  <w:LsdException Locked="false" Priority="99" SemiHidden="true"
+   Name="Placeholder Text"/>
+  <w:LsdException Locked="false" Priority="1" QFormat="true" Name="No Spacing"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 1"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 1"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 1"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 1"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 1"/>
+  <w:LsdException Locked="false" Priority="99" SemiHidden="true" Name="Revision"/>
+  <w:LsdException Locked="false" Priority="34" QFormat="true"
+   Name="List Paragraph"/>
+  <w:LsdException Locked="false" Priority="29" QFormat="true" Name="Quote"/>
+  <w:LsdException Locked="false" Priority="30" QFormat="true"
+   Name="Intense Quote"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 1"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 1"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 1"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 1"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 1"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 1"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 2"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 2"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 2"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 2"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 2"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 2"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 2"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 2"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 3"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 3"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 3"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 3"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 3"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 3"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 3"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 3"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 4"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 4"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 4"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 4"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 4"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 4"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 4"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 4"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 5"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 5"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 5"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 5"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 5"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 5"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 5"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 5"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 6"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 6"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 6"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 6"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 6"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 6"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 6"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 6"/>
+  <w:LsdException Locked="false" Priority="19" QFormat="true"
+   Name="Subtle Emphasis"/>
+  <w:LsdException Locked="false" Priority="21" QFormat="true"
+   Name="Intense Emphasis"/>
+  <w:LsdException Locked="false" Priority="31" QFormat="true"
+   Name="Subtle Reference"/>
+  <w:LsdException Locked="false" Priority="32" QFormat="true"
+   Name="Intense Reference"/>
+  <w:LsdException Locked="false" Priority="33" QFormat="true" Name="Book Title"/>
+  <w:LsdException Locked="false" Priority="37" SemiHidden="true"
+   UnhideWhenUsed="true" Name="Bibliography"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="TOC Heading"/>
+  <w:LsdException Locked="false" Priority="41" Name="Plain Table 1"/>
+  <w:LsdException Locked="false" Priority="42" Name="Plain Table 2"/>
+  <w:LsdException Locked="false" Priority="43" Name="Plain Table 3"/>
+  <w:LsdException Locked="false" Priority="44" Name="Plain Table 4"/>
+  <w:LsdException Locked="false" Priority="45" Name="Plain Table 5"/>
+  <w:LsdException Locked="false" Priority="40" Name="Grid Table Light"/>
+  <w:LsdException Locked="false" Priority="46" Name="Grid Table 1 Light"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark"/>
+  <w:LsdException Locked="false" Priority="51" Name="Grid Table 6 Colorful"/>
+  <w:LsdException Locked="false" Priority="52" Name="Grid Table 7 Colorful"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="Grid Table 1 Light Accent 1"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 1"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 1"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 1"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="Grid Table 6 Colorful Accent 1"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="Grid Table 7 Colorful Accent 1"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="Grid Table 1 Light Accent 2"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 2"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 2"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 2"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="Grid Table 6 Colorful Accent 2"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="Grid Table 7 Colorful Accent 2"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="Grid Table 1 Light Accent 3"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 3"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 3"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 3"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="Grid Table 6 Colorful Accent 3"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="Grid Table 7 Colorful Accent 3"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="Grid Table 1 Light Accent 4"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 4"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 4"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 4"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="Grid Table 6 Colorful Accent 4"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="Grid Table 7 Colorful Accent 4"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="Grid Table 1 Light Accent 5"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 5"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 5"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 5"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="Grid Table 6 Colorful Accent 5"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="Grid Table 7 Colorful Accent 5"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="Grid Table 1 Light Accent 6"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 6"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 6"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 6"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="Grid Table 6 Colorful Accent 6"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="Grid Table 7 Colorful Accent 6"/>
+  <w:LsdException Locked="false" Priority="46" Name="List Table 1 Light"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark"/>
+  <w:LsdException Locked="false" Priority="51" Name="List Table 6 Colorful"/>
+  <w:LsdException Locked="false" Priority="52" Name="List Table 7 Colorful"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="List Table 1 Light Accent 1"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 1"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 1"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 1"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="List Table 6 Colorful Accent 1"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="List Table 7 Colorful Accent 1"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="List Table 1 Light Accent 2"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 2"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 2"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 2"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="List Table 6 Colorful Accent 2"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="List Table 7 Colorful Accent 2"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="List Table 1 Light Accent 3"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 3"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 3"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 3"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="List Table 6 Colorful Accent 3"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="List Table 7 Colorful Accent 3"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="List Table 1 Light Accent 4"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 4"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 4"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 4"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="List Table 6 Colorful Accent 4"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="List Table 7 Colorful Accent 4"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="List Table 1 Light Accent 5"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 5"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 5"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 5"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="List Table 6 Colorful Accent 5"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="List Table 7 Colorful Accent 5"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="List Table 1 Light Accent 6"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 6"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 6"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 6"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="List Table 6 Colorful Accent 6"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="List Table 7 Colorful Accent 6"/>
+  <w:LsdException Locked="false" Priority="99" SemiHidden="true"
+   UnhideWhenUsed="true" Name="Mention"/>
+  <w:LsdException Locked="false" Priority="99" SemiHidden="true"
+   UnhideWhenUsed="true" Name="Smart Hyperlink"/>
+  <w:LsdException Locked="false" Priority="99" SemiHidden="true"
+   UnhideWhenUsed="true" Name="Hashtag"/>
+  <w:LsdException Locked="false" Priority="99" SemiHidden="true"
+   UnhideWhenUsed="true" Name="Unresolved Mention"/>
+ </w:LatentStyles>
+</xml><![endif]-->
 <style>
 <!--
  /* Font Definitions */
@@ -576,44 +1215,26 @@ span.CommentSubjectChar
 	mso-fareast-language:EN-NZ;
 	mso-bidi-language:AR-SA;}
  /* Page Definitions */
-
+ @page
+	{mso-footnote-separator:url("file:///C:/Users/galle/Downloads/Metalpolis%20website-terms-of-use_files/header.htm") fs;
+	mso-footnote-continuation-separator:url("file:///C:/Users/galle/Downloads/Metalpolis%20website-terms-of-use_files/header.htm") fcs;
+	mso-footnote-continuation-notice:url("file:///C:/Users/galle/Downloads/Metalpolis%20website-terms-of-use_files/header.htm") fcn;
+	mso-endnote-separator:url("file:///C:/Users/galle/Downloads/Metalpolis%20website-terms-of-use_files/header.htm") es;
+	mso-endnote-continuation-separator:url("file:///C:/Users/galle/Downloads/Metalpolis%20website-terms-of-use_files/header.htm") ecs;
+	mso-endnote-continuation-notice:url("file:///C:/Users/galle/Downloads/Metalpolis%20website-terms-of-use_files/header.htm") ecn;}
 @page WordSection1
-	{size:8.5in 11.0in;
-	margin:92.15pt 106.3pt 1.0in 106.3pt;
-	mso-header-margin:35.45pt;
-	mso-footer-margin:35.45pt;
-	mso-title-page:yes;
-	mso-paper-source:0;}
-div.WordSection1
-	{page:WordSection1;}
-@page WordSection2
-	{size:8.5in 11.0in;
-	margin:92.15pt 106.3pt 1.0in 106.3pt;
-	mso-header-margin:35.45pt;
-	mso-footer-margin:35.45pt;
-	mso-columns:2 even 35.4pt;
-	mso-title-page:yes;
-	mso-paper-source:0;}
-div.WordSection2
-	{page:WordSection2;}
-@page WordSection3
-	{size:8.5in 11.0in;
-	margin:70.9pt 85.05pt 62.35pt 85.05pt;
-	mso-header-margin:35.45pt;
-	mso-footer-margin:35.45pt;
-	mso-title-page:yes;
-	mso-paper-source:0;}
-div.WordSection3
-	{page:WordSection3;}
-@page WordSection4
 	{size:595.35pt 842.0pt;
 	margin:1.0in 49.6pt 1.0in 89.85pt;
 	mso-header-margin:35.45pt;
 	mso-footer-margin:35.45pt;
 	mso-title-page:yes;
+	mso-header:url("file:///C:/Users/galle/Downloads/Metalpolis%20website-terms-of-use_files/header.htm") h1;
+	mso-footer:url("file:///C:/Users/galle/Downloads/Metalpolis%20website-terms-of-use_files/header.htm") f1;
+	mso-first-header:url("file:///C:/Users/galle/Downloads/Metalpolis%20website-terms-of-use_files/header.htm") fh1;
+	mso-first-footer:url("file:///C:/Users/galle/Downloads/Metalpolis%20website-terms-of-use_files/header.htm") ff1;
 	mso-paper-source:0;}
-div.WordSection4
-	{page:WordSection4;}
+div.WordSection1
+	{page:WordSection1;}
  /* List Definitions */
  @list l0
 	{mso-list-id:66611269;
@@ -1191,161 +1812,17 @@ table.MsoTableGrid
 	mso-fareast-language:EN-NZ;
 	mso-bidi-language:AR-SA;}
 </style>
+<![endif]--><!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext="edit" spidmax="2049"/>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1"/>
+ </o:shapelayout></xml><![endif]-->
 </head>
 
 <body lang=EN-US link=blue vlink=purple style='tab-interval:28.35pt'>
 
 <div class=WordSection1>
-
-<p class=MsoNormal><!--[if gte vml 1]></o:wrapblock><![endif]--><span
-lang=EN-NZ><o:p>&nbsp;</o:p>
-Template Website Terms and Condition
-</span></p>
-
-</div>
-
-<div class=WordSection2>
-
-<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:8.0pt;
-margin-left:7.1pt;line-height:12.0pt;mso-line-height-rule:exactly'><span lang=EN-NZ
-style='font-size:9.0pt;mso-bidi-font-family:Arial'>These are simple website
-terms of use that may be used for a website that describes a business and the
-team behind the business. <span style='mso-spacerun:yes'></span><o:p></o:p></span></p>
-
-<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:8.0pt;
-margin-left:7.1pt;line-height:12.0pt;mso-line-height-rule:exactly'><span
-lang=EN-NZ style='font-size:9.0pt;mso-bidi-font-family:Arial'>If the website
-has additional purposes, e.g. services or products are sold or supplied via the
-website (e.g. downloadable apps), or the website has a public noticeboard/forum
-where people can post comments and other material, different or additional terms
-will be required to address the risks for those additional purposes.<span
-style='mso-spacerun:yes'> </span><o:p></o:p></span></p>
-
-<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:8.0pt;
-margin-left:7.1pt;line-height:12.0pt;mso-line-height-rule:exactly'><span
-lang=EN-NZ style='font-size:9.0pt;mso-bidi-font-family:Arial'>If you expand
-these terms to provide for different purposes, you will need to consider the
-impact of the <i style='mso-bidi-font-style:normal'>unfair contract terms </i>regime
-under the Fair Trading Act 1986.This
-regime comes into force on 17 March 2015, applies to all standard form consumer
-contracts entered into after that date, and enables the Commerce Commission to
-obtain a declaration that a term of the contract is unfair.<span
-style='mso-spacerun:yes'> </span>If this happens, no person may apply, enforce
-or rely on that term.<o:p></o:p></span></p>
-
-<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:8.0pt;
-margin-left:7.1pt;line-height:12.0pt;mso-line-height-rule:exactly'><span
-lang=EN-NZ style='font-size:9.0pt;mso-bidi-font-family:Arial'>Because a person
-reading or using the website (<b style='mso-bidi-font-weight:normal'>end user</b>)
-will not actively agree to these terms (unlike the traditional form of contract
-where both parties sign it), you will need to ensure the end users acceptance
-can be evidenced.<b style='mso-bidi-font-weight:normal'><span
-style='mso-spacerun:yes'> </span></b>To do this, we suggest that the link to
-the terms is displayed in a prominent place on the home page and other pages of
-the website.Many sites display a link
-at the base of each page, alongside corporate information about the business. <span
-style='mso-spacerun:yes'></span>Where you have additional purposes for the website
-and seek to extend these terms to cover those purposes, you should consider a
-more <i style='mso-bidi-font-style:normal'>active </i>form of acceptance by the
-end user, e.g. if something is downloaded, before the download can occur, the
-end user should actively agree to the terms, e.g. by clicking on an <i
-style='mso-bidi-font-style:normal'>I agree </i>button (or similar).<span
-style='mso-spacerun:yes'> </span>In this case, the page requiring the end
-users agreement should set out the terms of use or have a prominent link to
-those terms.<o:p></o:p></span></p>
-
-<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:8.0pt;
-margin-left:7.1pt;line-height:12.0pt;mso-line-height-rule:exactly'><span
-lang=EN-NZ style='font-size:9.0pt;mso-bidi-font-family:Arial'>The terms also include
-references to setting up an account. <span style='mso-spacerun:yes'></span>The
-user accounts contemplated are limited to a visitor setting up an account to access
-password-protected areas of the site, or to register for further updates from
-the website.<o:p></o:p></span></p>
-
-<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:8.0pt;
-margin-left:7.1pt;line-height:12.0pt;mso-line-height-rule:exactly;page-break-after:
-avoid;tab-stops:7.1pt'><b style='mso-bidi-font-weight:normal'><span lang=EN-NZ
-style='mso-bidi-font-size:9.0pt;font-family:"Arial Black",sans-serif;
-mso-bidi-font-family:Arial;color:#C00000'>using this template<o:p></o:p></span></b></p>
-
-<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:8.0pt;
-margin-left:7.1pt;line-height:12.0pt;mso-line-height-rule:exactly'><span
-lang=EN-NZ style='font-size:9.0pt;mso-bidi-font-family:Arial'>The <b
-style='mso-bidi-font-weight:normal'><i style='mso-bidi-font-style:normal'><span
-style='color:#C00000;background:lightgrey;mso-highlight:lightgrey'>User Notes</span></i></b>
-and the statements in the footer (all marked in red) are included to assist you
-to prepare this document.They are for
-reference only.You should delete all
-user notes and the statements in the footer from the final form of your
-document.<o:p></o:p></span></p>
-
-<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:8.0pt;
-margin-left:7.1pt;line-height:12.0pt;mso-line-height-rule:exactly'><span
-lang=EN-NZ style='font-size:9.0pt;mso-bidi-font-family:Arial'>The use of [<i
-style='mso-bidi-font-style:normal'>square brackets</i>] around black text means
-that:<o:p></o:p></span></p>
-
-<p class=MsoNormal style='margin-top:10.0pt;margin-right:0in;margin-bottom:
-8.0pt;margin-left:35.45pt;text-indent:-28.35pt;line-height:12.0pt;mso-line-height-rule:
-exactly;mso-list:l7 level2 lfo5;tab-stops:7.1pt 35.45pt'><![if !supportLists]><span
-lang=EN-NZ style='font-size:8.0pt;mso-fareast-font-family:Arial;mso-bidi-font-family:
-Arial;color:#C00000'><span style='mso-list:Ignore'>&#9650;<span
-style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span></span><![endif]><span lang=EN-NZ style='font-size:9.0pt;
-mso-bidi-font-family:Arial'>the requested details need to be inserted<o:p></o:p></span></p>
-
-<p class=MsoNormal style='margin-top:10.0pt;margin-right:0in;margin-bottom:
-8.0pt;margin-left:35.45pt;text-indent:-28.35pt;line-height:12.0pt;mso-line-height-rule:
-exactly;mso-list:l7 level2 lfo5;tab-stops:7.1pt 35.45pt'><![if !supportLists]><span
-lang=EN-NZ style='font-size:8.0pt;mso-fareast-font-family:Arial;mso-bidi-font-family:
-Arial;color:#C00000'><span style='mso-list:Ignore'>&#9650;<span
-style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span></span><![endif]><span lang=EN-NZ style='font-size:9.0pt;
-mso-bidi-font-family:Arial'>there are different options for you to consider <o:p></o:p></span></p>
-
-<p class=MsoNormal style='margin-top:10.0pt;margin-right:0in;margin-bottom:
-8.0pt;margin-left:35.45pt;text-indent:-28.35pt;line-height:12.0pt;mso-line-height-rule:
-exactly;mso-list:l7 level2 lfo5;tab-stops:7.1pt 35.45pt'><![if !supportLists]><span
-lang=EN-NZ style='font-size:8.0pt;mso-fareast-font-family:Arial;mso-bidi-font-family:
-Arial;color:#C00000'><span style='mso-list:Ignore'>&#9650;<span
-style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span></span><![endif]><span lang=EN-NZ style='font-size:9.0pt;
-mso-bidi-font-family:Arial'>the whole clause is optional and you need to
-consider whether to include it, based on your circumstances and the other issues
-set out in the user notes.<o:p></o:p></span></p>
-
-<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:8.0pt;
-margin-left:7.1pt;line-height:12.0pt;mso-line-height-rule:exactly'><span
-lang=EN-NZ style='font-size:9.0pt;mso-bidi-font-family:Arial'>Before finalising
-your document, check for all square brackets to ensure you have considered the
-relevant options and deleted the brackets.<o:p></o:p></span></p>
-
-<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:8.0pt;
-margin-left:7.1pt;line-height:12.0pt;mso-line-height-rule:exactly'><span
-lang=EN-NZ style='font-size:9.0pt;mso-bidi-font-family:Arial'>If you delete any
-clauses or schedules, remember to cross reference check the document</span><span
-lang=EN-NZ style='mso-bidi-font-size:9.0pt;mso-bidi-font-family:Arial'>.<b
-style='mso-bidi-font-weight:normal'><i style='mso-bidi-font-style:normal'><span
-style='color:#C00000'><o:p></o:p></span></i></b></span></p>
-
-</div>
-
-<b style='mso-bidi-font-weight:normal'><i style='mso-bidi-font-style:normal'><span
-lang=EN-NZ style='font-size:10.0pt;mso-bidi-font-size:9.0pt;font-family:"Arial",sans-serif;
-mso-fareast-font-family:"Times New Roman";color:#C00000;mso-ansi-language:EN-NZ;
-mso-fareast-language:EN-US;mso-bidi-language:AR-SA'><br clear=all
-style='page-break-before:auto;mso-break-type:section-break'>
-</span></i></b>
-
-<div class=WordSection3></div>
-
-<span lang=EN-NZ style='font-size:10.0pt;font-family:"Arial",sans-serif;
-mso-fareast-font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman";
-mso-ansi-language:EN-NZ;mso-fareast-language:EN-US;mso-bidi-language:AR-SA'><br
-clear=all style='page-break-before:always;mso-break-type:section-break'>
-</span>
-
-<div class=WordSection4>
 
 <p class=MsoNormal align=center style='text-align:center'><b style='mso-bidi-font-weight:
 normal'><span lang=EN-NZ style='font-size:20.0pt;font-family:"Arial Black",sans-serif;
@@ -1409,7 +1886,7 @@ style='mso-list:Ignore'>2.1<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbs
 Calibri;mso-bidi-theme-font:minor-latin;mso-bidi-font-weight:bold;mso-no-proof:
 no'>We may change these Terms at any time by updating them on the Website.<span
 style='mso-spacerun:yes'> </span>Unless stated otherwise, any change takes
-effect immediately.You are responsible
+effect immediately.<span style='mso-spacerun:yes'> </span>You are responsible
 for ensuring you are familiar with the latest Terms.<span
 style='mso-spacerun:yes'> </span>By continuing to access and use the Website,
 you agree to be bound by the changed Terms. </span><span lang=EN-NZ
@@ -1428,12 +1905,8 @@ lang=EN-NZ style='mso-fareast-font-family:Arial;mso-no-proof:no'><span
 style='mso-list:Ignore'>2.3<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 </span></span></span><![endif]><b><span lang=EN-NZ style='mso-bidi-font-family:
 Calibri;mso-bidi-theme-font:minor-latin;mso-no-proof:no'>These Terms were last
-updated on [<i style='mso-bidi-font-style:normal'>insert date</i>]. <span
-style='mso-spacerun:yes'></span><span style='color:#C00000;background:lightgrey;
-mso-highlight:lightgrey'>[<i style='mso-bidi-font-style:normal'>User note:<span
-style='mso-spacerun:yes'> </span>This date should be updated each time you change
-your Website Terms of Use.</i>]</span></span></b><span lang=EN-NZ
-style='mso-no-proof:no'><o:p></o:p></span></p>
+updated on 18<sup>th</sup> Dec 2017. <span style='mso-spacerun:yes'></span></span></b><span
+lang=EN-NZ style='mso-no-proof:no'><o:p></o:p></span></p>
 
 <p class=OutlinenumberedLevel1 style='mso-list:l6 level1 lfo2'><![if !supportLists]><span
 lang=EN-NZ style='mso-fareast-font-family:"Arial Black";mso-bidi-font-family:
@@ -1498,15 +1971,15 @@ mso-list:none'><i style='mso-bidi-font-style:normal'><span lang=EN-NZ
 style='mso-bidi-font-family:Calibri;mso-bidi-theme-font:minor-latin;mso-bidi-font-weight:
 bold;mso-no-proof:no'>We, us or our</span></i><span lang=EN-NZ
 style='mso-bidi-font-family:Calibri;mso-bidi-theme-font:minor-latin;mso-bidi-font-weight:
-bold;mso-no-proof:no'> means [<i style='mso-bidi-font-style:normal'>insert your
-full legal name</i>]<o:p></o:p></span></p>
+bold;mso-no-proof:no'> means <i style='mso-bidi-font-style:normal'>Metalpolis
+Pte. Ltd.</i><o:p></o:p></span></p>
 
 <p class=OutlinenumberedLevel2 style='margin-top:0in;text-indent:0in;
 mso-list:none'><i style='mso-bidi-font-style:normal'><span lang=EN-NZ
 style='mso-bidi-font-family:Calibri;mso-bidi-theme-font:minor-latin;mso-bidi-font-weight:
 bold;mso-no-proof:no'>Website </span></i><span lang=EN-NZ style='mso-bidi-font-family:
 Calibri;mso-bidi-theme-font:minor-latin;mso-bidi-font-weight:bold;mso-no-proof:
-no'>means [<i style='mso-bidi-font-style:normal'>insert URL</i>]<o:p></o:p></span></p>
+no'>means www.metalpolis.com<o:p></o:p></span></p>
 
 <p class=OutlinenumberedLevel2 style='margin-top:0in;text-indent:0in;
 mso-list:none'><i style='mso-bidi-font-style:normal'><span lang=EN-NZ
@@ -1557,8 +2030,7 @@ style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&
 </span></span></span><![endif]><span lang=EN-NZ style='mso-bidi-font-family:
 Calibri;mso-bidi-theme-font:minor-latin'>immediately notify us if you become
 aware of any disclosure or unauthorised use of your User ID, by sending an
-email to </span><b style='mso-bidi-font-weight:normal'><span lang=EN-NZ>[<i
-style='mso-bidi-font-style:normal'>insert contact email</i>]</span></b><span
+email to </span><b style='mso-bidi-font-weight:normal'><span lang=EN-NZ>info@metalpolis.com</span></b><span
 lang=EN-NZ style='mso-bidi-font-family:Calibri;mso-bidi-theme-font:minor-latin'>.
 </span></p>
 
@@ -1588,11 +2060,7 @@ Calibri;mso-bidi-theme-font:minor-latin'>unless with our agreement, access the W
 via standard web browsers only and not by any other method. <span
 style='mso-spacerun:yes'></span>Other methods include scraping, deep-linking,
 harvesting, data mining, use of a robot or spider, automation, or any similar
-data gathering, extraction or monitoring method. <b style='mso-bidi-font-weight:
-normal'><span style='color:#C00000;background:lightgrey;mso-highlight:lightgrey'>[<i
-style='mso-bidi-font-style:normal'>User note:<span style='mso-spacerun:yes'>
-</span>If the Website includes sensitive data, you should consider whether you
-need to extend these restrictions.</i>]</span></b></span></p>
+data gathering, extraction or monitoring method.</span></p>
 
 <p class=OutlinenumberedLevel2 style='margin-top:0in;mso-list:l6 level2 lfo2'><![if !supportLists]><span
 lang=EN-NZ style='mso-fareast-font-family:Arial;mso-no-proof:no'><span
@@ -1600,8 +2068,7 @@ style='mso-list:Ignore'>4.4<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbs
 </span></span></span><![endif]><span lang=EN-NZ style='mso-no-proof:no'>You
 must obtain our written permission to establish a link to our Website.<span
 style='mso-spacerun:yes'> </span>If you wish to do so, email your request to <b
-style='mso-bidi-font-weight:normal'>[<i style='mso-bidi-font-style:normal'>insert
-contact email</i>]</b>.<o:p></o:p></span></p>
+style='mso-bidi-font-weight:normal'><i style='mso-bidi-font-style:normal'>info@metalpolis.com</i></b>.<o:p></o:p></span></p>
 
 <p class=OutlinenumberedLevel2 style='margin-top:0in;mso-list:l6 level2 lfo2'><a
 name="_Ref411424637"><![if !supportLists]><span lang=EN-NZ style='mso-fareast-font-family:
@@ -1611,6 +2078,42 @@ indemnify us against all Loss we suffer or incur as a direct or indirect result
 of your failure to comply with these Terms, including any failure of a person
 who accesses and uses our Website by using your User ID.</span></a><span
 lang=EN-NZ style='mso-no-proof:no'><o:p></o:p></span></p>
+
+<p class=OutlinenumberedLevel2 style='margin-top:0in;mso-list:l6 level2 lfo2'><![if !supportLists]><span
+lang=EN-NZ style='mso-fareast-font-family:Arial;background:yellow;mso-highlight:
+yellow;mso-no-proof:no'><span style='mso-list:Ignore'>4.6<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span lang=EN-NZ style='background:yellow;
+mso-highlight:yellow;mso-no-proof:no'>Fee Structure:<o:p></o:p></span></p>
+
+<p class=OutlinenumberedLevel3 style='mso-list:l6 level3 lfo2'><![if !supportLists]><span
+lang=EN-NZ style='mso-fareast-font-family:Arial;background:yellow;mso-highlight:
+yellow'><span style='mso-list:Ignore'>a<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span lang=EN-NZ style='background:yellow;
+mso-highlight:yellow'>Buyers use the website for free, or until when we decide
+to charge an administrative fee <span style='mso-spacerun:yes'></span>for
+account management which will be updated on the terms of use.<o:p></o:p></span></p>
+
+<p class=OutlinenumberedLevel3 style='mso-list:l6 level3 lfo2'><![if !supportLists]><span
+lang=EN-NZ style='mso-fareast-font-family:Arial;background:yellow;mso-highlight:
+yellow'><span style='mso-list:Ignore'>b<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span lang=EN-NZ style='background:yellow;
+mso-highlight:yellow'>Suppliers who want to get a listing and become searchable
+on our website will pay the following fees:<o:p></o:p></span></p>
+
+<p class=OutlinenumberedLevel4 style='mso-list:l6 level4 lfo2'><![if !supportLists]><span
+lang=EN-NZ style='mso-fareast-font-family:Arial;background:yellow;mso-highlight:
+yellow'><span style='mso-list:Ignore'>i<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span lang=EN-NZ style='background:yellow;
+mso-highlight:yellow'>Listing fee of 125 Singapore dollars per month upfront
+for each month of listing;<o:p></o:p></span></p>
+
+<p class=OutlinenumberedLevel4 style='mso-list:l6 level4 lfo2'><![if !supportLists]><span
+lang=EN-NZ style='mso-fareast-font-family:Arial;background:yellow;mso-highlight:
+yellow'><span style='mso-list:Ignore'>ii<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span lang=EN-NZ style='background:yellow;
+mso-highlight:yellow'>Transaction fee of 2.5% of the deal value which was
+concluded on our website with buyers on our website.<o:p></o:p></span></p>
 
 <p class=OutlinenumberedLevel1 style='mso-list:l6 level1 lfo2'><a
 name="_Ref411424646"><![if !supportLists]><span lang=EN-NZ style='mso-fareast-font-family:
@@ -1662,7 +2165,7 @@ style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&
 </span></span></span><![endif]><span lang=EN-NZ style='mso-bidi-font-family:
 Calibri;mso-bidi-theme-font:minor-latin'>any exposure to viruses or other forms
 of interference which may damage your computer system or expose you to fraud
-when you access or use the Website.To
+when you access or use the Website.<span style='mso-spacerun:yes'> </span>To
 avoid doubt, you are responsible for ensuring the process by which you access
 and use the Website protects you from this; and</span></p>
 
@@ -1682,7 +2185,7 @@ style='mso-list:Ignore'>6.2<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbs
 </span></span></span><![endif]><span lang=EN-NZ style='mso-no-proof:no'>We make
 no representation or warranty that the Website is appropriate or available for
 use in all countries or that the content satisfies the laws of all
-countries.You are responsible for
+countries.<span style='mso-spacerun:yes'> </span>You are responsible for
 ensuring that your access to and use of the Website is not illegal or
 prohibited, and for your own compliance with applicable local laws. <o:p></o:p></span></p>
 
@@ -1720,35 +2223,6 @@ our liability or responsibility arises in contract, tort (including
 negligence), equity, breach of statutory duty, or otherwise.</span><span
 lang=EN-NZ> </span></p>
 
-<p class=OutlinenumberedLevel2 style='margin-top:0in;mso-list:l6 level2 lfo2'><![if !supportLists]><span
-lang=EN-NZ style='mso-fareast-font-family:Arial;mso-no-proof:no'><span
-style='mso-list:Ignore'>7.2<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span></span><![endif]><span lang=EN-NZ style='mso-bidi-font-family:
-Calibri;mso-bidi-theme-font:minor-latin;mso-no-proof:no'>Except to the extent
-permitted by law, nothing in these Terms has the effect of contracting out of
-the New Zealand Consumer Guarantees Act 1993 or any other consumer protection
-law that cannot be excluded.To the
-extent our liability cannot be excluded but can be limited, our liability is
-limited to NZD100.</span><span lang=EN-NZ style='mso-no-proof:no'><o:p></o:p></span></p>
-
-<p class=OutlinenumberedLevel2 style='margin-top:0in;mso-list:l6 level2 lfo2'><![if !supportLists]><span
-lang=EN-NZ style='mso-fareast-font-family:Arial;mso-no-proof:no'><span
-style='mso-list:Ignore'>7.3<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span></span><![endif]><span lang=EN-NZ style='mso-bidi-font-family:
-Calibri;mso-bidi-theme-font:minor-latin;mso-no-proof:no'>To the maximum extent
-permitted by law and only to the extent clauses 7.1 and 7.2 of these Terms do
-not apply, our total liability to you under or in connection with these Terms,
-or in connection with the Website, or your access and use of (or inability to
-access or use) the Website, must not exceed NZD100.</span><span lang=EN-NZ
-style='mso-no-proof:no'> <b style='mso-bidi-font-weight:normal'><span
-style='mso-spacerun:yes'></span><span style='color:#C00000;background:lightgrey;
-mso-highlight:lightgrey'>[<i style='mso-bidi-font-style:normal'>User note:<span
-style='mso-spacerun:yes'> </span>NZD100 is a low limit for liability.<span
-style='mso-spacerun:yes'> </span>This is appropriate where the Website does
-nothing more than provide information about a company/group/person.<span
-style='mso-spacerun:yes'> </span>A higher amount may be appropriate if the
-Website has additional purposes.</i>]</span></b><o:p></o:p></span></p>
-
 <p class=OutlinenumberedLevel1 style='mso-list:l6 level1 lfo2'><![if !supportLists]><span
 lang=EN-NZ style='mso-fareast-font-family:"Arial Black";mso-bidi-font-family:
 "Arial Black";text-transform:uppercase;mso-bidi-font-weight:bold'><span
@@ -1764,18 +2238,18 @@ style='mso-list:Ignore'>8.1<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbs
 Calibri;mso-bidi-theme-font:minor-latin;mso-no-proof:no'>You are not required
 to provide personal information to us, although in some cases if you choose not
 to do so then we will be unable to make certain sections of the Website
-available to you.For example, we may
+available to you.<span style='mso-spacerun:yes'> </span>For example, we may
 need to have your contact information in order to provide you with updates from
-our Website.</span><span lang=EN-NZ
+our Website.<span style='mso-spacerun:yes'> </span></span><span lang=EN-NZ
 style='mso-no-proof:no'><o:p></o:p></span></p>
 
-<p class=OutlinenumberedLevel2 style='margin-top:0in;mso-list:l6 level2 lfo2'><![if !supportLists]><span
-lang=EN-NZ style='mso-fareast-font-family:Arial;mso-no-proof:no'><span
-style='mso-list:Ignore'>8.2<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span></span><![endif]><span lang=EN-NZ style='mso-bidi-font-family:
-Calibri;mso-bidi-theme-font:minor-latin;mso-no-proof:no'>When you provide
-personal information to us, we will comply with the New Zealand Privacy Act
-1993.</span><span lang=EN-NZ style='mso-no-proof:no'><o:p></o:p></span></p>
+<p class=OutlinenumberedLevel2 style='mso-list:l6 level2 lfo2'><![if !supportLists]><span
+lang=EN-NZ style='mso-fareast-font-family:Arial'><span style='mso-list:Ignore'>8.2<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span lang=EN-NZ>When you provide personal
+information to us, we will comply with the Singapore </span><span lang=EN-NZ
+style='mso-bidi-font-family:Calibri;mso-bidi-theme-font:minor-latin;mso-no-proof:
+no'>Personal Data Protection Act 2012 (PDPA)</span><span lang=EN-NZ>.</span></p>
 
 <p class=OutlinenumberedLevel2 style='margin-top:0in;mso-list:l6 level2 lfo2'><![if !supportLists]><span
 lang=EN-NZ style='mso-fareast-font-family:Arial;mso-no-proof:no'><span
@@ -1794,24 +2268,24 @@ style='mso-list:Ignore'>8.4<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbs
 </span></span></span><![endif]><span lang=EN-NZ style='mso-bidi-font-family:
 Calibri;mso-bidi-theme-font:minor-latin;mso-no-proof:no'>We may also collect technical
 information whenever you log on to, or visit the public version of, our
-Website.This may include information
-about the way users arrive at, browse through and interact with our Website.<span
-style='mso-spacerun:yes'> </span>We may collect this type of technical
-information through the use of <i style='mso-bidi-font-style:normal'>cookies</i>
-and other means.<i style='mso-bidi-font-style:
+Website.<span style='mso-spacerun:yes'> </span>This may include information
+about the way users arrive at, browse through and interact with our
+Website.<span style='mso-spacerun:yes'> </span>We may collect this type of
+technical information through the use of <i style='mso-bidi-font-style:normal'>cookies</i>
+and other means.<span style='mso-spacerun:yes'> </span><i style='mso-bidi-font-style:
 normal'>Cookies</i> are alphanumeric identifiers that we transfer to your
 computers hard drive to enable our systems to recognise your browser.<span
 style='mso-spacerun:yes'> </span>If you want to disable <i style='mso-bidi-font-style:
 normal'>cookies</i>, you may do so by changing the settings on your
-browser.However, if you do so, you may
+browser.<span style='mso-spacerun:yes'> </span>However, if you do so, you may
 not be able to use all of the functions on the Website.<span
 style='mso-spacerun:yes'> </span>We use the technical information we collect
 to have a better understanding of the way people use our Website, to improve
 the way it works and to personalise it to be more relevant and useful to your
-particular needs.We may also use this
-information to assist in making any advertising we display on the Website more personalised
-and applicable to your interests.</span><span lang=EN-NZ style='mso-no-proof:
-no'><o:p></o:p></span></p>
+particular needs.<span style='mso-spacerun:yes'> </span>We may also use this
+information to assist in making any advertising we display on the Website more
+personalised and applicable to your interests.</span><span lang=EN-NZ
+style='mso-no-proof:no'><o:p></o:p></span></p>
 
 <p class=OutlinenumberedLevel2 style='margin-top:0in;page-break-after:avoid;
 mso-list:l6 level2 lfo2'><![if !supportLists]><span lang=EN-NZ
@@ -1820,7 +2294,7 @@ Ignore'>8.5<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&n
 </span></span></span><![endif]><span lang=EN-NZ style='mso-bidi-font-family:
 Calibri;mso-bidi-theme-font:minor-latin;mso-no-proof:no'>Generally, we do not
 disclose personal information to third parties for them to use for their own
-purposes.However, some of the
+purposes.<span style='mso-spacerun:yes'> </span>However, some of the
 circumstances in which we may do this are:</span><span lang=EN-NZ
 style='mso-no-proof:no'><o:p></o:p></span></p>
 
@@ -1850,10 +2324,10 @@ style='mso-list:Ignore'>8.6<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbs
 </span></span></span><![endif]><span lang=EN-NZ style='mso-bidi-font-family:
 Calibri;mso-bidi-theme-font:minor-latin;mso-no-proof:no'>Any personal
 information you provide to us may be stored on the secure servers of our
-trusted service providers, which may be located outside New Zealand.<span
+trusted service providers, which may be located outside Singapore.<span
 style='mso-spacerun:yes'> </span>This may involve the transfer of your
 personal information to countries which have less legal protection for personal
-information than New Zealand.</span><span lang=EN-NZ style='mso-no-proof:no'><o:p></o:p></span></p>
+information than Singapore.</span><span lang=EN-NZ style='mso-no-proof:no'><o:p></o:p></span></p>
 
 <p class=OutlinenumberedLevel2 style='margin-top:0in;mso-list:l6 level2 lfo2'><![if !supportLists]><span
 lang=EN-NZ style='mso-fareast-font-family:Arial;mso-no-proof:no'><span
@@ -1861,9 +2335,8 @@ style='mso-list:Ignore'>8.7<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbs
 </span></span></span><![endif]><span lang=EN-NZ style='mso-bidi-font-family:
 Calibri;mso-bidi-theme-font:minor-latin;mso-no-proof:no'>You have the right to
 request access to and correction of any of the personal information we hold
-about you.If you would like to exercise
-these rights, please email us at <b style='mso-bidi-font-weight:normal'>[<i
-style='mso-bidi-font-style:normal'>insert contact email</i>]</b>.</span><span
+about you.<span style='mso-spacerun:yes'> </span>If you would like to exercise
+these rights, please email us at <b style='mso-bidi-font-weight:normal'>info@metalpolis.com</b>.</span><span
 lang=EN-NZ style='mso-no-proof:no'><o:p></o:p></span></p>
 
 <p class=OutlinenumberedLevel1 style='mso-list:l6 level1 lfo2'><![if !supportLists]><span
@@ -1903,33 +2376,24 @@ Arial;mso-no-proof:no'><span style='mso-list:Ignore'>10.1<span
 style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span><![endif]><span
 lang=EN-NZ style='mso-bidi-font-family:Calibri;mso-bidi-theme-font:minor-latin;
 mso-no-proof:no'>If we need to contact you, we may do so by email or by posting
-a notice on the Website.You agree that
+a notice on the Website.<span style='mso-spacerun:yes'> </span>You agree that
 this satisfies all legal requirements in relation to written communications.</span></a><span
 lang=EN-NZ style='mso-bidi-font-family:Calibri;mso-bidi-theme-font:minor-latin;
 mso-no-proof:no'> </span><span lang=EN-NZ style='mso-no-proof:no'><o:p></o:p></span></p>
 
-<p class=OutlinenumberedLevel2 style='margin-top:0in;mso-list:l6 level2 lfo2'><![if !supportLists]><span
+<p class=OutlinenumberedLevel2 style='mso-list:l6 level2 lfo2'><![if !supportLists]><span
 lang=EN-NZ style='mso-fareast-font-family:Arial;mso-no-proof:no'><span
 style='mso-list:Ignore'>10.2<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
 </span></span></span><![endif]><span lang=EN-NZ style='mso-bidi-font-family:
 Calibri;mso-bidi-theme-font:minor-latin;mso-no-proof:no'>These Terms, and any dispute
-relating to these Terms or the Website, are governed by and must be interpreted
-in accordance with the laws of New Zealand.<span style='mso-spacerun:yes'>
-</span>Each party submits to the non-exclusive jurisdiction of the Courts of New
-Zealand in relation to any dispute connected with these Terms or the Website.</span><span
-lang=EN-NZ style='mso-no-proof:no'><o:p></o:p></span></p>
+relating to these Terms or the Website, are governed by the law of the Republic
+of Singapore and the courts of the Republic of Singapore will have exclusive
+jurisdiction in case of any dispute.</span><span lang=EN-NZ style='mso-no-proof:
+no'><o:p></o:p></span></p>
 
 <p class=OutlinenumberedLevel2 style='margin-top:0in;mso-list:l6 level2 lfo2'><![if !supportLists]><span
 lang=EN-NZ style='mso-fareast-font-family:Arial;mso-no-proof:no'><span
 style='mso-list:Ignore'>10.3<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span></span><![endif]><span lang=EN-NZ style='mso-bidi-font-family:
-Calibri;mso-bidi-theme-font:minor-latin;mso-no-proof:no'>For us to waive a
-right under these Terms, the waiver must be in writing.</span><span lang=EN-NZ
-style='mso-no-proof:no'><o:p></o:p></span></p>
-
-<p class=OutlinenumberedLevel2 style='margin-top:0in;mso-list:l6 level2 lfo2'><![if !supportLists]><span
-lang=EN-NZ style='mso-fareast-font-family:Arial;mso-no-proof:no'><span
-style='mso-list:Ignore'>10.4<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
 </span></span></span><![endif]><span lang=EN-NZ style='mso-no-proof:no'>Clauses
 which, by their nature, are intended to survive termination of these Terms,
 including clauses </span><!--[if supportFields]><span lang=EN-NZ
@@ -1976,7 +2440,7 @@ lang=EN-NZ style='mso-no-proof:no'>, continue in force.<o:p></o:p></span></p>
 
 <p class=OutlinenumberedLevel2 style='margin-top:0in;mso-list:l6 level2 lfo2'><![if !supportLists]><span
 lang=EN-NZ style='mso-fareast-font-family:Arial;mso-no-proof:no'><span
-style='mso-list:Ignore'>10.5<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
+style='mso-list:Ignore'>10.4<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
 </span></span></span><![endif]><span lang=EN-NZ style='mso-bidi-font-family:
 Calibri;mso-bidi-theme-font:minor-latin;mso-no-proof:no'>If any part or
 provision of these Terms is or becomes illegal, unenforceable, or invalid, that
@@ -1989,12 +2453,12 @@ lang=EN-NZ style='mso-no-proof:no'><o:p></o:p></span></p>
 
 <p class=OutlinenumberedLevel2 style='margin-top:0in;mso-list:l6 level2 lfo2'><![if !supportLists]><span
 lang=EN-NZ style='mso-fareast-font-family:Arial;mso-no-proof:no'><span
-style='mso-list:Ignore'>10.6<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
+style='mso-list:Ignore'>10.5<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
 </span></span></span><![endif]><span lang=EN-NZ style='mso-bidi-font-family:
 Calibri;mso-bidi-theme-font:minor-latin;mso-no-proof:no'>These Terms set out
 everything agreed by the parties relating to your use of the Website and supersede
 and cancel anything discussed, exchanged or agreed prior to you agreeing to
-these Terms.</span><span lang=EN-NZ
+these Terms.<span style='mso-spacerun:yes'> </span></span><span lang=EN-NZ
 style='mso-no-proof:no'>The parties have not relied on any representation,
 warranty or agreement relating to the Website that is not expressly set out in
 the Terms, and no such representation, warranty or agreement has any effect
