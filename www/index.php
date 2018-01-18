@@ -83,22 +83,22 @@
                             or, Sign In</p>
                         <form name="loginform" id="loginform" class="login" action="market/checklogin.php"
                               method="post">
-                            <input  name="username" placeholder="Email" type="text" style="color:black;" value="<?php
+                            <input  name="username" placeholder="Email" type="text"  value="<?php
                              if(isset($_GET['l'])){
                                echo $_GET['l'];
                              }
 
                             ?>"/>
-                            <input name="password" placeholder="Password" type="password" style="color:black;"/>
+                            <input name="password" placeholder="Password" type="password" />
 
 
                             <div class="remember-forgot">
                                 <div class="row">
                                     <div class="col-md-12">
-                                        <a href="" class="forgot-pass pull-left"
+                                        <!--  <a href="" class="forgot-pass pull-left"
                                            style="color: white !important;">Forgot Password</a>
 
-                                        <!--<div class="checkbox pull-right">
+                                      <div class="checkbox pull-right">
                                             <label>
                                                 <input type="checkbox"/>
                                                 Remember Me

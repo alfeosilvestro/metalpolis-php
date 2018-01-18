@@ -85,7 +85,7 @@
 				$dt = $db->insert('company_notification', $dataArray);
 
         $email = "";
-        $sql = "SELECT * FROM `m_user` t1 where Status = 1 and Confirmed = 1 AND M_Company_Id = " . $selected_supplier_id;
+        $sql = "SELECT * FROM `m_user` t1 where Status = 1 and Confirmed = 1 AND M_Company_Id = " . $buyer_id;
         $result = $conn->query($sql);
         if (isset($result)){
           if ($result->num_rows > 0) {
@@ -93,7 +93,7 @@
             while($row = $result->fetch_assoc()) {
               $email = $email .  $row["EmailAddress"];
             }
-            sendEmailforNotification($email,$Message, $Message);
+            //sendEmailforNotification($email,$Message, $Message);
           }
          }
 
@@ -226,7 +226,7 @@
 
 	<div class="box box-default">
         <div class="box-header with-border">
-            <h3 class="box-title">Note/Comment to Buyyer</h3>
+            <h3 class="box-title">Note/Comment to Buyer</h3>
 			<div class="box-tools pull-right">
                 <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
                 </button>
@@ -237,7 +237,7 @@
         <div class="box-body">
             <div class="row">
                 <div class="col-sm-12">
-					<textarea rows="4" cols="170" name="comment"></textarea>
+					<textarea rows="4" cols="150" name="comment"></textarea>
 
                 </div>
             </div>
@@ -381,7 +381,7 @@
 		$rfq_ref = "";
 	}
 
-  
+
 
   function sendEmailforNotification($email,$subject, $message){
 		$mail_to = $email;

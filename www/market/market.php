@@ -354,7 +354,7 @@
 						 		while($row = $result->fetch_assoc()) {
 									$email = $email .  $row["EmailAddress"];
 								}
-								sendEmailforNotification($email,$Message, $Message);
+								//sendEmailforNotification($email,$Message, $Message);
 							}
 						 }
 
@@ -545,7 +545,7 @@
 								while($row = $result->fetch_assoc()) {
 									$email = $email .  $row["EmailAddress"];
 								}
-								sendEmailforNotification($email,$Message, $Message);
+								//sendEmailforNotification($email,$Message, $Message);
 							}
 						 }
 					}
@@ -645,7 +645,7 @@
 					while($row = $result->fetch_assoc()) {
 						$email = $email .  $row["EmailAddress"];
 					}
-					sendEmailforNotification($email,$Message, $Message);
+					//sendEmailforNotification($email,$Message, $Message);
 				}
 			 }
 
@@ -877,7 +877,7 @@
 						while($row = $result->fetch_assoc()) {
 							$email = $email .  $row["EmailAddress"];
 						}
-						sendEmailforNotification($email,$Message, $Message);
+						//sendEmailforNotification($email,$Message, $Message);
 					}
 				 }
 			}else{
@@ -904,7 +904,7 @@
 					while($row = $result->fetch_assoc()) {
 						$email = $email .  $row["EmailAddress"];
 					}
-					sendEmailforNotification($email,$Message, $Message);
+					//sendEmailforNotification($email,$Message, $Message);
 				}
 			 }
 
@@ -980,7 +980,7 @@
 							 		while($row1 = $result1->fetch_assoc()) {
 										$email = $email .  $row1["EmailAddress"].";";
 									}
-									sendEmailforNotification($email,$Message, $Message);
+									//sendEmailforNotification($email,$Message, $Message);
 								}
 							 }
 						}
@@ -1024,7 +1024,7 @@
 						while($row = $result->fetch_assoc()) {
 							$email = $email .  $row["EmailAddress"];
 						}
-						sendEmailforNotification($email,$Message, $Message);
+						//sendEmailforNotification($email,$Message, $Message);
 					}
 				 }
 
@@ -1045,7 +1045,7 @@
 						while($row = $result->fetch_assoc()) {
 							$email = $email .  $row["EmailAddress"];
 						}
-						sendEmailforNotification($email,$Message, $Message);
+						//sendEmailforNotification($email,$Message, $Message);
 					}
 				 }
 
@@ -1076,7 +1076,7 @@
 						while($row = $result->fetch_assoc()) {
 							$email = $email .  $row["EmailAddress"];
 						}
-						sendEmailforNotification($email,$Message, $Message);
+						//sendEmailforNotification($email,$Message, $Message);
 					}
 				 }
 

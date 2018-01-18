@@ -980,7 +980,6 @@ $("#btn_Send").click(function (e) {
 
     $('#btnSubmit').on('click', function(){
       var due_date = $('input[name=due_date]').val();
-      alert(due_date);
       $.ajax({
              type: "GET",
              url: "market.php?function=EditDueDate&rfq_id=<?php echo $rfq_id;?>&due_date=" + due_date,

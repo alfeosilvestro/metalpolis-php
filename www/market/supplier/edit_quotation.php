@@ -243,7 +243,7 @@
         <div class="box-body">
             <div class="row">
                 <div class="col-sm-12">
-					<textarea rows="4" cols="170" name="comment"><?php echo $Comments;?>
+					<textarea rows="4" cols="150" name="comment"><?php echo $Comments;?>
 					</textarea>
 
                 </div>
