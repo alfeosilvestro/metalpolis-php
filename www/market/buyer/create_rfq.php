@@ -115,7 +115,7 @@
                     </div>
                     <div class="form-group">
                         <label>Contact Person Last Name</label>
-                        <input name="last_name" type="text"  class="form-control" value="<?php echo $username; ?>" placeholder="Last Name">
+                        <input name="last_name" type="text"  class="form-control" value="" placeholder="Last Name">
                     </div>
                     <div class="form-group">
                         <label>Due Date</label>

@@ -53,11 +53,11 @@ if(($_SESSION['usertype'] == 'Buyer')){
   $result = $conn->query($sql);
   $count_quotation_submitted = $result->num_rows;
 
-  $sql = $query = "SELECT t1.Id, t1.DocumentNo, t1.Title, t1.CreatedDate, t2.Name as Status FROM t_document t1 Inner Join c_codetable t2 on t2.Id = t1.C_QuotationStatus Where t1.Status = 1 and C_DocumentType = 7 and t1.C_QuotationStatus in (17) and t1.M_User_Id = ". $userid;
+  $sql = $query = "SELECT t1.Id, t1.DocumentNo, t1.Title, t1.CreatedDate, t2.Name as Status FROM t_document t1 Inner Join c_codetable t2 on t2.Id = t1.C_QuotationStatus Where t1.Status = 1 and C_DocumentType = 7 and t1.C_QuotationStatus in (18) and t1.M_User_Id = ". $userid;
   $result = $conn->query($sql);
   $count_quotation_approved = $result->num_rows;
 
-  $sql = $query = "SELECT t1.Id, t1.DocumentNo, t1.Title, t1.CreatedDate, t2.Name as Status FROM t_document t1 Inner Join c_codetable t2 on t2.Id = t1.C_QuotationStatus Where t1.Status = 1 and C_DocumentType = 7 and t1.C_QuotationStatus in (18) and t1.M_User_Id = ". $userid;
+  $sql = $query = "SELECT t1.Id, t1.DocumentNo, t1.Title, t1.CreatedDate, t2.Name as Status FROM t_document t1 Inner Join c_codetable t2 on t2.Id = t1.C_QuotationStatus Where t1.Status = 1 and C_DocumentType = 7 and t1.C_QuotationStatus in (19) and t1.M_User_Id = ". $userid;
   $result = $conn->query($sql);
   $count_quotation_rejected = $result->num_rows;
 
