@@ -287,10 +287,10 @@ INSERT INTO `md_companyrating` (`Id`, `Company_Id`, `User_Id`, `SpeedOfQuotation
 DELIMITER $$
 CREATE TRIGGER `AvgCompanyRating` AFTER INSERT ON `md_companyrating` FOR EACH ROW BEGIN
     DECLARE AvgSpeedofQuotation decimal(10,2);
-    
+
     SET @AvgSpeedofQuotation  := (Select AVG((SpeedOfQuotation + SpeedofDelivery + ServiceQuality + Price) / 4) FROM md_companyrating WHERE Company_Id = New.Company_Id GROUP BY Company_Id);
 
-   UPDATE m_company 
+   UPDATE m_company
 	SET SupplierAvgRating = @AvgSpeedofQuotation
 	WHERE Id = New.Company_Id;
 END
@@ -703,8 +703,6 @@ INSERT INTO `m_services` (`Id`, `M_Parent_Services_Id`, `ServiceName`, `C_Metal_
 (129, 114, 'Wire', NULL, '0000-00-00 00:00:00', 'System', NULL, 'System', 1, NULL, NULL),
 (130, 114, 'Others', NULL, '0000-00-00 00:00:00', 'System', NULL, 'System', 1, NULL, NULL),
 (131, NULL, 'Fabrication Services', NULL, '0000-00-00 00:00:00', 'System', NULL, 'System', 1, NULL, NULL),
-(132, 131, 'Provide Material (Yes, No)', NULL, '0000-00-00 00:00:00', 'System', NULL, 'System', 1, NULL, NULL),
-(133, 131, 'Provide Transport (Yes, No)', NULL, '0000-00-00 00:00:00', 'System', NULL, 'System', 1, NULL, NULL),
 (134, 131, 'CNC Cutting (Plate/Sheet only)', NULL, '0000-00-00 00:00:00', 'System', NULL, 'System', 1, NULL, NULL),
 (135, 134, 'Mild Steel', NULL, '0000-00-00 00:00:00', 'System', NULL, 'System', 1, NULL, NULL),
 (136, 135, 'Oxy-Fuel (Flame)', NULL, '0000-00-00 00:00:00', 'System', NULL, 'System', 1, NULL, NULL),
@@ -2422,8 +2420,8 @@ INSERT INTO `t_document` (`Id`, `Title`, `C_DocumentType`, `ShortDescription`, `
 -- Triggers `t_document`
 --
 DELIMITER $$
-CREATE TRIGGER `SaveQuotationsCount` AFTER UPDATE ON `t_document` FOR EACH ROW UPDATE m_company 
-	SET AwardedQuotation =1,AwardedQuotation = 1 
+CREATE TRIGGER `SaveQuotationsCount` AFTER UPDATE ON `t_document` FOR EACH ROW UPDATE m_company
+	SET AwardedQuotation =1,AwardedQuotation = 1
 	WHERE Id = 1
 $$
 DELIMITER ;

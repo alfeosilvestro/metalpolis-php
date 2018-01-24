@@ -174,7 +174,7 @@
                     </div>
                     <div class="form-group">
                         <label>Bid Price</label>
-                        <input name="bid_price" type="number" class="form-control pull-right" placeholder="Please enter bid price">
+                        <input id="bid_price" name="bid_price" type="number" class="form-control pull-right" placeholder="Please enter bid price">
                     </div>
                 </div>
             </div>
@@ -306,7 +306,10 @@
 		row.remove();
 		}
 
-
+    $("input[id='bid_price']").keyup(function () {
+    var bid_price = $("input[id='bid_price']").val();
+    $("input[id='bid_price']").val(parseInt(bid_price));
+    });
 
 		$("#btnsave_quotation_top").click(function (e) {
 
