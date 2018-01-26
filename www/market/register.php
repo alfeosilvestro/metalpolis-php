@@ -282,7 +282,11 @@
 
 
 								                            <ul class="list-inline pull-right">
+																							<li>
+																									<button type="button" class="btn btn-default prev-step">Previous</button>
+																							</li>
 								                                <li>
+
 								                                    <button type="button" class="btn btn-primary next-step next-step1  hide">Accept and Continue</button>
 																										<button type="submit" class="btn btn-primary buyer-step hide" id="btncreate_buyer">Accept and Register</button>
 								                                </li>

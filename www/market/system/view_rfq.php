@@ -264,12 +264,14 @@ $FinalClosingDate = "";
              <?php
 
            if($rfq_statusid == 10){
+             if(($_SESSION['usertype'] == 'Buyer')){
                ?>
               &nbsp;  <a href="#" id="btnEditDueDate" class="btn btn-info"  onclick="editFinalDate()">
                    <i class="fa fa-pencil-square-o"></i>
                  Edit Due Date
                </a>
              <?php
+           }
            }
 
            ?>
