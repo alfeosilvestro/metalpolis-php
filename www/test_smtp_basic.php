@@ -45,9 +45,6 @@ $address = "thantsinaung92@gmail.com";
 $mail->AddAddress($address, "John Doe");
 
 
-
-
-
 try {
 
   if(!$mail->Send()) {

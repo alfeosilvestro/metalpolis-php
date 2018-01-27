@@ -237,7 +237,7 @@
         <div class="box-body">
             <div class="row">
                 <div class="col-sm-12">
-					<textarea rows="4" cols="150" name="comment"></textarea>
+					<textarea rows="4" cols="100" name="comment"></textarea>
 
                 </div>
             </div>

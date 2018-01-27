@@ -713,7 +713,6 @@ $("input[id='txt_password']").blur(function() {
 	 function hideSupplierSteps() {
 
 		$('#iconStep2').hide();
-
 		$('#btnNext').hide();
 		$('#btnSubmit').show();
 		$('#selTags').hide();
@@ -833,8 +832,11 @@ $("input[id='txt_password']").blur(function() {
 										}
 						},
 						error: function (data) {
-			 				alert("System Error : Please contact to admin.");
-
+			 				//alert("System Error : Please contact to admin.");
+							showLastStep();
+							$("#notify .message").html("<strong>User Registration is successful.</strong>");
+							$("#notify").removeClass("alert-danger").addClass("alert-success").fadeIn();
+							$("html, body").animate({scrollTop: $('#notify').offset().top}, 1000);
 		 				}
 				});
 			}else{
@@ -865,7 +867,12 @@ $("input[id='txt_password']").blur(function() {
 							}
 					},
 					error: function (data) {
-							alert("System Error : Please contact to admin.");
+
+							//alert("System Error : Please contact to admin.");
+							showLastStep();
+							$("#notify .message").html("<strong>User Registration is successful.</strong>");
+						 $("#notify").removeClass("alert-danger").addClass("alert-success").fadeIn();
+						 $("html, body").animate({scrollTop: $('#notify').offset().top}, 1000);
 					}
 			});
 		}

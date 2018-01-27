@@ -352,7 +352,7 @@
 							if ($result->num_rows > 0) {
 							// output data of each row
 						 		while($row = $result->fetch_assoc()) {
-									$email = $email .  $row["EmailAddress"]."; ";
+									$email = $email .  $row["EmailAddress"];
 								}
 								sendEmailforNotification($email,$Message, $Message);
 							}
@@ -543,7 +543,7 @@
 							if ($result->num_rows > 0) {
 							// output data of each row
 								while($row = $result->fetch_assoc()) {
-									$email = $email .  $row["EmailAddress"]."; ";
+									$email = $email .  $row["EmailAddress"];
 								}
 								sendEmailforNotification($email,$Message, $Message);
 							}
@@ -643,7 +643,7 @@
 				if ($result->num_rows > 0) {
 				// output data of each row
 					while($row = $result->fetch_assoc()) {
-						$email = $email .  $row["EmailAddress"]."; ";
+						$email = $email .  $row["EmailAddress"];
 					}
 					sendEmailforNotification($email,$Message, $Message);
 				}
@@ -865,7 +865,7 @@
 
 
 				$Message = "$company_name has sent you a clarification on your document.";
-				$dataArray = array('Document' => $rfq_id, 'First_Opened_User' => $askinguser_id, 'Receiving_Company' => $document_owner_companyid, 'Message' => $Message ,'Open_Status' => '22', 'Created_Date' => $CreatedDate, 'Created_By' => $askinguser_id,'Status' => "1", 'Type' => 'Comment');
+				$dataArray = array('Document' => $rfq_id, 'First_Opened_User' => $askinguser_id, 'Receiving_Company' => $document_owner_companyid, 'Message' => $Message ,'Open_Status' => '22', 'Created_Date' => $CreatedDate, 'Created_By' => $CreatedBy,'Status' => "1", 'Type' => 'Comment');
 				$dt = $db->insert('company_notification', $dataArray);
 
 				$email = "";
@@ -875,7 +875,7 @@
 					if ($result->num_rows > 0) {
 					// output data of each row
 						while($row = $result->fetch_assoc()) {
-							$email = $email .  $row["EmailAddress"]."; ";
+							$email = $email .  $row["EmailAddress"];
 						}
 						sendEmailforNotification($email,$Message, $Message);
 					}
@@ -892,7 +892,7 @@
 			$db->update('t_clarifications', $dataArray,$where);
 
 			$Message = "$company_name has replied on your comment.";
-			$dataArray = array('Document' => $rfq_id, 'First_Opened_User' => $askinguser_id, 'Receiving_Company' => $document_owner_companyid, 'Message' => $Message ,'Open_Status' => '22', 'Created_Date' => $CreatedDate, 'Created_By' => $askinguser_id,'Status' => "1", 'Type' => 'Reply');
+			$dataArray = array('Document' => $rfq_id, 'First_Opened_User' => $askinguser_id, 'Receiving_Company' => $document_owner_companyid, 'Message' => $Message ,'Open_Status' => '22', 'Created_Date' => $CreatedDate, 'Created_By' => $CreatedBy,'Status' => "1", 'Type' => 'Reply');
 			$dt = $db->insert('company_notification', $dataArray);
 
 			$email = "";
@@ -902,7 +902,7 @@
 				if ($result->num_rows > 0) {
 				// output data of each row
 					while($row = $result->fetch_assoc()) {
-						$email = $email .  $row["EmailAddress"]."; ";
+						$email = $email .  $row["EmailAddress"];
 					}
 					sendEmailforNotification($email,$Message, $Message);
 				}
@@ -978,7 +978,7 @@
 								if ($result1->num_rows > 0) {
 								// output data of each row
 							 		while($row1 = $result1->fetch_assoc()) {
-										$email = $email .  $row1["EmailAddress"]."; ";
+										$email = $email .  $row1["EmailAddress"].";";
 									}
 									sendEmailforNotification($email,$Message, $Message);
 								}
@@ -1022,7 +1022,7 @@
 					if ($result->num_rows > 0) {
 					// output data of each row
 						while($row = $result->fetch_assoc()) {
-							$email = $email .  $row["EmailAddress"]."; ";
+							$email = $email .  $row["EmailAddress"];
 						}
 						sendEmailforNotification($email,$Message, $Message);
 					}
@@ -1043,7 +1043,7 @@
 					if ($result->num_rows > 0) {
 					// output data of each row
 						while($row = $result->fetch_assoc()) {
-							$email = $email .  $row["EmailAddress"]."; ";
+							$email = $email .  $row["EmailAddress"];
 						}
 						sendEmailforNotification($email,$Message, $Message);
 					}
@@ -1074,7 +1074,7 @@
 					if ($result->num_rows > 0) {
 					// output data of each row
 						while($row = $result->fetch_assoc()) {
-							$email = $email .  $row["EmailAddress"]."; ";
+							$email = $email .  $row["EmailAddress"];
 						}
 						sendEmailforNotification($email,$Message, $Message);
 					}
@@ -1218,6 +1218,70 @@
 
 
 	function sendEmailforNotification($email,$subject, $message){
+		$mail_to = $email;
+		//error_reporting(E_STRICT);
+		error_reporting(E_ERROR);
+		date_default_timezone_set('Asia/Singapore');
 
+		require_once('../class.phpmailer.php');
+		//include("class.smtp.php"); // optional, gets called from within class.phpmailer.php if not already loaded
+
+		$from_mail = "info@metalpolis.com";
+		$from_name = "Metalpolis";
+		$to_address = $email;
+		$to_name = "Info";
+		//$subject = "Verification for registeration at Metalpolis";
+		//$message = $message;
+		$smtp_host = "127.0.0.1";
+		$smtp_port = 25;
+		// $smtp_username = "info@metalpolis.com";
+		// $smtp_password = "12345678";
+		$smtp_username = "";
+		$smtp_password = "";
+		//$smtp_debug = 2;
+
+		$mail             = new PHPMailer();
+
+		//$message             = file_get_contents('contents.html');
+		//$message             = eregi_replace("[\]",'',$message);
+
+		$mail->IsSMTP(); // telling the class to use SMTP
+		$mail->Host       = $smtp_host; // SMTP server
+		//$mail->SMTPDebug  = $smtp_debug;                     // enables SMTP debug information (for testing)
+																							 // 1 = errors and messages
+																							 // 2 = messages only
+		$mail->SMTPAuth   = false;                  // enable SMTP authentication
+		$mail->Port       = $smtp_port;                    // set the SMTP port for the GMAIL server
+		//$mail->Username   = $smtp_username;       // SMTP account username
+		//$mail->Password   = $smtp_password;        // SMTP account password
+
+		$mail->SetFrom($from_address, $from_name);
+
+		$mail->AddReplyTo($from_address, $from_name);
+
+		$mail->Subject    = $subject;
+
+		$mail->AltBody    = $message; // optional, comment out and test
+
+		$mail->MsgHTML($message);
+
+		$mail->AddAddress($to_address, $to_name);
+
+		//$mail->AddAttachment("images/phpmailer.gif");      // attachment
+		//$mail->AddAttachment("images/phpmailer_mini.gif"); // attachment
+
+
+
+		try {
+
+			if(!$mail->Send()) {
+
+			} else {
+
+			}
+		}
+		catch(Exception $e) {
+
+		}
 	}
 ?>

@@ -747,7 +747,10 @@ if(($rfq_statusid == '10')){?>
             if (isset($result_user)){
           		if ($result_user->num_rows > 0) {
                 while($row_user = $result_user->fetch_assoc()) {
-                  $asking_person = $row_user["UserName"];
+                  $asking_person = "";
+                    if($row["make_public"] != "1"){
+                      $asking_person = $row_user["UserName"];
+                    }
                   if($row_user["C_UserType"] == 2 ){
                     $asking_type = "Supplier";
                   }elseif($row_user["C_UserType"] == 3 ){

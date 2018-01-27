@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jan 18, 2018 at 02:43 PM
+-- Generation Time: Jan 27, 2018 at 06:36 PM
 -- Server version: 10.1.28-MariaDB
 -- PHP Version: 7.1.11
 
@@ -48,45 +48,8 @@ CREATE TABLE `company_notification` (
 --
 
 INSERT INTO `company_notification` (`Id`, `Document`, `First_Opened_User`, `Receiving_Company`, `Message`, `Open_Status`, `Created_Date`, `Created_By`, `Modified_Date`, `Modified_By`, `Status`, `Type`) VALUES
-(1, 1, 3, 7, 'AAAAA has invited you to participate in RFQ, RFQ_Submitted_1', 22, '2017-11-19 12:22:29', '3', NULL, NULL, 1, 'Invited'),
-(2, 2, 3, 15, 'AAAAA has invited you to participate in RFQ, RFQ_Submitted_2', 22, '2017-12-16 04:53:59', '3', NULL, NULL, 1, 'Invited'),
-(3, 4, 11, 3, 'mr it has interested on your RFQ_Submitted_2.', 22, '2017-12-16 09:03:55', '11', NULL, NULL, 1, 'Create_Quotation	'),
-(4, 4, 11, 3, 'mr it has registered interest.', 22, '2017-12-16 09:08:10', '11', NULL, NULL, 1, 'Create_Quotation'),
-(5, 4, 3, 15, 'Your Quotation(4) has been awareded to your company.', 22, '2017-12-16 09:12:41', '3', NULL, NULL, 1, 'Accepted'),
-(6, 6, 3, 15, 'AAAAA has invited you to participate in RFQ, RFQ_Submitted_4', 22, '2017-12-17 16:49:33', '3', NULL, NULL, 1, 'Invited'),
-(7, 7, 11, 3, 'mr it has interested on your RFQ_Submitted_4.', 22, '2017-12-17 16:50:00', '11', NULL, NULL, 1, 'Create_Quotation	'),
-(8, 7, 11, 3, 'mr it has registered interest.', 22, '2017-12-17 16:50:39', '11', NULL, NULL, 1, 'Create_Quotation'),
-(9, 7, 3, 15, 'Your Quotation(7) has been awareded to your company.', 22, '2017-12-17 17:03:37', '3', NULL, NULL, 1, 'Accepted'),
-(10, 7, 3, 15, 'Your Quotation(7) has been awareded to your company.', 22, '2017-12-17 17:04:50', '3', NULL, NULL, 1, 'Accepted'),
-(11, 7, 3, 15, 'Your Quotation(7) has been awareded to your company.', 22, '2017-12-17 17:05:23', '3', NULL, NULL, 1, 'Accepted'),
-(12, 7, 3, 15, 'Your Quotation(7) has been awareded to your company.', 22, '2017-12-17 17:08:00', '3', NULL, NULL, 1, 'Accepted'),
-(13, 7, 3, 15, 'Your Quotation(7) has been awareded to your company.', 22, '2017-12-17 17:12:23', '3', NULL, NULL, 1, 'Accepted'),
-(14, 7, 3, 15, 'Your Quotation(7) has been awareded to your company.', 22, '2017-12-17 17:13:37', '3', NULL, NULL, 1, 'Accepted'),
-(15, 7, 3, 15, 'Your Quotation(7) has been awareded to your company.', 22, '2017-12-17 17:17:50', '3', NULL, NULL, 1, 'Accepted'),
-(16, 8, 11, 15, 'mr it has invited you to participate in RFQ, RFQ_Submitted_5', 22, '2017-12-28 15:03:51', '11', NULL, NULL, 1, 'Invited'),
-(17, 9, 11, 15, 'mr it has invited you to participate in RFQ, RFQ_Submitted_6', 22, '2017-12-28 15:04:04', '11', NULL, NULL, 1, 'Invited'),
-(18, 10, 11, 15, 'mr it has invited you to participate in RFQ, RFQ_Submitted_7', 22, '2017-12-28 15:06:05', '11', NULL, NULL, 1, 'Invited'),
-(19, 10, 11, 15, 'mr it has withdrawn in RFQ, RFQ_Submitted_7. All Quotation will be automatically locked.', 22, '2017-12-28 15:26:55', '11', NULL, NULL, 1, 'Withdrawn'),
-(20, 11, 11, 4, 'mr it has invited you to participate in RFQ, RFQ_Submitted_8', 22, '2017-12-28 15:36:19', '11', NULL, NULL, 1, 'Invited'),
-(21, 12, 4, 15, 'BBBBB has interested on your RFQ_Submitted_8.', 22, '2017-12-28 15:38:06', '4', NULL, NULL, 1, 'Create_Quotation	'),
-(22, 12, 4, 15, 'BBBBB has registered interest.', 22, '2017-12-28 15:38:23', '4', NULL, NULL, 1, 'Create_Quotation'),
-(23, 12, 11, 4, 'Your Quotation(12) has been awareded to your company.', 22, '2017-12-28 15:38:46', '11', NULL, NULL, 1, 'Accepted'),
-(24, 13, 11, 4, 'mr it has invited you to participate in RFQ, RFQ_Submitted_9', 22, '2017-12-28 16:04:11', '11', NULL, NULL, 1, 'Invited'),
-(25, 14, 4, 15, 'BBBBB has interested on your RFQ_Submitted_9.', 22, '2017-12-28 16:04:34', '4', NULL, NULL, 1, 'Create_Quotation	'),
-(26, 14, 4, 15, 'BBBBB has registered interest.', 22, '2017-12-28 16:05:15', '4', NULL, NULL, 1, 'Create_Quotation'),
-(27, 15, 11, 15, 'mr it has invited you to participate in RFQ, RFQ_Submitted_10', 22, '2018-01-03 13:43:08', '11', NULL, NULL, 1, 'Invited'),
-(28, 16, 11, 4, 'mr it has invited you to participate in RFQ, RFQ_Submitted_11', 22, '2018-01-09 15:48:09', '11', NULL, NULL, 1, 'Invited'),
-(29, 17, 11, 4, 'mr it has invited you to participate in RFQ, RFQ_Submitted_12', 22, '2018-01-09 15:48:18', '11', NULL, NULL, 1, 'Invited'),
-(30, 18, 11, 4, 'mr it has invited you to participate in RFQ, RFQ_Submitted_13', 22, '2018-01-09 15:54:54', '11', NULL, NULL, 1, 'Invited'),
-(31, 19, 11, 4, 'mr it has invited you to participate in RFQ, RFQ_Submitted_14', 22, '2018-01-09 15:56:01', '11', NULL, NULL, 1, 'Invited'),
-(32, 20, 11, 4, 'mr it has invited you to participate in RFQ, RFQ_Submitted_15', 22, '2018-01-09 16:00:06', '11', NULL, NULL, 1, 'Invited'),
-(33, 21, 11, 4, 'mr it has invited you to participate in RFQ, RFQ_Submitted_16', 22, '2018-01-09 16:05:52', '11', NULL, NULL, 1, 'Invited'),
-(34, 22, 11, 4, 'mr it has invited you to participate in RFQ, RFQ_Submitted_17', 22, '2018-01-09 16:08:39', '11', NULL, NULL, 1, 'Invited'),
-(35, 23, 11, 15, 'mr it has invited you to participate in RFQ, RFQ_Submitted_18', 22, '2018-01-09 16:10:33', '11', NULL, NULL, 1, 'Invited'),
-(36, 24, 11, 4, 'mr it has invited you to participate in RFQ, RFQ_Submitted_19', 22, '2018-01-18 12:35:17', '11', NULL, NULL, 1, 'Invited'),
-(37, 25, 4, 15, 'BBBBB has interested on your RFQ_Submitted_19.', 22, '2018-01-18 12:39:59', '4', NULL, NULL, 1, 'Create_Quotation	'),
-(38, 26, 4, 15, 'BBBBB has interested on your RFQ_Submitted_19.', 22, '2018-01-18 12:40:50', '4', NULL, NULL, 1, 'Create_Quotation	'),
-(39, 26, 4, 15, 'BBBBB has submitted quotation on RFQ_Submitted_19.', 22, '2018-01-18 12:42:09', '4', NULL, NULL, 1, 'Create_Quotation');
+(1, 1, 11, 4, 'mr it has invited you to participate in RFQ, RFQ_Submitted_1', 22, '2018-01-27 17:23:15', '11', NULL, NULL, 1, 'Invited'),
+(2, 1, 4, 15, 'BBBBB has sent you a clarification on your document.', 22, '2018-01-27 17:34:10', 'system', NULL, NULL, 1, 'Comment');
 
 -- --------------------------------------------------------
 
@@ -212,27 +175,7 @@ CREATE TABLE `document_number` (
 --
 
 INSERT INTO `document_number` (`Id`, `Name`, `Prefix`, `Suffix`, `Format`, `Running_Number`) VALUES
-(1, 'RFQ', 'Submitted', 'RFQ', 'RFQ', 1),
-(2, 'RFQ', 'Draft', 'RFQ', 'RFQ', 1),
-(3, 'RFQ', 'Submitted', 'RFQ', 'RFQ', 2),
-(4, 'RFQ', 'Draft', 'RFQ', 'RFQ', 2),
-(5, 'RFQ', 'Submitted', 'RFQ', 'RFQ', 3),
-(6, 'RFQ', 'Submitted', 'RFQ', 'RFQ', 4),
-(7, 'RFQ', 'Submitted', 'RFQ', 'RFQ', 5),
-(8, 'RFQ', 'Submitted', 'RFQ', 'RFQ', 6),
-(9, 'RFQ', 'Submitted', 'RFQ', 'RFQ', 7),
-(10, 'RFQ', 'Submitted', 'RFQ', 'RFQ', 8),
-(11, 'RFQ', 'Submitted', 'RFQ', 'RFQ', 9),
-(12, 'RFQ', 'Submitted', 'RFQ', 'RFQ', 10),
-(13, 'RFQ', 'Submitted', 'RFQ', 'RFQ', 11),
-(14, 'RFQ', 'Submitted', 'RFQ', 'RFQ', 12),
-(15, 'RFQ', 'Submitted', 'RFQ', 'RFQ', 13),
-(16, 'RFQ', 'Submitted', 'RFQ', 'RFQ', 14),
-(17, 'RFQ', 'Submitted', 'RFQ', 'RFQ', 15),
-(18, 'RFQ', 'Submitted', 'RFQ', 'RFQ', 16),
-(19, 'RFQ', 'Submitted', 'RFQ', 'RFQ', 17),
-(20, 'RFQ', 'Submitted', 'RFQ', 'RFQ', 18),
-(21, 'RFQ', 'Submitted', 'RFQ', 'RFQ', 19);
+(1, 'RFQ', 'Submitted', 'RFQ', 'RFQ', 1);
 
 -- --------------------------------------------------------
 
@@ -259,38 +202,15 @@ CREATE TABLE `md_companyrating` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `md_companyrating`
---
-
-INSERT INTO `md_companyrating` (`Id`, `Company_Id`, `User_Id`, `SpeedOfQuotation`, `SpeedofDelivery`, `ServiceQuality`, `Price`, `SpeedofProcessing`, `Payment`, `Status`, `Created`, `CreatedBy`, `Title`, `Description`, `Ref_Document_Id`) VALUES
-(1, 2, 3, 2, 3, 2, 4, NULL, NULL, 1, '2017-12-10 07:28:18', '3', 'fff', '', NULL),
-(2, 2, 3, 0, 0, 0, 0, NULL, NULL, 1, '2017-12-10 09:10:09', '3', '', 'abc', NULL),
-(3, 2, 3, NULL, NULL, NULL, NULL, 5, 5, 1, '2017-12-10 09:10:09', '3', '', 'abc', NULL),
-(4, 3, 3, 4, 4, 3, 3, NULL, NULL, 1, '2017-12-10 09:41:20', '3', 'test', 'dkfadflajdf', NULL),
-(5, 3, 3, 4, 4, 3, 3, NULL, NULL, 1, '2017-12-10 09:41:21', '3', 'test', 'dkfadflajdf', NULL),
-(6, 15, 3, 5, 4, 5, 3, NULL, NULL, 1, '2017-12-17 17:18:06', '3', 'peter test', 'asdfsadf', NULL),
-(7, 4, 11, 5, 5, 4, 4, NULL, NULL, 1, '2017-12-28 15:41:41', '11', 'test', 'fsadfad', NULL),
-(8, 4, 11, 5, 5, 5, 5, NULL, NULL, 1, '2017-12-28 15:49:08', '11', 'testdasfadfsad', 'stafdsfasdfasdf', NULL),
-(9, 4, 11, 3, 3, 5, 5, NULL, NULL, 1, '2017-12-28 15:55:05', '11', 'cdsadfas', 'fadsfasdfa', 12),
-(11, 4, 11, 3, 3, 5, 5, NULL, NULL, 1, '2017-12-28 15:55:05', '11', 'cdsadfas', 'fadsfasdfa', 12),
-(12, 4, 11, 3, 3, 5, 5, NULL, NULL, 1, '2017-12-28 15:55:05', '11', 'cdsadfas', 'fadsfasdfa', 12),
-(13, 4, 11, 0, 3, 5, 5, NULL, NULL, 1, '2017-12-28 15:55:05', '11', 'cdsadfas', 'fadsfasdfa', 12),
-(14, 4, 11, 1, 3, 5, 5, NULL, NULL, 1, '2017-12-28 15:55:05', '11', 'cdsadfas', 'fadsfasdfa', 12),
-(15, 4, 11, 2, 1, 4, 2, NULL, NULL, 1, '2017-12-28 15:55:05', '11', 'cdsadfas', 'fadsfasdfa', 12),
-(16, 4, 11, 2, 1, 4, 2, NULL, NULL, 1, '2017-12-28 15:55:05', '11', 'test', 'test1', 12),
-(17, 4, 11, 2, 1, 4, 2, NULL, NULL, 1, '2017-12-28 15:55:05', '11', 'test', 'test1', 12),
-(18, 4, 11, 2, 1, 4, 2, NULL, NULL, 1, '2017-12-28 15:55:05', '11', 'test', 'test1', 12);
-
---
 -- Triggers `md_companyrating`
 --
 DELIMITER $$
 CREATE TRIGGER `AvgCompanyRating` AFTER INSERT ON `md_companyrating` FOR EACH ROW BEGIN
     DECLARE AvgSpeedofQuotation decimal(10,2);
-
+    
     SET @AvgSpeedofQuotation  := (Select AVG((SpeedOfQuotation + SpeedofDelivery + ServiceQuality + Price) / 4) FROM md_companyrating WHERE Company_Id = New.Company_Id GROUP BY Company_Id);
 
-   UPDATE m_company
+   UPDATE m_company 
 	SET SupplierAvgRating = @AvgSpeedofQuotation
 	WHERE Id = New.Company_Id;
 END
@@ -1035,10 +955,10 @@ INSERT INTO `m_services` (`Id`, `M_Parent_Services_Id`, `ServiceName`, `C_Metal_
 (463, 319, 'Item Size ( > 250mm[H] x 250mm[W] x 12m[L])', NULL, '0000-00-00 00:00:00', 'System', NULL, 'System', 1, NULL, NULL),
 (464, 320, 'Item Size ( < 50mm[H] x 50mm[W] x 12m[L])', NULL, '0000-00-00 00:00:00', 'System', NULL, 'System', 1, NULL, NULL),
 (465, 320, 'Item Size ( < 100mm[H] x 100mm[W] x 12m[L])', NULL, '0000-00-00 00:00:00', 'System', NULL, 'System', 1, NULL, NULL),
-(466, 320, 'Item Size ( < 150mm[H] x 150mm[W] x 12m[L])', NULL, '0000-00-00 00:00:00', 'System', NULL, 'System', 1, NULL, NULL);
-INSERT INTO `m_services` (`Id`, `M_Parent_Services_Id`, `ServiceName`, `C_Metal_Type`, `CreatedDate`, `CreatedBy`, `ModifiedDate`, `ModifiedBy`, `Status`, `Version`, `CommonShapeImage`) VALUES
+(466, 320, 'Item Size ( < 150mm[H] x 150mm[W] x 12m[L])', NULL, '0000-00-00 00:00:00', 'System', NULL, 'System', 1, NULL, NULL),
 (467, 320, 'Item Size ( < 200mm[H] x 200mm[W] x 12m[L])', NULL, '0000-00-00 00:00:00', 'System', NULL, 'System', 1, NULL, NULL),
-(468, 320, 'Item Size ( < 250mm[H] x 250mm[W] x 12m[L])', NULL, '0000-00-00 00:00:00', 'System', NULL, 'System', 1, NULL, NULL),
+(468, 320, 'Item Size ( < 250mm[H] x 250mm[W] x 12m[L])', NULL, '0000-00-00 00:00:00', 'System', NULL, 'System', 1, NULL, NULL);
+INSERT INTO `m_services` (`Id`, `M_Parent_Services_Id`, `ServiceName`, `C_Metal_Type`, `CreatedDate`, `CreatedBy`, `ModifiedDate`, `ModifiedBy`, `Status`, `Version`, `CommonShapeImage`) VALUES
 (469, 320, 'Item Size ( > 250mm[H] x 250mm[W] x 12m[L])', NULL, '0000-00-00 00:00:00', 'System', NULL, 'System', 1, NULL, NULL),
 (470, 321, 'Item Size ( < 50mm[H] x 50mm[W] x 12m[L])', NULL, '0000-00-00 00:00:00', 'System', NULL, 'System', 1, NULL, NULL),
 (471, 321, 'Item Size ( < 100mm[H] x 100mm[W] x 12m[L])', NULL, '0000-00-00 00:00:00', 'System', NULL, 'System', 1, NULL, NULL),
@@ -2232,7 +2152,63 @@ INSERT INTO `m_user` (`Id`, `EmailAddress`, `Password`, `UserName`, `C_UserType`
 (11, 'thantsinaung@mritmyanmar.com', 'nnhhyy66', 'Peter', 3, '2017-12-16 04:21:29', 'system', 'system', '2017-12-16 04:21:29', 1, 0, '0', NULL, 'Manager', '1233333', 15, 1, 1),
 (12, 'info1@mritmyanmar.com', 'nnhhyy66', 'John', 3, '2017-12-23 02:13:34', 'system', 'system', '2017-12-23 02:13:34', 1, 0, '0', NULL, 'staff', '123456', 16, 1, 1),
 (13, 'peterwang@mritmyanmar.com', 'nnhhyy66', 'Peter Wang', 3, '2017-12-23 02:14:28', 'system', 'system', '2017-12-23 02:14:28', 1, 0, '0', NULL, 'staff', '123456', 16, 1, 1),
-(14, 'info@mritmyanmar.com', '123456', 'TSA', 3, '2018-01-06 07:12:08', 'system', 'system', '2018-01-06 07:12:08', 1, 0, '0', NULL, 'Staff', '12333434', 12, 0, 0);
+(14, 'info@mritmyanmar.com', '123456', 'TSA', 3, '2018-01-06 07:12:08', 'system', 'system', '2018-01-06 07:12:08', 1, 0, '0', NULL, 'Staff', '12333434', 12, 0, 0),
+(15, 'testuserid@metalpolis.com', 'qwe12345', 'Testuser', 2, '2018-01-28 00:00:00', 'system', 'system', '2018-01-28 00:00:00', 1, 0, '0', NULL, 'Staff', '12333434', 17, 0, 0),
+(16, 'testuserid@metalpolis.com', 'qwe12345', 'Testuser', 2, '2018-01-28 00:00:00', 'system', 'system', '2018-01-28 00:00:00', 1, 0, '0', NULL, 'Staff', '12333435', 18, 0, 0),
+(17, 'testuserid@metalpolis.com', 'qwe12345', 'Testuser', 2, '2018-01-28 00:00:00', 'system', 'system', '2018-01-28 00:00:00', 1, 0, '0', NULL, 'Staff', '12333436', 19, 0, 0),
+(18, 'testuserid@metalpolis.com', 'qwe12345', 'Testuser', 2, '2018-01-28 00:00:00', 'system', 'system', '2018-01-28 00:00:00', 1, 0, '0', NULL, 'Staff', '12333437', 20, 0, 0),
+(19, 'testuserid@metalpolis.com', 'qwe12345', 'Testuser', 2, '2018-01-28 00:00:00', 'system', 'system', '2018-01-28 00:00:00', 1, 0, '0', NULL, 'Staff', '12333438', 21, 0, 0),
+(20, 'testuserid@metalpolis.com', 'qwe12345', 'Testuser', 2, '2018-01-28 00:00:00', 'system', 'system', '2018-01-28 00:00:00', 1, 0, '0', NULL, 'Staff', '12333439', 22, 0, 0),
+(21, 'testuserid@metalpolis.com', 'qwe12345', 'Testuser', 2, '2018-01-28 00:00:00', 'system', 'system', '2018-01-28 00:00:00', 1, 0, '0', NULL, 'Staff', '12333440', 23, 0, 0),
+(22, 'testuserid@metalpolis.com', 'qwe12345', 'Testuser', 2, '2018-01-28 00:00:00', 'system', 'system', '2018-01-28 00:00:00', 1, 0, '0', NULL, 'Staff', '12333441', 24, 0, 0),
+(23, 'testuserid@metalpolis.com', 'qwe12345', 'Testuser', 2, '2018-01-28 00:00:00', 'system', 'system', '2018-01-28 00:00:00', 1, 0, '0', NULL, 'Staff', '12333442', 25, 0, 0),
+(24, 'testuserid@metalpolis.com', 'qwe12345', 'Testuser', 2, '2018-01-28 00:00:00', 'system', 'system', '2018-01-28 00:00:00', 1, 0, '0', NULL, 'Staff', '12333443', 26, 0, 0),
+(25, 'testuserid@metalpolis.com', 'qwe12345', 'Testuser', 2, '2018-01-28 00:00:00', 'system', 'system', '2018-01-28 00:00:00', 1, 0, '0', NULL, 'Staff', '12333444', 27, 0, 0),
+(26, 'testuserid@metalpolis.com', 'qwe12345', 'Testuser', 2, '2018-01-28 00:00:00', 'system', 'system', '2018-01-28 00:00:00', 1, 0, '0', NULL, 'Staff', '12333445', 28, 0, 0),
+(27, 'testuserid@metalpolis.com', 'qwe12345', 'Testuser', 2, '2018-01-28 00:00:00', 'system', 'system', '2018-01-28 00:00:00', 1, 0, '0', NULL, 'Staff', '12333446', 29, 0, 0),
+(28, 'testuserid@metalpolis.com', 'qwe12345', 'Testuser', 2, '2018-01-28 00:00:00', 'system', 'system', '2018-01-28 00:00:00', 1, 0, '0', NULL, 'Staff', '12333447', 30, 0, 0),
+(29, 'testuserid@metalpolis.com', 'qwe12345', 'Testuser', 2, '2018-01-28 00:00:00', 'system', 'system', '2018-01-28 00:00:00', 1, 0, '0', NULL, 'Staff', '12333448', 31, 0, 0),
+(30, 'testuserid@metalpolis.com', 'qwe12345', 'Testuser', 2, '2018-01-28 00:00:00', 'system', 'system', '2018-01-28 00:00:00', 1, 0, '0', NULL, 'Staff', '12333449', 32, 0, 0),
+(31, 'testuserid@metalpolis.com', 'qwe12345', 'Testuser', 2, '2018-01-28 00:00:00', 'system', 'system', '2018-01-28 00:00:00', 1, 0, '0', NULL, 'Staff', '12333450', 33, 0, 0),
+(32, 'testuserid@metalpolis.com', 'qwe12345', 'Testuser', 2, '2018-01-28 00:00:00', 'system', 'system', '2018-01-28 00:00:00', 1, 0, '0', NULL, 'Staff', '12333451', 34, 0, 0),
+(33, 'testuserid@metalpolis.com', 'qwe12345', 'Testuser', 2, '2018-01-28 00:00:00', 'system', 'system', '2018-01-28 00:00:00', 1, 0, '0', NULL, 'Staff', '12333452', 35, 0, 0),
+(34, 'testuserid@metalpolis.com', 'qwe12345', 'Testuser', 2, '2018-01-28 00:00:00', 'system', 'system', '2018-01-28 00:00:00', 1, 0, '0', NULL, 'Staff', '12333453', 36, 0, 0),
+(35, 'testuserid@metalpolis.com', 'qwe12345', 'Testuser', 2, '2018-01-28 00:00:00', 'system', 'system', '2018-01-28 00:00:00', 1, 0, '0', NULL, 'Staff', '12333454', 37, 0, 0),
+(36, 'testuserid@metalpolis.com', 'qwe12345', 'Testuser', 2, '2018-01-28 00:00:00', 'system', 'system', '2018-01-28 00:00:00', 1, 0, '0', NULL, 'Staff', '12333455', 38, 0, 0),
+(37, 'testuserid@metalpolis.com', 'qwe12345', 'Testuser', 2, '2018-01-28 00:00:00', 'system', 'system', '2018-01-28 00:00:00', 1, 0, '0', NULL, 'Staff', '12333456', 39, 0, 0),
+(38, 'testuserid@metalpolis.com', 'qwe12345', 'Testuser', 2, '2018-01-28 00:00:00', 'system', 'system', '2018-01-28 00:00:00', 1, 0, '0', NULL, 'Staff', '12333457', 40, 0, 0),
+(39, 'testuserid@metalpolis.com', 'qwe12345', 'Testuser', 2, '2018-01-28 00:00:00', 'system', 'system', '2018-01-28 00:00:00', 1, 0, '0', NULL, 'Staff', '12333458', 41, 0, 0),
+(40, 'testuserid@metalpolis.com', 'qwe12345', 'Testuser', 2, '2018-01-28 00:00:00', 'system', 'system', '2018-01-28 00:00:00', 1, 0, '0', NULL, 'Staff', '12333459', 42, 0, 0),
+(41, 'testuserid@metalpolis.com', 'qwe12345', 'Testuser', 2, '2018-01-28 00:00:00', 'system', 'system', '2018-01-28 00:00:00', 1, 0, '0', NULL, 'Staff', '12333460', 43, 0, 0),
+(42, 'testuserid@metalpolis.com', 'qwe12345', 'Testuser', 2, '2018-01-28 00:00:00', 'system', 'system', '2018-01-28 00:00:00', 1, 0, '0', NULL, 'Staff', '12333461', 44, 0, 0),
+(43, 'testuserid@metalpolis.com', 'qwe12345', 'Testuser', 2, '2018-01-28 00:00:00', 'system', 'system', '2018-01-28 00:00:00', 1, 0, '0', NULL, 'Staff', '12333462', 45, 0, 0),
+(44, 'testuserid@metalpolis.com', 'qwe12345', 'Testuser', 2, '2018-01-28 00:00:00', 'system', 'system', '2018-01-28 00:00:00', 1, 0, '0', NULL, 'Staff', '12333463', 46, 0, 0),
+(45, 'testuserid@metalpolis.com', 'qwe12345', 'Testuser', 2, '2018-01-28 00:00:00', 'system', 'system', '2018-01-28 00:00:00', 1, 0, '0', NULL, 'Staff', '12333464', 47, 0, 0),
+(46, 'testuserid@metalpolis.com', 'qwe12345', 'Testuser', 2, '2018-01-28 00:00:00', 'system', 'system', '2018-01-28 00:00:00', 1, 0, '0', NULL, 'Staff', '12333465', 48, 0, 0),
+(47, 'testuserid@metalpolis.com', 'qwe12345', 'Testuser', 2, '2018-01-28 00:00:00', 'system', 'system', '2018-01-28 00:00:00', 1, 0, '0', NULL, 'Staff', '12333466', 49, 0, 0),
+(48, 'testuserid@metalpolis.com', 'qwe12345', 'Testuser', 2, '2018-01-28 00:00:00', 'system', 'system', '2018-01-28 00:00:00', 1, 0, '0', NULL, 'Staff', '12333467', 50, 0, 0),
+(49, 'testuserid@metalpolis.com', 'qwe12345', 'Testuser', 2, '2018-01-28 00:00:00', 'system', 'system', '2018-01-28 00:00:00', 1, 0, '0', NULL, 'Staff', '12333468', 51, 0, 0),
+(50, 'testuserid@metalpolis.com', 'qwe12345', 'Testuser', 2, '2018-01-28 00:00:00', 'system', 'system', '2018-01-28 00:00:00', 1, 0, '0', NULL, 'Staff', '12333469', 52, 0, 0),
+(51, 'testuserid@metalpolis.com', 'qwe12345', 'Testuser', 2, '2018-01-28 00:00:00', 'system', 'system', '2018-01-28 00:00:00', 1, 0, '0', NULL, 'Staff', '12333470', 53, 0, 0),
+(52, 'testuserid@metalpolis.com', 'qwe12345', 'Testuser', 2, '2018-01-28 00:00:00', 'system', 'system', '2018-01-28 00:00:00', 1, 0, '0', NULL, 'Staff', '12333471', 54, 0, 0),
+(53, 'testuserid@metalpolis.com', 'qwe12345', 'Testuser', 2, '2018-01-28 00:00:00', 'system', 'system', '2018-01-28 00:00:00', 1, 0, '0', NULL, 'Staff', '12333472', 55, 0, 0),
+(54, 'testuserid@metalpolis.com', 'qwe12345', 'Testuser', 2, '2018-01-28 00:00:00', 'system', 'system', '2018-01-28 00:00:00', 1, 0, '0', NULL, 'Staff', '12333473', 56, 0, 0),
+(55, 'testuserid@metalpolis.com', 'qwe12345', 'Testuser', 2, '2018-01-28 00:00:00', 'system', 'system', '2018-01-28 00:00:00', 1, 0, '0', NULL, 'Staff', '12333474', 57, 0, 0),
+(56, 'testuserid@metalpolis.com', 'qwe12345', 'Testuser', 2, '2018-01-28 00:00:00', 'system', 'system', '2018-01-28 00:00:00', 1, 0, '0', NULL, 'Staff', '12333475', 58, 0, 0),
+(57, 'testuserid@metalpolis.com', 'qwe12345', 'Testuser', 2, '2018-01-28 00:00:00', 'system', 'system', '2018-01-28 00:00:00', 1, 0, '0', NULL, 'Staff', '12333476', 59, 0, 0),
+(58, 'testuserid@metalpolis.com', 'qwe12345', 'Testuser', 2, '2018-01-28 00:00:00', 'system', 'system', '2018-01-28 00:00:00', 1, 0, '0', NULL, 'Staff', '12333477', 60, 0, 0),
+(59, 'testuserid@metalpolis.com', 'qwe12345', 'Testuser', 2, '2018-01-28 00:00:00', 'system', 'system', '2018-01-28 00:00:00', 1, 0, '0', NULL, 'Staff', '12333478', 61, 0, 0),
+(60, 'testuserid@metalpolis.com', 'qwe12345', 'Testuser', 2, '2018-01-28 00:00:00', 'system', 'system', '2018-01-28 00:00:00', 1, 0, '0', NULL, 'Staff', '12333479', 62, 0, 0),
+(61, 'testuserid@metalpolis.com', 'qwe12345', 'Testuser', 2, '2018-01-28 00:00:00', 'system', 'system', '2018-01-28 00:00:00', 1, 0, '0', NULL, 'Staff', '12333480', 63, 0, 0),
+(62, 'testuserid@metalpolis.com', 'qwe12345', 'Testuser', 2, '2018-01-28 00:00:00', 'system', 'system', '2018-01-28 00:00:00', 1, 0, '0', NULL, 'Staff', '12333481', 64, 0, 0),
+(63, 'testuserid@metalpolis.com', 'qwe12345', 'Testuser', 2, '2018-01-28 00:00:00', 'system', 'system', '2018-01-28 00:00:00', 1, 0, '0', NULL, 'Staff', '12333482', 65, 0, 0),
+(64, 'testuserid@metalpolis.com', 'qwe12345', 'Testuser', 2, '2018-01-28 00:00:00', 'system', 'system', '2018-01-28 00:00:00', 1, 0, '0', NULL, 'Staff', '12333483', 66, 0, 0),
+(65, 'testuserid@metalpolis.com', 'qwe12345', 'Testuser', 2, '2018-01-28 00:00:00', 'system', 'system', '2018-01-28 00:00:00', 1, 0, '0', NULL, 'Staff', '12333484', 67, 0, 0),
+(66, 'testuserid@metalpolis.com', 'qwe12345', 'Testuser', 2, '2018-01-28 00:00:00', 'system', 'system', '2018-01-28 00:00:00', 1, 0, '0', NULL, 'Staff', '12333485', 68, 0, 0),
+(67, 'testuserid@metalpolis.com', 'qwe12345', 'Testuser', 2, '2018-01-28 00:00:00', 'system', 'system', '2018-01-28 00:00:00', 1, 0, '0', NULL, 'Staff', '12333486', 69, 0, 0),
+(68, 'testuserid@metalpolis.com', 'qwe12345', 'Testuser', 2, '2018-01-28 00:00:00', 'system', 'system', '2018-01-28 00:00:00', 1, 0, '0', NULL, 'Staff', '12333487', 70, 0, 0),
+(69, 'testuserid@metalpolis.com', 'qwe12345', 'Testuser', 2, '2018-01-28 00:00:00', 'system', 'system', '2018-01-28 00:00:00', 1, 0, '0', NULL, 'Staff', '12333488', 71, 0, 0),
+(70, 'testuserid@metalpolis.com', 'qwe12345', 'Testuser', 2, '2018-01-28 00:00:00', 'system', 'system', '2018-01-28 00:00:00', 1, 0, '0', NULL, 'Staff', '12333489', 72, 0, 0);
 
 -- --------------------------------------------------------
 
@@ -2281,49 +2257,7 @@ CREATE TABLE `td_requiredservices` (
 --
 
 INSERT INTO `td_requiredservices` (`Id`, `M_ServiceName`, `CreatedDate`, `CreatedBy`, `ModifiedDate`, `ModifiedBy`, `Status`, `Version`, `T_RFQ_Id`, `M_Service_Id`, `Supplier_Provide_Material`, `Supplier_Provide_Transport`) VALUES
-(1, '', '2017-11-19 12:22:29', '3', NULL, NULL, 1, NULL, 1, 13, NULL, NULL),
-(2, '', '2017-11-19 12:22:29', '3', NULL, NULL, 1, NULL, 1, 14, NULL, NULL),
-(3, '', '2017-12-16 04:50:50', '3', NULL, NULL, 0, NULL, 2, 9, NULL, NULL),
-(4, 'Small Item ( < 1m[L] x 1m[W] x 1m[H])', '2017-12-16 04:53:59', '3', NULL, NULL, 1, NULL, 2, 9, NULL, NULL),
-(5, '', '2017-12-16 04:53:59', '3', NULL, NULL, 1, NULL, 2, 9, NULL, NULL),
-(6, '', '2017-12-16 04:57:07', '3', NULL, NULL, 0, NULL, 3, 4, NULL, NULL),
-(7, 'Small Item ( < 1m[L] x 1m[W] x 1m[H])', '2017-12-16 04:57:38', '3', NULL, NULL, 1, NULL, 3, 4, NULL, NULL),
-(8, '', '2017-12-17 16:46:51', '3', NULL, NULL, 1, NULL, 5, 10, NULL, NULL),
-(9, '', '2017-12-17 16:49:33', '3', NULL, NULL, 1, NULL, 6, 9, NULL, NULL),
-(10, '', '2017-12-28 15:03:51', '11', NULL, NULL, 1, NULL, 8, 5, NULL, NULL),
-(11, '', '2017-12-28 15:03:51', '11', NULL, NULL, 1, NULL, 8, 4, NULL, NULL),
-(12, '', '2017-12-28 15:03:51', '11', NULL, NULL, 1, NULL, 8, 9, NULL, NULL),
-(13, '', '2017-12-28 15:04:04', '11', NULL, NULL, 1, NULL, 9, 5, NULL, NULL),
-(14, '', '2017-12-28 15:04:04', '11', NULL, NULL, 1, NULL, 9, 4, NULL, NULL),
-(15, '', '2017-12-28 15:04:04', '11', NULL, NULL, 1, NULL, 9, 9, NULL, NULL),
-(16, '', '2017-12-28 15:06:05', '11', NULL, NULL, 1, NULL, 10, 5, NULL, NULL),
-(17, '', '2017-12-28 15:06:05', '11', NULL, NULL, 1, NULL, 10, 4, NULL, NULL),
-(18, '', '2017-12-28 15:06:05', '11', NULL, NULL, 1, NULL, 10, 9, NULL, NULL),
-(19, '', '2017-12-28 15:36:19', '11', NULL, NULL, 1, NULL, 11, 4, NULL, NULL),
-(20, '', '2017-12-28 16:04:11', '11', NULL, NULL, 1, NULL, 13, 4, NULL, NULL),
-(21, '', '2018-01-03 13:43:08', '11', NULL, NULL, 1, NULL, 15, 9, NULL, NULL),
-(22, '', '2018-01-03 13:43:08', '11', NULL, NULL, 1, NULL, 15, 10, NULL, NULL),
-(23, '', '2018-01-09 15:48:09', '11', NULL, NULL, 1, NULL, 16, 4, NULL, NULL),
-(24, '', '2018-01-09 15:48:18', '11', NULL, NULL, 1, NULL, 17, 4, NULL, NULL),
-(25, '', '2018-01-09 15:54:54', '11', NULL, NULL, 1, NULL, 18, 4, NULL, NULL),
-(26, '', '2018-01-09 15:56:01', '11', NULL, NULL, 1, NULL, 19, 4, NULL, NULL),
-(27, '', '2018-01-09 15:56:01', '11', NULL, NULL, 1, NULL, 19, 5, NULL, NULL),
-(28, '', '2018-01-09 15:56:01', '11', NULL, NULL, 1, NULL, 19, 4, NULL, NULL),
-(29, '', '2018-01-09 16:00:06', '11', NULL, NULL, 1, NULL, 20, 4, NULL, NULL),
-(30, '', '2018-01-09 16:00:06', '11', NULL, NULL, 1, NULL, 20, 5, NULL, NULL),
-(31, '', '2018-01-09 16:00:06', '11', NULL, NULL, 1, NULL, 20, 4, NULL, NULL),
-(32, '', '2018-01-09 16:05:52', '11', NULL, NULL, 1, NULL, 21, 4, NULL, NULL),
-(33, '', '2018-01-09 16:05:52', '11', NULL, NULL, 1, NULL, 21, 5, NULL, NULL),
-(34, '', '2018-01-09 16:05:52', '11', NULL, NULL, 1, NULL, 21, 4, NULL, NULL),
-(35, '', '2018-01-09 16:08:39', '11', NULL, NULL, 1, NULL, 22, 4, NULL, NULL),
-(36, '', '2018-01-09 16:08:39', '11', NULL, NULL, 1, NULL, 22, 5, NULL, NULL),
-(37, '', '2018-01-09 16:08:39', '11', NULL, NULL, 1, NULL, 22, 4, NULL, NULL),
-(38, '', '2018-01-09 16:10:33', '11', NULL, NULL, 1, NULL, 23, 10, NULL, NULL),
-(39, '', '2018-01-18 12:35:17', '11', NULL, NULL, 1, NULL, 24, 22, NULL, NULL),
-(40, '', '2018-01-18 12:35:17', '11', NULL, NULL, 1, NULL, 24, 28, NULL, NULL),
-(41, '', '2018-01-18 12:35:17', '11', NULL, NULL, 1, NULL, 24, 27, NULL, NULL),
-(42, '', '2018-01-18 12:35:17', '11', NULL, NULL, 1, NULL, 24, 4, NULL, NULL),
-(43, '', '2018-01-18 12:35:17', '11', NULL, NULL, 1, NULL, 24, 4, NULL, NULL);
+(1, '', '2018-01-27 17:23:15', '11', NULL, NULL, 1, NULL, 1, 5, NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -2350,12 +2284,9 @@ CREATE TABLE `t_clarifications` (
 --
 
 INSERT INTO `t_clarifications` (`Id`, `ClarificationQuestion`, `ClarificationAnswer`, `AnswerType`, `M_Asking_Person_Id`, `T_Document_Id`, `Version`, `CreatedDate`, `CreatedBy`, `Status`, `make_public`) VALUES
-(1, 'hi', 'hi1', NULL, 8, 1, NULL, '2017-12-04 15:42:24', 'system', 1, 1),
-(2, 'aaaa', 'aaaa', NULL, 8, 1, NULL, '2017-12-04 15:57:43', 'system', 1, 1),
-(3, 'abc', '111', NULL, 3, 1, NULL, '2017-12-16 08:24:24', 'system', 1, 1),
-(4, 'dfasddaf', NULL, NULL, 3, 1, NULL, '2017-12-16 08:44:45', 'system', 1, 1),
-(5, 'test', 'ttt', NULL, 3, 2, NULL, '2017-12-16 08:50:38', 'system', 1, 1),
-(6, 'hi\r\n', NULL, NULL, 4, 24, NULL, '2018-01-18 12:37:34', 'system', 1, 0);
+(1, 'hi', 'ok', NULL, 4, 1, NULL, '2018-01-27 17:24:59', 'system', 1, 1),
+(2, 'hi2', NULL, NULL, 4, 1, NULL, '2018-01-27 17:28:38', 'system', 1, 0),
+(3, 'hi2', NULL, NULL, 4, 1, NULL, '2018-01-27 17:34:10', 'system', 1, 0);
 
 -- --------------------------------------------------------
 
@@ -2389,39 +2320,14 @@ CREATE TABLE `t_document` (
 --
 
 INSERT INTO `t_document` (`Id`, `Title`, `C_DocumentType`, `ShortDescription`, `LongDescription`, `SubmissionDate`, `C_QuotationStatus`, `C_RfqStatus`, `CreatedDate`, `CreatedBy`, `ModifiedDate`, `ModifiedBy`, `Status`, `Version`, `M_User_Id`, `DocumentNo`, `ContactPersonFName`, `ContactPersonLName`) VALUES
-(1, 'dafasd', 6, '', '', NULL, 8, 11, '2017-11-19 12:22:29', '3', NULL, NULL, 1, NULL, 3, 'RFQ_Submitted_1', 'dfadf', 'dafsdf'),
-(2, 'P1', 6, '', '', NULL, 8, 11, '2017-12-16 04:53:59', '3', '2017-12-16 09:12:41', '3', 1, NULL, 3, 'RFQ_Submitted_2', 'AAAAA_manager', 'AAAAA_manager'),
-(3, 'Test', 6, '', '', NULL, 8, 11, '2017-12-16 04:57:38', '3', NULL, NULL, 1, NULL, 3, 'RFQ_Draft_2', 'AAAAA_manager', 'AAAAA_manager'),
-(4, '', 7, '', '', NULL, 18, 8, '2017-12-16 09:03:55', '11', '2017-12-16 09:12:41', '3', 1, NULL, 11, 'RFQ_Submitted_2', '', ''),
-(5, 'dsfsaf', 6, '', '', NULL, 8, 11, '2017-12-17 16:46:51', '3', NULL, NULL, 1, NULL, 3, 'RFQ_Submitted_3', 'AAAAA_manager', 'AAAAA_manager'),
-(6, 'Test', 6, '', '', NULL, 8, 11, '2017-12-17 16:49:33', '3', '2017-12-17 17:17:50', '3', 1, NULL, 3, 'RFQ_Submitted_4', 'AAAAA_manager', 'AAAAA_manager'),
-(7, '', 7, '', '', NULL, 18, 8, '2017-12-17 16:50:00', '11', '2017-12-17 17:17:50', '3', 1, NULL, 11, 'RFQ_Submitted_4', '', ''),
-(8, 'Test', 6, '', '', NULL, 8, 10, '2017-12-28 15:03:51', '11', NULL, NULL, 1, NULL, 11, 'RFQ_Submitted_5', 'Peter', 'Peter'),
-(9, 'Test', 6, '', '', NULL, 8, 10, '2017-12-28 15:04:04', '11', NULL, NULL, 1, NULL, 11, 'RFQ_Submitted_6', 'Peter', 'Peter'),
-(10, 'Test', 6, '', '', NULL, 8, 14, '2017-12-28 15:06:05', '11', '2017-12-28 15:26:55', '11', 1, NULL, 11, 'RFQ_Submitted_7', 'Peter', 'Peter'),
-(11, 'Test', 6, '', '', NULL, 8, 12, '2017-12-28 15:36:19', '11', '2017-12-28 15:38:46', '11', 1, NULL, 11, 'RFQ_Submitted_8', 'Peter', 'Peter'),
-(12, '', 7, '', '', NULL, 18, 8, '2017-12-28 15:38:06', '4', '2017-12-28 15:38:46', '11', 1, NULL, 4, 'RFQ_Submitted_8', 'test', 'asdfasdf'),
-(13, 'dsfsad', 6, '', '', NULL, 8, 11, '2017-12-28 16:04:11', '11', NULL, NULL, 1, NULL, 11, 'RFQ_Submitted_9', 'Peter', 'Peter'),
-(14, '', 7, '', '', NULL, 16, 8, '2017-12-28 16:04:34', '4', '2017-12-28 16:05:15', '4', 1, NULL, 4, 'RFQ_Submitted_9', '', ''),
-(15, 'adfa', 6, '', '', NULL, 8, 11, '2018-01-03 13:43:08', '11', NULL, NULL, 1, NULL, 11, 'RFQ_Submitted_10', 'Peter', 'Peter'),
-(16, '', 6, '', '', NULL, 8, 11, '2018-01-09 15:48:09', '11', NULL, NULL, 1, NULL, 11, 'RFQ_Submitted_11', 'Peter', 'Peter'),
-(17, '', 6, '', '', NULL, 8, 11, '2018-01-09 15:48:18', '11', NULL, NULL, 1, NULL, 11, 'RFQ_Submitted_12', 'Peter', 'Peter'),
-(18, '', 6, '', '', NULL, 8, 11, '2018-01-09 15:54:54', '11', NULL, NULL, 1, NULL, 11, 'RFQ_Submitted_13', 'Peter', 'Peter'),
-(19, '', 6, '', '', NULL, 8, 11, '2018-01-09 15:56:01', '11', NULL, NULL, 1, NULL, 11, 'RFQ_Submitted_14', 'Peter', 'Peter'),
-(20, '', 6, '', '', NULL, 8, 11, '2018-01-09 16:00:06', '11', NULL, NULL, 1, NULL, 11, 'RFQ_Submitted_15', 'Peter', 'Peter'),
-(21, '', 6, '', '', NULL, 8, 11, '2018-01-09 16:05:52', '11', NULL, NULL, 1, NULL, 11, 'RFQ_Submitted_16', 'Peter', 'Peter'),
-(22, '', 6, '', '', NULL, 8, 11, '2018-01-09 16:08:39', '11', NULL, NULL, 1, NULL, 11, 'RFQ_Submitted_17', 'Peter', 'Peter'),
-(23, '', 6, '', '', NULL, 8, 11, '2018-01-09 16:10:33', '11', NULL, NULL, 1, NULL, 11, 'RFQ_Submitted_18', 'Peter', 'Peter'),
-(24, '', 6, '', '', NULL, 8, 10, '2018-01-18 12:35:17', '11', NULL, NULL, 1, NULL, 11, 'RFQ_Submitted_19', 'Peter', 'Peter'),
-(25, '', 7, '', '', NULL, 15, 8, '2018-01-18 12:39:59', '4', NULL, NULL, 1, NULL, 4, 'RFQ_Submitted_19', '', ''),
-(26, '', 7, '', '', NULL, 16, 8, '2018-01-18 12:40:50', '4', '2018-01-18 12:42:09', '4', 1, NULL, 4, 'RFQ_Submitted_19', '', '');
+(1, 'p1', 6, '', '', NULL, 8, 10, '2018-01-27 17:23:15', '11', NULL, NULL, 1, NULL, 11, 'RFQ_Submitted_1', 'Peter', 'Wang');
 
 --
 -- Triggers `t_document`
 --
 DELIMITER $$
-CREATE TRIGGER `SaveQuotationsCount` AFTER UPDATE ON `t_document` FOR EACH ROW UPDATE m_company
-	SET AwardedQuotation =1,AwardedQuotation = 1
+CREATE TRIGGER `SaveQuotationsCount` AFTER UPDATE ON `t_document` FOR EACH ROW UPDATE m_company 
+	SET AwardedQuotation =1,AwardedQuotation = 1 
 	WHERE Id = 1
 $$
 DELIMITER ;
@@ -2452,17 +2358,7 @@ CREATE TABLE `t_fileattachments` (
 --
 
 INSERT INTO `t_fileattachments` (`Id`, `T_Document_Id`, `FileName`, `FileBinary`, `CreatedDate`, `CreatedBy`, `ModifiedDate`, `ModifiedBy`, `Status`, `Version`, `Subject`, `Message`) VALUES
-(1, 1, '20171119122222_AttendanceReport-26122016150733.xls', '', '2017-11-19 12:22:29', '3', NULL, NULL, 1, NULL, 'dfads', 'fdssafsd'),
-(2, 2, '20171216044358_software-engineering-global.rar', '', '2017-12-16 04:50:50', '3', NULL, NULL, 0, NULL, '', 'test'),
-(3, 2, '20171216044358_software-engineering-global.rar', '', '2017-12-16 04:53:59', '3', NULL, NULL, 1, NULL, '', 'test'),
-(4, 3, '20171216045631_software-engineering-global.rar', '', '2017-12-16 04:57:07', '3', NULL, NULL, 0, NULL, '', 'test'),
-(5, 3, '20171216045631_software-engineering-global.rar', '', '2017-12-16 04:57:38', '3', NULL, NULL, 1, NULL, '', 'test'),
-(6, 4, '20171216090803_HTB1A7dlFVXXXXbxXFXX.PRXFXXXN (1).pdf', '', '2017-12-16 09:08:10', '11', NULL, NULL, 1, NULL, '', 'sdfdfsdf'),
-(7, 5, '20171217164608_list_rfq.php', '', '2017-12-17 16:46:51', '3', NULL, NULL, 1, NULL, '', 'fdasdf'),
-(8, 11, '20171228153602_laptop and printer receipt.jpg', '', '2017-12-28 15:36:19', '11', NULL, NULL, 1, NULL, '', 'test'),
-(9, 12, '20171228153819_laptop and printer receipt.jpg', '', '2017-12-28 15:38:23', '4', NULL, NULL, 1, NULL, '', 'atestasd'),
-(10, 13, '20171228160315_laptop and printer receipt.jpg', '', '2017-12-28 16:04:11', '11', NULL, NULL, 1, NULL, '', 'fdsfsadfasd'),
-(11, 26, '20180118124201_Supplier List Template 1 for DB_v0.2.xlsx', '', '2018-01-18 12:42:09', '4', NULL, NULL, 1, NULL, '', '');
+(1, 1, '20180127172306_ArtOfComputerProgramming.jpg', '', '2018-01-27 17:23:15', '11', NULL, NULL, 1, NULL, '', '');
 
 -- --------------------------------------------------------
 
@@ -2491,24 +2387,7 @@ CREATE TABLE `t_requestforquotation` (
 --
 
 INSERT INTO `t_requestforquotation` (`Document_Id`, `Title`, `FinalClosingDate`, `FirstClosingDate`, `RevisedClosingDate1`, `RevisedClosingDate2`, `TotalSubmittedQuotes`, `RequireServiceTags`, `IsSelected`, `PreferredPaymentTerms`, `Supplier_Provide_Material`, `Supplier_Provide_Transport`, `Remark`) VALUES
-(1, 'dafasd', '2017-12-19 00:00:00', '2017-12-19 00:00:00', NULL, NULL, 0, NULL, NULL, NULL, 0, 0, 'dfas'),
-(2, 'P1', '2017-12-23 00:00:00', '2017-12-23 00:00:00', NULL, NULL, 0, NULL, NULL, NULL, 1, 1, 'Remark to supplier'),
-(3, 'Test', '2017-12-23 00:00:00', '2017-12-23 00:00:00', NULL, NULL, 0, NULL, NULL, NULL, 1, 1, 'remark'),
-(5, 'dsfsaf', '2017-12-24 00:00:00', '2017-12-24 00:00:00', NULL, NULL, 0, NULL, NULL, NULL, 1, 1, 'dsfsdf'),
-(6, 'Test', '2017-12-24 00:00:00', '2017-12-24 00:00:00', NULL, NULL, 0, NULL, NULL, NULL, 0, 0, 'dsfdf'),
-(10, 'Test', '2018-01-04 00:00:00', '2018-01-04 00:00:00', NULL, NULL, 0, NULL, NULL, NULL, 1, 1, ''),
-(11, 'Test', '2018-01-04 00:00:00', '2018-01-04 00:00:00', NULL, NULL, 0, NULL, NULL, NULL, 1, 1, 'test'),
-(13, 'dsfsad', '2017-12-29 00:00:00', '2018-01-04 00:00:00', NULL, NULL, 0, NULL, NULL, NULL, 1, 1, 'dsfsdf'),
-(15, 'adfa', '2018-01-11 00:00:00', '2018-01-10 00:00:00', NULL, NULL, 0, NULL, NULL, NULL, 0, 0, 'adfas'),
-(16, '', '2018-01-16 00:00:00', '2018-01-16 00:00:00', NULL, NULL, 0, NULL, NULL, NULL, 0, 0, ''),
-(17, '', '2018-01-16 00:00:00', '2018-01-16 00:00:00', NULL, NULL, 0, NULL, NULL, NULL, 0, 0, ''),
-(18, '', '2018-01-16 00:00:00', '2018-01-16 00:00:00', NULL, NULL, 0, NULL, NULL, NULL, 0, 0, ''),
-(19, '', '2018-01-16 00:00:00', '2018-01-16 00:00:00', NULL, NULL, 0, NULL, NULL, NULL, 0, 0, ''),
-(20, '', '2018-01-16 00:00:00', '2018-01-16 00:00:00', NULL, NULL, 0, NULL, NULL, NULL, 0, 0, ''),
-(21, '', '2018-01-16 00:00:00', '2018-01-16 00:00:00', NULL, NULL, 0, NULL, NULL, NULL, 0, 0, ''),
-(22, '', '2018-01-16 00:00:00', '2018-01-16 00:00:00', NULL, NULL, 0, NULL, NULL, NULL, 0, 0, ''),
-(23, '', '2018-01-16 00:00:00', '2018-01-16 00:00:00', NULL, NULL, 0, NULL, NULL, NULL, 0, 0, ''),
-(24, '', '2018-01-25 00:00:00', '2018-01-25 00:00:00', NULL, NULL, 0, NULL, NULL, NULL, 0, 0, '');
+(1, 'p1', '2018-02-03 00:00:00', '2018-02-03 00:00:00', NULL, NULL, 0, NULL, NULL, NULL, 1, 1, 'test');
 
 -- --------------------------------------------------------
 
@@ -2524,18 +2403,6 @@ CREATE TABLE `t_supplierquotation` (
   `RevisionNo` int(11) NOT NULL,
   `Comments` varchar(500) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
---
--- Dumping data for table `t_supplierquotation`
---
-
-INSERT INTO `t_supplierquotation` (`Document_Id`, `T_Rfq_Id`, `QuotedFigure`, `ValidToDate`, `RevisionNo`, `Comments`) VALUES
-(4, 2, '0.00', '2017-12-16 00:00:00', 2, 'test'),
-(7, 6, '0.00', '2017-12-17 00:00:00', 3, '					'),
-(12, 11, '1000.00', '2017-12-28 00:00:00', 3, 'dsafsdfadfasd'),
-(14, 13, '0.00', '2017-12-28 00:00:00', 3, '					zsfsdfvsd'),
-(25, 24, '0.00', '2018-01-18 00:00:00', 1, ''),
-(26, 24, '0.00', '2018-01-18 00:00:00', 3, 'tsest');
 
 -- --------------------------------------------------------
 
@@ -2554,25 +2421,7 @@ CREATE TABLE `t_targetedsuppliers` (
 --
 
 INSERT INTO `t_targetedsuppliers` (`Id`, `T_Document_Id`, `M_Company_Id`) VALUES
-(1, 1, 7),
-(2, 2, 15),
-(3, 3, 4),
-(4, 6, 15),
-(5, 8, 15),
-(6, 9, 15),
-(7, 10, 15),
-(8, 11, 4),
-(9, 13, 4),
-(10, 15, 15),
-(11, 16, 4),
-(12, 17, 4),
-(13, 18, 4),
-(14, 19, 4),
-(15, 20, 4),
-(16, 21, 4),
-(17, 22, 4),
-(18, 23, 15),
-(19, 24, 4);
+(1, 1, 4);
 
 --
 -- Indexes for dumped tables
@@ -2692,7 +2541,6 @@ ALTER TABLE `m_supplier`
 --
 ALTER TABLE `m_user`
   ADD PRIMARY KEY (`Id`),
-  ADD UNIQUE KEY `EmailAddress_UNIQUE` (`EmailAddress`),
   ADD KEY `fk_M_User_C_CodeTable1_idx` (`C_UserType`),
   ADD KEY `fk_M_User_M_Company1_idx` (`M_Company_Id`);
 
@@ -2764,7 +2612,7 @@ ALTER TABLE `t_targetedsuppliers`
 -- AUTO_INCREMENT for table `company_notification`
 --
 ALTER TABLE `company_notification`
-  MODIFY `Id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=40;
+  MODIFY `Id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT for table `c_tags`
@@ -2776,13 +2624,13 @@ ALTER TABLE `c_tags`
 -- AUTO_INCREMENT for table `document_number`
 --
 ALTER TABLE `document_number`
-  MODIFY `Id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=22;
+  MODIFY `Id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT for table `md_companyrating`
 --
 ALTER TABLE `md_companyrating`
-  MODIFY `Id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
+  MODIFY `Id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `md_serviceparameter`
@@ -2806,7 +2654,7 @@ ALTER TABLE `md_userrating`
 -- AUTO_INCREMENT for table `m_user`
 --
 ALTER TABLE `m_user`
-  MODIFY `Id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
+  MODIFY `Id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=71;
 
 --
 -- AUTO_INCREMENT for table `public_email`
@@ -2818,19 +2666,19 @@ ALTER TABLE `public_email`
 -- AUTO_INCREMENT for table `td_requiredservices`
 --
 ALTER TABLE `td_requiredservices`
-  MODIFY `Id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=44;
+  MODIFY `Id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT for table `t_clarifications`
 --
 ALTER TABLE `t_clarifications`
-  MODIFY `Id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `Id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT for table `t_targetedsuppliers`
 --
 ALTER TABLE `t_targetedsuppliers`
-  MODIFY `Id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
+  MODIFY `Id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- Constraints for dumped tables

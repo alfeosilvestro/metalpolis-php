@@ -186,8 +186,8 @@ $("#yesbtn").click(function (e) {
   };
   xmlhttp.open("GET","market.php?user_id=<?php echo $userid;?>&function=changeaccounttype&type_id=<?php echo $changetypeid;?>",true);
   xmlhttp.send();
-  <?php session_destroy(); ?>
-  window.location.href="../";
+  <?php //session_destroy(); ?>
+  window.location.href="logout.php";
 // location.reload();
 		});
 </script>
