@@ -352,7 +352,7 @@
 							if ($result->num_rows > 0) {
 							// output data of each row
 						 		while($row = $result->fetch_assoc()) {
-									$email = $email .  $row["EmailAddress"].";";
+									$email = $email .  $row["EmailAddress"]."; ";
 								}
 								sendEmailforNotification($email,$Message, $Message);
 							}
@@ -543,7 +543,7 @@
 							if ($result->num_rows > 0) {
 							// output data of each row
 								while($row = $result->fetch_assoc()) {
-									$email = $email .  $row["EmailAddress"].";";
+									$email = $email .  $row["EmailAddress"]."; ";
 								}
 								sendEmailforNotification($email,$Message, $Message);
 							}
@@ -643,7 +643,7 @@
 				if ($result->num_rows > 0) {
 				// output data of each row
 					while($row = $result->fetch_assoc()) {
-						$email = $email .  $row["EmailAddress"].";";
+						$email = $email .  $row["EmailAddress"]."; ";
 					}
 					sendEmailforNotification($email,$Message, $Message);
 				}
@@ -875,7 +875,7 @@
 					if ($result->num_rows > 0) {
 					// output data of each row
 						while($row = $result->fetch_assoc()) {
-							$email = $email .  $row["EmailAddress"].";";
+							$email = $email .  $row["EmailAddress"]."; ";
 						}
 						sendEmailforNotification($email,$Message, $Message);
 					}
@@ -902,7 +902,7 @@
 				if ($result->num_rows > 0) {
 				// output data of each row
 					while($row = $result->fetch_assoc()) {
-						$email = $email .  $row["EmailAddress"].";";
+						$email = $email .  $row["EmailAddress"]."; ";
 					}
 					sendEmailforNotification($email,$Message, $Message);
 				}
@@ -978,7 +978,7 @@
 								if ($result1->num_rows > 0) {
 								// output data of each row
 							 		while($row1 = $result1->fetch_assoc()) {
-										$email = $email .  $row1["EmailAddress"].";";
+										$email = $email .  $row1["EmailAddress"]."; ";
 									}
 									sendEmailforNotification($email,$Message, $Message);
 								}
@@ -1022,7 +1022,7 @@
 					if ($result->num_rows > 0) {
 					// output data of each row
 						while($row = $result->fetch_assoc()) {
-							$email = $email .  $row["EmailAddress"].";";
+							$email = $email .  $row["EmailAddress"]."; ";
 						}
 						sendEmailforNotification($email,$Message, $Message);
 					}
@@ -1043,7 +1043,7 @@
 					if ($result->num_rows > 0) {
 					// output data of each row
 						while($row = $result->fetch_assoc()) {
-							$email = $email .  $row["EmailAddress"].";";
+							$email = $email .  $row["EmailAddress"]."; ";
 						}
 						sendEmailforNotification($email,$Message, $Message);
 					}
@@ -1074,7 +1074,7 @@
 					if ($result->num_rows > 0) {
 					// output data of each row
 						while($row = $result->fetch_assoc()) {
-							$email = $email .  $row["EmailAddress"].";";
+							$email = $email .  $row["EmailAddress"]."; ";
 						}
 						sendEmailforNotification($email,$Message, $Message);
 					}
@@ -1218,75 +1218,54 @@
 
 
 	function sendEmailforNotification($email,$subject, $message){
-		$mail_to = $email;
-		//error_reporting(E_STRICT);
-		error_reporting(E_ERROR);
+		error_reporting(E_STRICT);
+
 		date_default_timezone_set('Asia/Singapore');
 
 		require_once('../class.phpmailer.php');
 		//include("class.smtp.php"); // optional, gets called from within class.phpmailer.php if not already loaded
 
-		$from_mail = "info@metalpolis.com";
-		$from_name = "Metalpolis";
-		//$to_address = $email;
-		$to_name = "Info";
-		//$subject = "Verification for registeration at Metalpolis";
-		//$message = $message;
-		$smtp_host = "127.0.0.1";
-		$smtp_port = 25;
-		// $smtp_username = "info@metalpolis.com";
-		// $smtp_password = "12345678";
-		$smtp_username = "";
-		$smtp_password = "";
-		//$smtp_debug = 2;
-
 		$mail             = new PHPMailer();
 
-		//$message             = file_get_contents('contents.html');
-		//$message             = eregi_replace("[\]",'',$message);
-
+		//$body             = file_get_contents('contents.html');
+		//$body             = eregi_replace("[\]",'',$body);
+		$body =   $message;
+		//echo $body;
 		$mail->IsSMTP(); // telling the class to use SMTP
-		$mail->Host       = $smtp_host; // SMTP server
-		//$mail->SMTPDebug  = $smtp_debug;                     // enables SMTP debug information (for testing)
-																							 // 1 = errors and messages
-																							 // 2 = messages only
-		$mail->SMTPAuth   = false;                  // enable SMTP authentication
-		$mail->Port       = $smtp_port;                    // set the SMTP port for the GMAIL server
-		//$mail->Username   = $smtp_username;       // SMTP account username
-		//$mail->Password   = $smtp_password;        // SMTP account password
+		$mail->Host       = "mail.mritmyanmar.com"; // SMTP server
+		//$mail->SMTPDebug  = 2;                     // enables SMTP debug information (for testing)
+		                                           // 1 = errors and messages
+		                                           // 2 = messages only
+		$mail->SMTPAuth   = true;                  // enable SMTP authentication
+		$mail->Host       = "mail.mritmyanmar.com"; // sets the SMTP server
+		$mail->Port       = 25;                    // set the SMTP port for the GMAIL server
+		$mail->Username   = "info@mritmyanmar.com"; // SMTP account username
+		$mail->Password   = "Qwer@123";        // SMTP account password
 
-		$mail->SetFrom($from_address, $from_name);
+		$mail->SetFrom('galles.cs@gmail.com', 'First Last');
 
-		$mail->AddReplyTo($from_address, $from_name);
+		$mail->AddReplyTo("galles.cs@gmail.com","First Last");
 
-		$mail->Subject    = $subject;
+		$mail->Subject    = "PHPMailer Test Subject via smtp, basic with authentication";
 
-		$mail->AltBody    = $message; // optional, comment out and test
+		$mail->AltBody    = "To view the message, please use an HTML compatible email viewer!"; // optional, comment out and test
 
-		$mail->MsgHTML($message);
+		$mail->MsgHTML($body);
 
-		$to_address = "info@metalpolis.com";
-		$emails = explode(";", $email);
-		for($i = 0, $l = count($emails); $i < $l; ++$i) {
-		 // do something with $array[$i]
-			 if($i==0){
-				 $to_address = $emails[$i];
-				 $mail->AddAddress($to_address, $to_name);
-			 }else{
-				 $mail->AddCC($emails[$i], $to_name);
-			 }
-		}
+		$address = "thantsinaung92@gmail.com";
+		$mail->AddAddress($address, "John Doe");
+
 
 		try {
 
-			if(!$mail->Send()) {
-
-			} else {
-
-			}
+		  if(!$mail->Send()) {
+		    //echo "Mailer Error: " . $mail->ErrorInfo;
+		  } else {
+		    //echo "Message sent!";
+		  }
 		}
 		catch(Exception $e) {
-
+		  //echo 'Message: ' .$e->getMessage();
 		}
 	}
 ?>
