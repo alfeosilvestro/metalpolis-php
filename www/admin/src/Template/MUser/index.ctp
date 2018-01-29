@@ -17,7 +17,6 @@
             <tr>
                 <th scope="col"><?= $this->Paginator->sort('Id') ?></th>
                 <th scope="col"><?= $this->Paginator->sort('EmailAddress') ?></th>
-                <th scope="col"><?= $this->Paginator->sort('Password') ?></th>
                 <th scope="col"><?= $this->Paginator->sort('UserName') ?></th>
                 <th scope="col"><?= $this->Paginator->sort('C_UserType') ?></th>
                 <th scope="col"><?= $this->Paginator->sort('CreatedDate') ?></th>
@@ -25,9 +24,6 @@
                 <th scope="col"><?= $this->Paginator->sort('ModifiedBy') ?></th>
                 <th scope="col"><?= $this->Paginator->sort('ModifiedDate') ?></th>
                 <th scope="col"><?= $this->Paginator->sort('Status') ?></th>
-                <th scope="col"><?= $this->Paginator->sort('RfqCount') ?></th>
-                <th scope="col"><?= $this->Paginator->sort('QuoteCount') ?></th>
-                <th scope="col"><?= $this->Paginator->sort('Version') ?></th>
                 <th scope="col"><?= $this->Paginator->sort('Title') ?></th>
                 <th scope="col"><?= $this->Paginator->sort('ContactNumbers') ?></th>
                 <th scope="col"><?= $this->Paginator->sort('M_Company_Id') ?></th>
@@ -41,7 +37,6 @@
             <tr>
                 <td><?= $this->Number->format($mUser->Id) ?></td>
                 <td><?= h($mUser->EmailAddress) ?></td>
-                <td><?= h($mUser->Password) ?></td>
                 <td><?= h($mUser->UserName) ?></td>
                 <td><?= $this->Number->format($mUser->C_UserType) ?></td>
                 <td><?= h($mUser->CreatedDate) ?></td>
@@ -49,9 +44,6 @@
                 <td><?= h($mUser->ModifiedBy) ?></td>
                 <td><?= h($mUser->ModifiedDate) ?></td>
                 <td><?= $this->Number->format($mUser->Status) ?></td>
-                <td><?= $this->Number->format($mUser->RfqCount) ?></td>
-                <td><?= h($mUser->QuoteCount) ?></td>
-                <td><?= h($mUser->Version) ?></td>
                 <td><?= h($mUser->Title) ?></td>
                 <td><?= h($mUser->ContactNumbers) ?></td>
                 <td><?= $this->Number->format($mUser->M_Company_Id) ?></td>

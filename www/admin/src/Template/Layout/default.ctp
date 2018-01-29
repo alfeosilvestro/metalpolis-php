@@ -52,6 +52,7 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
         <?= $this->fetch('content') ?>
     </div>
     <footer>
+      Copy Right by Metalpolis
     </footer>
 </body>
 </html>
