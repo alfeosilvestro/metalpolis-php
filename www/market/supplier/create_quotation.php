@@ -91,9 +91,9 @@
           if ($result->num_rows > 0) {
           // output data of each row
             while($row = $result->fetch_assoc()) {
-              $email = $email .  $row["EmailAddress"];
+              $email = $email .  $row["EmailAddress"].";";
             }
-            //sendEmailforNotification($email,$Message, $Message);
+            sendEmailforNotification($email,$Message, $Message);
           }
          }
 
@@ -387,17 +387,17 @@
 
 
   function sendEmailforNotification($email,$subject, $message){
-		$mail_to = $email;
-		error_reporting(E_STRICT);
-
+    $mail_to = $email;
+		//error_reporting(E_STRICT);
+		error_reporting(E_ERROR);
 		date_default_timezone_set('Asia/Singapore');
 
-		require_once('../../class.phpmailer.php');
+		require_once('../class.phpmailer.php');
 		//include("class.smtp.php"); // optional, gets called from within class.phpmailer.php if not already loaded
 
 		$from_mail = "info@metalpolis.com";
 		$from_name = "Metalpolis";
-		$to_address = $email;
+		//$to_address = $email;
 		$to_name = "Info";
 		//$subject = "Verification for registeration at Metalpolis";
 		//$message = $message;
@@ -409,7 +409,7 @@
 		$smtp_password = "";
 		//$smtp_debug = 2;
 
-		$mail             = new PHPMailer();
+		$mail = new PHPMailer();
 
 		//$message             = file_get_contents('contents.html');
 		//$message             = eregi_replace("[\]",'',$message);
@@ -424,9 +424,9 @@
 		//$mail->Username   = $smtp_username;       // SMTP account username
 		//$mail->Password   = $smtp_password;        // SMTP account password
 
-		$mail->SetFrom($from_address, $from_name);
+		$mail->SetFrom($from_mail);
 
-		$mail->AddReplyTo($from_address, $from_name);
+		$mail->AddReplyTo($from_mail);
 
 		$mail->Subject    = $subject;
 
@@ -434,12 +434,17 @@
 
 		$mail->MsgHTML($message);
 
-		$mail->AddAddress($to_address, $to_name);
+		$to_address = "info@metalpolis.com";
+		$emails = explode(";", $email);
+		for($i = 0, $l = count($emails); $i < $l-1; ++$i) {
 
-		//$mail->AddAttachment("images/phpmailer.gif");      // attachment
-		//$mail->AddAttachment("images/phpmailer_mini.gif"); // attachment
-
-
+			 if($i==0){
+				 $to_address = $emails[$i];
+				 $mail->AddAddress($to_address);
+			 }else{
+				 $mail->AddCC($emails[$i]);
+			 }
+		}
 
 		try {
 
