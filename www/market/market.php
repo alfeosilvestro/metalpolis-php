@@ -1181,9 +1181,9 @@
 		//$mail->Username   = $smtp_username;       // SMTP account username
 		//$mail->Password   = $smtp_password;        // SMTP account password
 
-		$mail->SetFrom($from_address, $from_name);
+		$mail->SetFrom($from_mail, $from_name);
 
-		$mail->AddReplyTo($from_address, $from_name);
+		$mail->AddReplyTo($from_mail, $from_name);
 
 		$mail->Subject    = $subject;
 
@@ -1240,7 +1240,7 @@
 		$smtp_password = "";
 		//$smtp_debug = 2;
 
-		$mail             = new PHPMailer();
+		$mail = new PHPMailer();
 
 		//$message             = file_get_contents('contents.html');
 		//$message             = eregi_replace("[\]",'',$message);
@@ -1255,9 +1255,9 @@
 		//$mail->Username   = $smtp_username;       // SMTP account username
 		//$mail->Password   = $smtp_password;        // SMTP account password
 
-		$mail->SetFrom($from_address, $from_name);
+		$mail->SetFrom($from_mail);
 
-		$mail->AddReplyTo($from_address, $from_name);
+		$mail->AddReplyTo($from_mail);
 
 		$mail->Subject    = $subject;
 
@@ -1267,13 +1267,13 @@
 
 		$to_address = "info@metalpolis.com";
 		$emails = explode(";", $email);
-		for($i = 0, $l = count($emails); $i < $l; ++$i) {
-		 // do something with $array[$i]
+		for($i = 0, $l = count($emails); $i < $l-1; ++$i) {
+		 
 			 if($i==0){
 				 $to_address = $emails[$i];
-				 $mail->AddAddress($to_address, $to_name);
+				 $mail->AddAddress($to_address);
 			 }else{
-				 $mail->AddCC($emails[$i], $to_name);
+				 $mail->AddCC($emails[$i]);
 			 }
 		}
 
