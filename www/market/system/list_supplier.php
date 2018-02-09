@@ -81,6 +81,166 @@
         </div>
     </div>
 
+    <div class="box box-warning">
+          <div class="box-header with-border">
+              <h3 class="box-title">Search by service</h3>
+
+              <div class="box-tools pull-right">
+                  <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
+                  </button>
+              </div>
+          </div>
+          <!-- /.box-header -->
+          <div class="box-body">
+              <div class="row">
+                  <div class="box-body">
+                    <h3>Please select services ...</h3>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <div id="messageforsupplier"></div>
+              <div id="treeview-checkbox-demo">
+                <ul>
+                  <?php
+                  $sql = "SELECT * FROM `m_services` where Status = 1 and M_Parent_Services_Id is null  ";
+                  $result = $conn->query($sql);
+                  if (isset($result)){
+                    if ($result->num_rows > 0) {
+                      // output data of each row
+                      while($row = $result->fetch_assoc()) {
+                        echo "<li data-value='". $row["Id"] ."'>" . $row["ServiceName"] ;
+                        $servicecategory1id = $row["Id"];
+                        $sql1 = "SELECT * FROM `m_services` where Status = 1 and  M_Parent_Services_Id = ".$servicecategory1id ;
+                        $result1 = $conn->query($sql1);
+                        if (isset($result1)){
+                          if ($result1->num_rows > 0) {
+                            echo "<ul>";
+                            // output data of each row
+                            while($row1 = $result1->fetch_assoc()) {
+                              echo "<li data-value='". $row1["Id"] ."'>" . $row1["ServiceName"] ;
+                              $servicecategory1id1 = $row1["Id"];
+                              $sql2 = "SELECT * FROM `m_services` where Status = 1 and  M_Parent_Services_Id = ".$servicecategory1id1 ;
+                              $result2 = $conn->query($sql2);
+                              if (isset($result2)){
+                                if ($result2->num_rows > 0) {
+                                  echo "<ul>";
+                                  // output data of each row
+                                  while($row2 = $result2->fetch_assoc()) {
+                                    echo "<li data-value='". $row2["Id"] ."'>" . $row2["ServiceName"] ;
+                                    $servicecategory1id2 = $row2["Id"];
+                                    $sql3 = "SELECT * FROM `m_services` where Status = 1 and  M_Parent_Services_Id = ".$servicecategory1id2 ;
+                                    $result3 = $conn->query($sql3);
+                                    if (isset($result3)){
+                                      if ($result3->num_rows > 0) {
+                                        echo "<ul>";
+                                        // output data of each row
+                                        while($row3 = $result3->fetch_assoc()) {
+                                          echo "<li data-value='". $row3["Id"] ."'>" . $row3["ServiceName"] ;
+                                          $servicecategory1id3 = $row3["Id"];
+                                          $sql4 = "SELECT * FROM `m_services` where Status = 1 and  M_Parent_Services_Id = ".$servicecategory1id3 ;
+                                          $result4 = $conn->query($sql4);
+                                          if (isset($result4)){
+                                            if ($result4->num_rows > 0) {
+                                              echo "<ul>";
+                                              // output data of each row
+                                              while($row4 = $result4->fetch_assoc()) {
+                                                echo "<li data-value='". $row4["Id"] ."'>" . $row4["ServiceName"] ;
+
+                                                echo "</li>";
+                                              }
+                                              echo "</ul>";
+                                            }
+
+                                          }
+                                          echo "</li>";
+                                        }
+                                        echo "</ul>";
+                                      }
+
+                                    }
+                                    echo "</li>";
+                                  }
+                                  echo "</ul>";
+                                }
+
+                              }
+                              echo "</li>";
+                            }
+                            echo "</ul>";
+                          }
+
+                        }
+                        echo "</li>";
+                      }
+                    }
+                  }
+                  ?>
+
+                </ul>
+              </div>
+
+
+              <input type="hidden" id="values" name="supported_service" value="">
+             </div>
+            </div>
+           </div>
+
+              <script src="dev/jquery.min.js"></script>
+              <script src="dev/bootstrap.min.js"></script>
+              <script src="dev/logger.js"></script>
+              <script src="dev/treeview.js"></script>
+
+              <script>
+                $('#treeview-checkbox-demo').treeview({
+                  debug : true,
+                  data : ['links', 'Do WHile loop']
+                });
+              </script>
+              <button type="button" id="btnsearch" class="btn btn-info">Search</button>
+                <table id="supplier_list" class="table table-bordered table-striped">
+  					<thead>
+                          <tr>
+                              <th>No.</th>
+                              <th>Company Name</th>
+  							              <th>Registration No.</th>
+                              <th>Address</th>
+                              <th></th>
+                            </tr>
+  						</thead>
+  						<tbody>
+  						<?php
+  						$query = "SELECT * FROM m_company Where Id in (Select M_Company_Id From m_user Where C_UserType = 2 And Status = 1)";
+  						$results = $db->pdoQuery($query)->results();
+  						if (!empty($results)){
+  							$count = 0;
+  							foreach ($results as $row) {
+  								$count = $count+1;
+  								?>
+  								<tr>
+  									<td><?php echo $count; ?></td>
+  									<td><?php echo $row["Name"];?></td>
+  									<td><?php echo $row["Reg_No"];?></td>
+  									<td><?php echo $row["Address"];?></td>
+  									<td><?php
+
+  						$out = '<a href="index.php?rdp=company_profile&companyid=' . $row["Id"] .'" class="btn btn-warning btn-xs"><span class="icon-pencil"></span>View</a> ';
+  						echo $out;
+  						?></td>
+  								</tr>
+
+  								<?php
+  							}
+  						}
+  						?>
+
+                          </tbody>
+                      </table>
+                  </div>
+
+              </div>
+          </div>
+      </div>
+
 
 	<script>
   $(function () {
@@ -92,5 +252,11 @@
       'info'        : true,
       'autoWidth'   : false
     });
+    $("#btnsearch").click(function (e) {
+  		$('#values').val(
+  			$('#treeview-checkbox-demo').treeview('selectedValues')
+  		);
+  		e.preventDefault();
+  	});
 	})
 </script>
