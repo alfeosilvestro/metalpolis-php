@@ -760,7 +760,8 @@ if(($rfq_statusid == '10')){?>
               }
           }
           ?>
-          <button class="btn btn-default btn-xs" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseExample"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></button> <span class="label label-info"><?php echo $asking_type;?></span> <?php echo $asking_person;?> asked:
+          <button class="btn btn-default btn-xs" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseExample"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></button> <span class="label label-info"><?php echo $asking_type;?></span>
+          <?php if($row["make_public"] != "1"){echo $asking_person;} ?> asked:
         </div>
 
         <div class="panel-collapse collapse in" id="collapseThree">
@@ -798,7 +799,7 @@ if(($rfq_statusid == '10')){?>
                   <div class="form-group">
                     <label for="comment">Reply</label>
 					           <input type="hidden" name="comment_id" value="<?php echo $row["Id"];?>">
-                    <textarea name="replyComment" class="form-control" rows="3"></textarea>
+                    <textarea name="replyComment" class="" rows="3" cols="50"></textarea>
                   </div>
                   <button type="button" id="Send_Reply" class="btn btn-default" onclick="reply_Comment(<?php echo $row["Id"];?>)">Send</button>
                 </form>
