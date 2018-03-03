@@ -5,8 +5,8 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0"/>
-    <title>Metalpolis</title>
-    <meta name="description" content="">
+    <title>BudgetMetal</title>
+    <meta name="description" content="BudgetMetal">
     <meta name="author" content="">
 
     <!-- Bootstrap -->
@@ -38,7 +38,7 @@
         <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse"><i
                     class="fa fa-bars"></i></button>
-            <a class="navbar-brand page-scroll" href="#page-top"> Metalpolis</a></div>
+            <a class="navbar-brand page-scroll" href="#page-top"> BudgetMetal</a></div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
@@ -68,7 +68,7 @@
             <div class="row">&nbsp;</div>
             <div class="row">
                 <div class="col-md-10 col-md-offset-1">
-                    <h1><span class="brand-heading">Metalpolis</span></h1>
+                    <h1><span class="brand-heading">BudgetMetal</span></h1>
                     <p class="intro-text">Your Metalworks Marketplace</p>
                 </div>
             </div>
@@ -151,7 +151,7 @@
             <div class="col-md-4">
                 <div class="about-text">
                     <h4>Who We Are</h4>
-                    <p>Metalpolis is a one-stop metalworks marketplace to facilitate business trading among Small &
+                    <p>BudgetMetal is a one-stop metalworks marketplace to facilitate business trading among Small &
                         Medium Enterprises (SMEs) in the metal and fabrication services industry.</p>
                     <p>We aim to be the bridge for the buyers and suppliers in the market to improve transparency and
                         efficiency in the ecosystem.</p>
@@ -780,7 +780,7 @@
 </div>
 <div id="footer">
     <div class="container">
-             <p>Copyright &copy; Metalpolis.</p>
+             <p>Copyright &copy; BudgetMetal.</p>
     </div>
 </div>
 <script>

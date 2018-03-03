@@ -407,10 +407,10 @@
 		//include("class.smtp.php"); // optional, gets called from within class.phpmailer.php if not already loaded
 
 		$from_mail = "info@metalpolis.com";
-		$from_name = "Metalpolis";
+		$from_name = "BudgetMetal";
 		//$to_address = $email;
 		$to_name = "Info";
-		//$subject = "Verification for registeration at Metalpolis";
+		//$subject = "Verification for registeration at BudgetMetal";
 		//$message = $message;
 		$smtp_host = "127.0.0.1";
 		$smtp_port = 25;

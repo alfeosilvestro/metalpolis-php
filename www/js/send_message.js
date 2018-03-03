@@ -41,7 +41,7 @@ function sendMessage(obj) {
             var element = "";
             if(json.errors == "")
             {
-                element = "<div id=\"contactFormContainer\" class=\"col-md-8 col-md-offset-2\"><h3>Successfully sent email to Metalpolis.</h3></div>"
+                element = "<div id=\"contactFormContainer\" class=\"col-md-8 col-md-offset-2\"><h3>Successfully sent email to BudgetMetal.</h3></div>"
             }
             else
             {

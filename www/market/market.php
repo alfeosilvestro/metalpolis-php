@@ -1135,7 +1135,7 @@
 		// = "Metalpolis";
 		//$reply_to ="info@metalpolis.com";
 		//$subject = "Verification for registeration at Metalpolis";
-		$message1 = "Click the following link to verify your account at Metalpolis".PHP_EOL;
+		$message1 = "Click the following link to verify your account at BudgetMetal".PHP_EOL;
 		$date = date('Y-m-d', strtotime("+2 days"));
 
 		$email_encode = base64_encode($email);
@@ -1151,7 +1151,7 @@
 		//include("class.smtp.php"); // optional, gets called from within class.phpmailer.php if not already loaded
 
 		$from_mail = "info@metalpolis.com";
-		$from_name = "Metalpolis";
+		$from_name = "BudgetMetal";
 		$to_address = $email;
 		$to_name = "Info";
 		$subject = "Verification for registeration at Metalpolis";
@@ -1226,7 +1226,7 @@
 		$actual_link = (isset($_SERVER['HTTPS']) ? "https" : "http") . "://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
 		$sitelink = "<br><a href='".$actual_link."'>Go to Site</a>";
 		$from_mail = "info@metalpolis.com";
-		$from_name = "Metalpolis";
+		$from_name = "BudgetMetal";
 		//$to_address = $email;
 		$to_name = "Info";
 		//$subject = "Verification for registeration at Metalpolis";
