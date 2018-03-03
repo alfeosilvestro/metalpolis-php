@@ -600,23 +600,22 @@
 			$where = array('T_Document_Id' => $Id);
 			$dataArray = array( 'Status' => '0');
 			$db->update('t_fileattachments', $dataArray,$where);
-            foreach ($_GET['attachment'] as $filename)
-            {
-				$file_id = 0;
-				$row = $db->select('t_fileattachments', null, null, 'ORDER BY Id DESC')->results();
-				if ($row) {
-					$file_id = $row["Id"]+1;
-				}else{
-					$file_id = 1;
-				}
+      foreach ($_GET['attachment'] as $filename)
+      {
+				echo "hello";
+					$file_id = 0;
+					$row = $db->select('t_fileattachments', null, null, 'ORDER BY Id DESC')->results();
+					if ($row) {
+						$file_id = $row["Id"]+1;
+					}else{
+						$file_id = 1;
+			}
 				 $tmpfilename=$_GET['attachment'][$count];
 				 $tmpfilesubject = $_GET['attachment_subject'][$count];
 				 $tmpfilemessage = $_GET['attachment_message'][$count];
 				$dataArray = array('Id' => $file_id, 'T_Document_Id' => $Id, 'FileName' => $tmpfilename, 'Subject' => $tmpfilesubject, 'Message' => $tmpfilemessage, 'FileBinary' => "", 'CreatedDate' => $CreatedDate, 'CreatedBy' => $CreatedBy, 'Status' => $Status);
 				$db->insert('t_fileattachments', $dataArray);
-
-                $count=$count + 1;
-
+				$count=$count + 1;
 			}
 
 		}

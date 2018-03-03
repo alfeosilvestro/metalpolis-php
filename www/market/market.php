@@ -293,7 +293,7 @@
 					$file_id = 1;
 				}
 				 $tmpfilename=$_GET['attachment'][$count];
-				 $tmpfilesubject = $_GET['attachment_subject'][$count];
+				 $tmpfilesubject = $_GET['attachment_message'][$count];
 				 $tmpfilemessage = $_GET['attachment_message'][$count];
 				$dataArray = array('Id' => $file_id, 'T_Document_Id' => $Id, 'FileName' => $tmpfilename, 'Subject' => $tmpfilesubject, 'Message' => $tmpfilemessage, 'FileBinary' => "", 'CreatedDate' => $CreatedDate, 'CreatedBy' => $CreatedBy, 'Status' => $Status);
 				$db->insert('t_fileattachments', $dataArray);
@@ -480,7 +480,7 @@
 					$file_id = 1;
 				}
 				 $tmpfilename=$_GET['attachment'][$count];
-				 $tmpfilesubject = $_GET['attachment_subject'][$count];
+				 $tmpfilesubject = $_GET['attachment_message'][$count];
 				 $tmpfilemessage = $_GET['attachment_message'][$count];
 				$dataArray = array('Id' => $file_id, 'T_Document_Id' => $Id, 'FileName' => $tmpfilename, 'Subject' => $tmpfilesubject, 'Message' => $tmpfilemessage, 'FileBinary' => "", 'CreatedDate' => $CreatedDate, 'CreatedBy' => $CreatedBy, 'Status' => $Status);
 				$db->insert('t_fileattachments', $dataArray);
@@ -610,13 +610,11 @@
 					$file_id = 1;
 				}
 				 $tmpfilename=$_GET['attachment'][$count];
-				 $tmpfilesubject = $_GET['attachment_subject'][$count];
+				 $tmpfilesubject = $_GET['attachment_message'][$count];
 				 $tmpfilemessage = $_GET['attachment_message'][$count];
 				$dataArray = array('Id' => $file_id, 'T_Document_Id' => $Id, 'FileName' => $tmpfilename, 'Subject' => $tmpfilesubject, 'Message' => $tmpfilemessage, 'FileBinary' => "", 'CreatedDate' => $CreatedDate, 'CreatedBy' => $CreatedBy, 'Status' => $Status);
 				$db->insert('t_fileattachments', $dataArray);
-
-                $count=$count + 1;
-
+ 				$count=$count + 1;
 			}
 
 		}
