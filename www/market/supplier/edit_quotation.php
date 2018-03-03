@@ -118,10 +118,7 @@
 						  <input type="text" name="valid_date" class="form-control pull-right" id="rfq_datepicker" value="<?php echo date('d-m-Y', strtotime($ValidToDate)); ?>" required>
 						</div>
                     </div>
-                    <div class="form-group">
-                        <label>Bid Price</label>
-                        <input id="bid_price" name="bid_price" type="number" class="form-control pull-right" placeholder="Please enter bid price" value="<?php echo $QuotedFigure; ?>">
-                    </div>
+
                 </div>
                 <div class="col-sm-6">
                     <div class="form-group">
@@ -152,7 +149,14 @@
                         <label>Contact Person Last Name</label>
                         <input name="last_name" type="text"  class="form-control" value="<?php echo $FName; ?>" placeholder="Last Name">
                     </div>
-
+                    <div class="form-group">
+                        <label>Bid Price</label>
+                        <!--<input id="bid_price" name="bid_price" type="number" class="form-control pull-right" placeholder="Please enter bid price" value="">-->
+                        <div class="input-group">
+                          <span class="input-group-addon">$</span>
+                          <input  id="bid_price" name="bid_price" type="number" value="<?php echo $QuotedFigure; ?>" min="0" step="0.01" data-number-to-fixed="2" data-number-stepfactor="100" class="form-control currency" id="c2" />
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -265,6 +269,11 @@
 </form>
 
 	<script>
+  webshims.setOptions('forms-ext', {
+      replaceUI: 'auto',
+      types: 'number'
+  });
+  webshims.polyfill('forms forms-ext');
 	$(function () {
 		//Date picker
     $('#rfq_datepicker').datepicker({

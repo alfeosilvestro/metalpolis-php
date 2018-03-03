@@ -4,7 +4,7 @@
 <html style="height: auto; min-height: 100%;"><head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Metalpolis Marketplace</title>
+  <title>BudgetMetal Marketplace</title>
   <!-- Tell the browser to be responsive to screen width -->
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
 
@@ -59,7 +59,7 @@
     <nav class="navbar navbar-static-top">
       <div class="container">
         <div class="navbar-header">
-          <a href="" class="navbar-brand"><b>METALPOLIS</b>&nbsp;marketplace</a>
+          <a href="" class="navbar-brand"><b>BudgetMetal</b>&nbsp;marketplace</a>
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
             <i class="fa fa-bars"></i>
           </button>
@@ -161,7 +161,7 @@
   <div class="pull-right hidden-xs">
 
   </div>
-  <strong>Copyright © 2017 <a href="https://adminlte.io">Metalpolis</a>.</strong> All rights
+  <strong>Copyright © 2017 <a href="https://adminlte.io">BudgetMetal</a>.</strong> All rights
   reserved.
 </div>
     <!-- /.container -->

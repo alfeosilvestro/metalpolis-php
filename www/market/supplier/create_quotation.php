@@ -174,7 +174,12 @@
                     </div>
                     <div class="form-group">
                         <label>Bid Price</label>
-                        <input id="bid_price" name="bid_price" type="number" class="form-control pull-right" placeholder="Please enter bid price">
+                        <!--<input id="bid_price" name="bid_price" type="number" class="form-control pull-right" placeholder="Please enter bid price">
+                        -->
+                        <div class="input-group">
+                          <span class="input-group-addon">$</span>
+                          <input  id="bid_price" name="bid_price" type="number" value="0" min="0" step="0.01" data-number-to-fixed="2" data-number-stepfactor="100" class="form-control currency" id="c2" />
+                        </div>
                     </div>
                 </div>
             </div>
@@ -258,6 +263,12 @@
 </form>
 
 	<script>
+  webshims.setOptions('forms-ext', {
+      replaceUI: 'auto',
+      types: 'number'
+  });
+  webshims.polyfill('forms forms-ext');
+
 	$(function () {
 		//Date picker
     $('#rfq_datepicker').datepicker({
@@ -396,10 +407,10 @@
 		//include("class.smtp.php"); // optional, gets called from within class.phpmailer.php if not already loaded
 
 		$from_mail = "info@metalpolis.com";
-		$from_name = "Metalpolis";
+		$from_name = "BudgetMetal";
 		//$to_address = $email;
 		$to_name = "Info";
-		//$subject = "Verification for registeration at Metalpolis";
+		//$subject = "Verification for registeration at BudgetMetal";
 		//$message = $message;
 		$smtp_host = "127.0.0.1";
 		$smtp_port = 25;

@@ -293,7 +293,7 @@
 					$file_id = 1;
 				}
 				 $tmpfilename=$_GET['attachment'][$count];
-				 $tmpfilesubject = $_GET['attachment_subject'][$count];
+				 $tmpfilesubject = $_GET['attachment_message'][$count];
 				 $tmpfilemessage = $_GET['attachment_message'][$count];
 				$dataArray = array('Id' => $file_id, 'T_Document_Id' => $Id, 'FileName' => $tmpfilename, 'Subject' => $tmpfilesubject, 'Message' => $tmpfilemessage, 'FileBinary' => "", 'CreatedDate' => $CreatedDate, 'CreatedBy' => $CreatedBy, 'Status' => $Status);
 				$db->insert('t_fileattachments', $dataArray);
@@ -480,7 +480,7 @@
 					$file_id = 1;
 				}
 				 $tmpfilename=$_GET['attachment'][$count];
-				 $tmpfilesubject = $_GET['attachment_subject'][$count];
+				 $tmpfilesubject = $_GET['attachment_message'][$count];
 				 $tmpfilemessage = $_GET['attachment_message'][$count];
 				$dataArray = array('Id' => $file_id, 'T_Document_Id' => $Id, 'FileName' => $tmpfilename, 'Subject' => $tmpfilesubject, 'Message' => $tmpfilemessage, 'FileBinary' => "", 'CreatedDate' => $CreatedDate, 'CreatedBy' => $CreatedBy, 'Status' => $Status);
 				$db->insert('t_fileattachments', $dataArray);
@@ -610,13 +610,11 @@
 					$file_id = 1;
 				}
 				 $tmpfilename=$_GET['attachment'][$count];
-				 $tmpfilesubject = $_GET['attachment_subject'][$count];
+				 $tmpfilesubject = $_GET['attachment_message'][$count];
 				 $tmpfilemessage = $_GET['attachment_message'][$count];
 				$dataArray = array('Id' => $file_id, 'T_Document_Id' => $Id, 'FileName' => $tmpfilename, 'Subject' => $tmpfilesubject, 'Message' => $tmpfilemessage, 'FileBinary' => "", 'CreatedDate' => $CreatedDate, 'CreatedBy' => $CreatedBy, 'Status' => $Status);
 				$db->insert('t_fileattachments', $dataArray);
-
-                $count=$count + 1;
-
+ 				$count=$count + 1;
 			}
 
 		}
@@ -1137,7 +1135,7 @@
 		// = "Metalpolis";
 		//$reply_to ="info@metalpolis.com";
 		//$subject = "Verification for registeration at Metalpolis";
-		$message1 = "Click the following link to verify your account at Metalpolis".PHP_EOL;
+		$message1 = "Click the following link to verify your account at BudgetMetal".PHP_EOL;
 		$date = date('Y-m-d', strtotime("+2 days"));
 
 		$email_encode = base64_encode($email);
@@ -1153,7 +1151,7 @@
 		//include("class.smtp.php"); // optional, gets called from within class.phpmailer.php if not already loaded
 
 		$from_mail = "info@metalpolis.com";
-		$from_name = "Metalpolis";
+		$from_name = "BudgetMetal";
 		$to_address = $email;
 		$to_name = "Info";
 		$subject = "Verification for registeration at Metalpolis";
@@ -1225,9 +1223,10 @@
 
 		require_once('../class.phpmailer.php');
 		//include("class.smtp.php"); // optional, gets called from within class.phpmailer.php if not already loaded
-
+		$actual_link = (isset($_SERVER['HTTPS']) ? "https" : "http") . "://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
+		$sitelink = "<br><a href='".$actual_link."'>Go to Site</a>";
 		$from_mail = "info@metalpolis.com";
-		$from_name = "Metalpolis";
+		$from_name = "BudgetMetal";
 		//$to_address = $email;
 		$to_name = "Info";
 		//$subject = "Verification for registeration at Metalpolis";
@@ -1261,14 +1260,14 @@
 
 		$mail->Subject    = $subject;
 
-		$mail->AltBody    = $message; // optional, comment out and test
+		$mail->AltBody    = $message . $sitelink; // optional, comment out and test
 
 		$mail->MsgHTML($message);
 
 		$to_address = "info@metalpolis.com";
 		$emails = explode(";", $email);
 		for($i = 0, $l = count($emails); $i < $l-1; ++$i) {
-		 
+
 			 if($i==0){
 				 $to_address = $emails[$i];
 				 $mail->AddAddress($to_address);

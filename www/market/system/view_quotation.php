@@ -203,7 +203,7 @@
                         <label>Bid Price: </label>
 						 </div>
 						 <div class="col-sm-6">
-                         <?php echo $QuotedFigure;?>
+                         $<?php echo $QuotedFigure;?>
 						  </div>
 					  </div>
                     </div>
@@ -529,7 +529,7 @@
                   <div class="form-group">
                     <label for="comment">Reply</label>
 					<input type="hidden" name="comment_id" value="<?php echo $row["Id"];?>">
-                    <textarea name="replyComment" class="form-control" rows="3"></textarea>
+                    <textarea name="replyComment" class="" rows="3"  cols="50"></textarea>
                   </div>
                   <button type="button" id="Send_Reply" class="btn btn-default Send_Reply" data-clarificationid="<?php echo $row["Id"];?>">Reply Message</button>
                 </form>

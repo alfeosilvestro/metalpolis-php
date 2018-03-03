@@ -3,7 +3,7 @@
   <div class="pull-right hidden-xs">
 
   </div>
-  <strong>Copyright © 2017 <a href="https://adminlte.io">Metalpolis</a>.</strong> All rights
+  <strong>Copyright © 2017 <a href="https://adminlte.io">BudgetMetal</a>.</strong> All rights
   reserved.
 </div>
     <!-- /.container -->
@@ -31,7 +31,7 @@
 <script src="bower_components/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js"></script>
    <script src="bower_components/select2/dist/js/select2.full.min.js"></script>
     <script src="bower_components/bootstrap-daterangepicker/daterangepicker.js"></script>
-    
+
 
 </body>
 </html>

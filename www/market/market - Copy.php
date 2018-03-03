@@ -600,23 +600,22 @@
 			$where = array('T_Document_Id' => $Id);
 			$dataArray = array( 'Status' => '0');
 			$db->update('t_fileattachments', $dataArray,$where);
-            foreach ($_GET['attachment'] as $filename)
-            {
-				$file_id = 0;
-				$row = $db->select('t_fileattachments', null, null, 'ORDER BY Id DESC')->results();
-				if ($row) {
-					$file_id = $row["Id"]+1;
-				}else{
-					$file_id = 1;
-				}
+      foreach ($_GET['attachment'] as $filename)
+      {
+				echo "hello";
+					$file_id = 0;
+					$row = $db->select('t_fileattachments', null, null, 'ORDER BY Id DESC')->results();
+					if ($row) {
+						$file_id = $row["Id"]+1;
+					}else{
+						$file_id = 1;
+			}
 				 $tmpfilename=$_GET['attachment'][$count];
 				 $tmpfilesubject = $_GET['attachment_subject'][$count];
 				 $tmpfilemessage = $_GET['attachment_message'][$count];
 				$dataArray = array('Id' => $file_id, 'T_Document_Id' => $Id, 'FileName' => $tmpfilename, 'Subject' => $tmpfilesubject, 'Message' => $tmpfilemessage, 'FileBinary' => "", 'CreatedDate' => $CreatedDate, 'CreatedBy' => $CreatedBy, 'Status' => $Status);
 				$db->insert('t_fileattachments', $dataArray);
-
-                $count=$count + 1;
-
+				$count=$count + 1;
 			}
 
 		}
@@ -1136,8 +1135,8 @@
 		//$from_mail = "info@metalpolis.com";
 		// = "Metalpolis";
 		//$reply_to ="info@metalpolis.com";
-		//$subject = "Verification for registeration at Metalpolis";
-		$message1 = "Click the following link to verify your account at Metalpolis".PHP_EOL;
+		//$subject = "Verification for registeration at BudgetMetal";
+		$message1 = "Click the following link to verify your account at BudgetMetal".PHP_EOL;
 		$date = date('Y-m-d', strtotime("+2 days"));
 
 		$email_encode = base64_encode($email);
@@ -1153,10 +1152,10 @@
 		//include("class.smtp.php"); // optional, gets called from within class.phpmailer.php if not already loaded
 
 		$from_mail = "info@metalpolis.com";
-		$from_name = "Metalpolis";
+		$from_name = "BudgetMetal";
 		$to_address = $email;
 		$to_name = "Info";
-		$subject = "Verification for registeration at Metalpolis";
+		$subject = "Verification for registeration at BudgetMetal";
 		$message = $message1;
 		$smtp_host = "127.0.0.1";
 		$smtp_port = 25;
@@ -1230,7 +1229,7 @@
 		$from_name = "Metalpolis";
 		$to_address = $email;
 		$to_name = "Info";
-		//$subject = "Verification for registeration at Metalpolis";
+		//$subject = "Verification for registeration at BudgetMetal";
 		//$message = $message;
 		$smtp_host = "127.0.0.1";
 		$smtp_port = 25;
