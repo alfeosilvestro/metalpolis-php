@@ -203,7 +203,7 @@
                         <label>Bid Price: </label>
 						 </div>
 						 <div class="col-sm-6">
-                         <?php echo $QuotedFigure;?>
+                         $<?php echo $QuotedFigure;?>
 						  </div>
 					  </div>
                     </div>

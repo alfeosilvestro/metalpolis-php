@@ -147,6 +147,7 @@ if(isset($_SESSION['Company_Admin']) && isset($_SESSION['M_Company_Id'])){
                         }
 
                         ?>
+                          <li><a href="#feedbacklist" data-toggle="tab">Feedback</a></li>
                     </ul>
 
                     <div class="tab-content">
@@ -404,6 +405,21 @@ if(isset($_SESSION['Company_Admin']) && isset($_SESSION['M_Company_Id'])){
                               <?php
                             }
                             ?>
+                            <div class="tab-pane" id="feedbacklist">
+                            <h3>Feedback List</h3>
+                            <?php
+                            $query = "SELECT * FROM md_companyrating Where Company_Id = $companyid";
+
+                          $results = $db->pdoQuery($query)->results();
+                          if (!empty($results)){
+                            $count = 0;
+                            foreach ($results as $row) {
+                              echo $row["Description"];
+                              echo "<hr>";
+                            }
+                          }
+                            ?>
+                            </div>
                     </div>
                     <!-- /.tab-content -->
                 </div>

@@ -1225,7 +1225,8 @@
 
 		require_once('../class.phpmailer.php');
 		//include("class.smtp.php"); // optional, gets called from within class.phpmailer.php if not already loaded
-
+		$actual_link = (isset($_SERVER['HTTPS']) ? "https" : "http") . "://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
+		$sitelink = "<br><a href='".$actual_link."'>Go to Site</a>";
 		$from_mail = "info@metalpolis.com";
 		$from_name = "Metalpolis";
 		//$to_address = $email;
@@ -1261,14 +1262,14 @@
 
 		$mail->Subject    = $subject;
 
-		$mail->AltBody    = $message; // optional, comment out and test
+		$mail->AltBody    = $message . $sitelink; // optional, comment out and test
 
 		$mail->MsgHTML($message);
 
 		$to_address = "info@metalpolis.com";
 		$emails = explode(";", $email);
 		for($i = 0, $l = count($emails); $i < $l-1; ++$i) {
-		 
+
 			 if($i==0){
 				 $to_address = $emails[$i];
 				 $mail->AddAddress($to_address);
