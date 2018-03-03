@@ -52,9 +52,7 @@ if(isset($_SESSION['Company_Admin']) && isset($_SESSION['M_Company_Id'])){
             <div class="col-md-3">
                 <!-- About Me Box -->
                 <div class="box box-primary">
-                    <div class="box-header with-border">
-                        <h3 class="box-title">About Company</h3>
-                    </div>
+
                     <!-- /.box-header -->
                     <div class="box-body">
                         <strong><i class="fa fa-book margin-r-5"></i> Name</strong>
@@ -126,13 +124,10 @@ if(isset($_SESSION['Company_Admin']) && isset($_SESSION['M_Company_Id'])){
                 <div class="nav-tabs-custom">
                     <ul class="nav nav-tabs">
 
-                        <?php
-                        if($supplier_services != 0){
-                          ?>
-                          <li class="active"><a href="#activity" data-toggle="tab">Services</a></li>
-                          <?php
-                        }
 
+                          <li class="active"><a href="#activity" data-toggle="tab">About</a></li>
+
+<?php
                         if($rfq_count != 0){
                             ?>
                           <li><a href="#rfqList" data-toggle="tab">RFQ List</a></li>
@@ -151,9 +146,7 @@ if(isset($_SESSION['Company_Admin']) && isset($_SESSION['M_Company_Id'])){
                     </ul>
 
                     <div class="tab-content">
-                      <?php
-                      if($supplier_services != 0){
-                        ?>
+
                         <div class="active tab-pane" id="activity">
                           <div>
                             <h4>
@@ -257,9 +250,7 @@ if(isset($_SESSION['Company_Admin']) && isset($_SESSION['M_Company_Id'])){
               							?>
               							</ul>
                         </div>
-                        <?php
-                      }
-                      ?>
+
                         <!-- /.tab-pane -->
                           <?php
                           if($rfq_count != 0){
