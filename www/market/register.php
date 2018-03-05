@@ -310,7 +310,7 @@
 														if ($result->num_rows > 0) {
 															// output data of each row
 															while($row = $result->fetch_assoc()) {
-																echo "<li data-value='". $row["Id"] ."'>" . $row["ServiceName"] ;
+																echo "<li class='chkservice' data-value='". $row["Id"] ."'>" . $row["ServiceName"] ;
 																$servicecategory1id = $row["Id"];
 																$sql1 = "SELECT * FROM `m_services` where Status = 1 and  M_Parent_Services_Id = ".$servicecategory1id ;
 																$result1 = $conn->query($sql1);
@@ -319,7 +319,7 @@
 																		echo "<ul>";
 																		// output data of each row
 																		while($row1 = $result1->fetch_assoc()) {
-																			echo "<li data-value='". $row1["Id"] ."'>" . $row1["ServiceName"] ;
+																			echo "<li class='chkservice' data-value='". $row1["Id"] ."'>" . $row1["ServiceName"] ;
 																			$servicecategory1id1 = $row1["Id"];
 																			$sql2 = "SELECT * FROM `m_services` where Status = 1 and  M_Parent_Services_Id = ".$servicecategory1id1 ;
 																			$result2 = $conn->query($sql2);
@@ -328,7 +328,7 @@
 																					echo "<ul>";
 																					// output data of each row
 																					while($row2 = $result2->fetch_assoc()) {
-																						echo "<li data-value='". $row2["Id"] ."'>" . $row2["ServiceName"] ;
+																						echo "<li class='chkservice' data-value='". $row2["Id"] ."'>" . $row2["ServiceName"] ;
 																						$servicecategory1id2 = $row2["Id"];
 																						$sql3 = "SELECT * FROM `m_services` where Status = 1 and  M_Parent_Services_Id = ".$servicecategory1id2 ;
 																						$result3 = $conn->query($sql3);
@@ -337,7 +337,7 @@
 																								echo "<ul>";
 																								// output data of each row
 																								while($row3 = $result3->fetch_assoc()) {
-																									echo "<li data-value='". $row3["Id"] ."'>" . $row3["ServiceName"] ;
+																									echo "<li class='chkservice' data-value='". $row3["Id"] ."'>" . $row3["ServiceName"] ;
 																									$servicecategory1id3 = $row3["Id"];
 																									$sql4 = "SELECT * FROM `m_services` where Status = 1 and  M_Parent_Services_Id = ".$servicecategory1id3 ;
 																									$result4 = $conn->query($sql4);
@@ -346,7 +346,7 @@
 																											echo "<ul>";
 																											// output data of each row
 																											while($row4 = $result4->fetch_assoc()) {
-																												echo "<li data-value='". $row4["Id"] ."'>" . $row4["ServiceName"] ;
+																												echo "<li class='chkservice' data-value='". $row4["Id"] ."'>" . $row4["ServiceName"] ;
 
 																												echo "</li>";
 																											}
@@ -459,7 +459,23 @@
 <!-- ./wrapper -->
 <!-- ./wrapper -->
 <script>
+$(function () {
+        $("[id*=treeview-checkbox-demo] input[type=checkbox]").bind("click", function () {
+
+                //Is Parent CheckBox
+                var isChecked = $(this).is(":checked");
+                  $(this).parent().find("input[type=checkbox]").each(function () {
+                    if (isChecked) {
+                        $(this).attr("checked", "checked");
+                    } else {
+                        $(this).removeAttr("checked");
+                    }
+                });
+
+        });
+    })
 $(document).ready(function () {
+
 	$("input[id='txt_company_uen']").blur(function() {
 		var company_uen = $("input[id='txt_company_uen']").val();
 		var message = "";
