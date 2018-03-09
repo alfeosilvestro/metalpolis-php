@@ -117,7 +117,7 @@
                                     </div>
                                     <?php
                                      if(isset($_GET['l'])){
-                                       echo "<div class='row'><small class='text-danger'>Email or Password is invalid!</small></div>";
+                                       echo "<div class='row'><small style='color:white;'>Email or Password is invalid!</small></div>";
                                      }
 
                                     ?>

@@ -2080,38 +2080,36 @@ who accesses and uses our Website by using your User ID.</span></a><span
 lang=EN-NZ style='mso-no-proof:no'><o:p></o:p></span></p>
 
 <p class=OutlinenumberedLevel2 style='margin-top:0in;mso-list:l6 level2 lfo2'><![if !supportLists]><span
-lang=EN-NZ style='mso-fareast-font-family:Arial;background:yellow;mso-highlight:
+lang=EN-NZ style='mso-fareast-font-family:Arial;;mso-highlight:
 yellow;mso-no-proof:no'><span style='mso-list:Ignore'>4.6<span
 style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span></span><![endif]><span lang=EN-NZ style='background:yellow;
-mso-highlight:yellow;mso-no-proof:no'>Fee Structure:<o:p></o:p></span></p>
+</span></span></span><![endif]><span lang=EN-NZ>Fee Structure:<o:p></o:p></span></p>
 
 <p class=OutlinenumberedLevel3 style='mso-list:l6 level3 lfo2'><![if !supportLists]><span
-lang=EN-NZ style='mso-fareast-font-family:Arial;background:yellow;mso-highlight:
+lang=EN-NZ style='mso-fareast-font-family:Arial;;mso-highlight:
 yellow'><span style='mso-list:Ignore'>a<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span></span><![endif]><span lang=EN-NZ style='background:yellow;
-mso-highlight:yellow'>Buyers use the website for free, or until when we decide
+</span></span></span><![endif]><span lang=EN-NZ >Buyers use the website for free, or until when we decide
 to charge an administrative fee <span style='mso-spacerun:yes'></span>for
 account management which will be updated on the terms of use.<o:p></o:p></span></p>
 
 <p class=OutlinenumberedLevel3 style='mso-list:l6 level3 lfo2'><![if !supportLists]><span
-lang=EN-NZ style='mso-fareast-font-family:Arial;background:yellow;mso-highlight:
+lang=EN-NZ style='mso-fareast-font-family:Arial;;mso-highlight:
 yellow'><span style='mso-list:Ignore'>b<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span></span><![endif]><span lang=EN-NZ style='background:yellow;
+</span></span></span><![endif]><span lang=EN-NZ style=';
 mso-highlight:yellow'>Suppliers who want to get a listing and become searchable
 on our website will pay the following fees:<o:p></o:p></span></p>
 
 <p class=OutlinenumberedLevel4 style='mso-list:l6 level4 lfo2'><![if !supportLists]><span
-lang=EN-NZ style='mso-fareast-font-family:Arial;background:yellow;mso-highlight:
+lang=EN-NZ style='mso-fareast-font-family:Arial;;mso-highlight:
 yellow'><span style='mso-list:Ignore'>i<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span></span><![endif]><span lang=EN-NZ style='background:yellow;
+</span></span></span><![endif]><span lang=EN-NZ style=';
 mso-highlight:yellow'>Listing fee of 125 Singapore dollars per month upfront
 for each month of listing;<o:p></o:p></span></p>
 
 <p class=OutlinenumberedLevel4 style='mso-list:l6 level4 lfo2'><![if !supportLists]><span
-lang=EN-NZ style='mso-fareast-font-family:Arial;background:yellow;mso-highlight:
+lang=EN-NZ style='mso-fareast-font-family:Arial;;mso-highlight:
 yellow'><span style='mso-list:Ignore'>ii<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span></span><![endif]><span lang=EN-NZ style='background:yellow;
+</span></span></span><![endif]><span lang=EN-NZ style=';
 mso-highlight:yellow'>Transaction fee of 2.5% of the deal value which was
 concluded on our website with buyers on our website.<o:p></o:p></span></p>
 

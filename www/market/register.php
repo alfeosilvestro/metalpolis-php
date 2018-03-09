@@ -65,7 +65,7 @@
     <nav class="navbar navbar-static-top">
       <div class="container">
         <div class="navbar-header">
-          <a href="" class="navbar-brand"><b>METALPOLIS</b>&nbsp;marketplace</a>
+          <a href="" class="navbar-brand"><b>BudgetMetal</b>&nbsp;marketplace</a>
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
             <i class="fa fa-bars"></i>
           </button>
@@ -173,7 +173,7 @@
 													<input id="txt_contact_number" name="contact_number" type="number"
 														   class="form-control"
 														   data-bind="value: contact_number, valueUpdate: 'blur'"
-														   placeholder="Number for suppliers to reach you"  max="99999999">
+														   placeholder="Enter Contact Number" maxlength="10">
 												</div>
 
 												<div class="form-group">
@@ -182,30 +182,15 @@
 
 												</div>
 
-												<div id="selTags" class="form-group">
-													<label>Tag</label>
-													<select class="form-control select2" multiple="multiple"
-															style="width: 100%;"
-															data-bind="value: tags, valueUpdate: 'blur'" name="tagList[]">
-															<?php
-															$sql2 = "SELECT * FROM `c_tags` where Status = 1";
-															$result2 = $conn->query($sql2);
-															if (isset($result2)){
-																if ($result2->num_rows > 0) {
-																	while($row2 = $result2->fetch_assoc()) {
-																		echo "<option value='". $row2["Id"] ."'>" . $row2["TagName"] ;
-																		echo "</option>";
-																	}
 
-																}
-
-															}
-															?>
-
-
-													</select>
+												<div class="form-group">
+													<label>
+														<input id="chkRegisterAsSupplier" name="register_as_supplier"
+																 data-bind="checked: register_as_supplier"
+																 type="checkbox">
+														&nbsp;Please register me as a supplier
+													</label>
 												</div>
-
 											</div>
 										</div>
 										<div class="col-md-6">
@@ -241,15 +226,30 @@
 														   data-bind="value: user_password, valueUpdate: 'blur'"
 														   placeholder="Password to sign in later">
 												</div>
+												<div id="selTags" class="form-group">
+													<label>Tag</label>
+													<select class="form-control select2" multiple="multiple"
+															style="width: 100%;"
+															data-bind="value: tags, valueUpdate: 'blur'" name="tagList[]">
+															<?php
+															$sql2 = "SELECT * FROM `c_tags` where Status = 1";
+															$result2 = $conn->query($sql2);
+															if (isset($result2)){
+																if ($result2->num_rows > 0) {
+																	while($row2 = $result2->fetch_assoc()) {
+																		echo "<option value='". $row2["Id"] ."'>" . $row2["TagName"] ;
+																		echo "</option>";
+																	}
 
-												<div class="form-group">
-													<label>
-														<input id="chkRegisterAsSupplier" name="register_as_supplier"
-															   data-bind="checked: register_as_supplier"
-															   type="checkbox">
-														&nbsp;Please register me as a supplier
-													</label>
+																}
+
+															}
+															?>
+
+
+													</select>
 												</div>
+
 
 											</div>
 										</div>
@@ -450,7 +450,7 @@
   <div class="pull-right hidden-xs">
 
   </div>
-  <strong>Copyright © 2017 <a href="https://adminlte.io">Metalpolis</a>.</strong> All rights
+  <strong>Copyright © 2017 <a href="#">Styler</a>.</strong> All rights
   reserved.
 </div>
     <!-- /.container -->
@@ -459,21 +459,7 @@
 <!-- ./wrapper -->
 <!-- ./wrapper -->
 <script>
-$(function () {
-        $("[id*=treeview-checkbox-demo] input[type=checkbox]").bind("click", function () {
 
-                //Is Parent CheckBox
-                var isChecked = $(this).is(":checked");
-                  $(this).parent().find("input[type=checkbox]").each(function () {
-                    if (isChecked) {
-                        $(this).attr("checked", "checked");
-                    } else {
-                        $(this).removeAttr("checked");
-                    }
-                });
-
-        });
-    })
 $(document).ready(function () {
 
 	$("input[id='txt_company_uen']").blur(function() {
@@ -553,12 +539,11 @@ $("input[id='txt_company_name']").blur(function() {
 	}
 
 });
-$("input[id='txt_contact_number']").keyup(function () {
-var contact_number = $("input[id='txt_contact_number']").val();
-var tweet_length = $("input[id='txt_contact_number']").val().length;
-if(tweet_length > 8) {
-		$("input[id='txt_contact_number']").val(contact_number.substring(0,8));
-}
+document.querySelector("input[id='txt_contact_number']").addEventListener("keypress", function (evt) {
+    if (evt.which < 48 || evt.which > 57)
+    {
+        evt.preventDefault();
+    }
 });
 
 $("input[id='txt_contact_number']").blur(function() {
@@ -567,7 +552,10 @@ $("input[id='txt_contact_number']").blur(function() {
 	if(contact_number == ""){
 		message = message + "Contact Number field is required!";
 	}else{
-
+		var regex = new RegExp(/^[0-9]{1,8}$/);
+		if(regex.test(contact_number)){}else{
+			message = message + "Contact Number is invalid!";
+		}
 	}
 	if(message != ""){
 		$("input[id='txt_contact_number']").select();
@@ -907,6 +895,22 @@ $("input[id='txt_password']").blur(function() {
 	$(document).ready(function() {
 		$('.select2').select2();
 	});
+
+
+	        $("[id*=treeview-checkbox-demo] input[type=checkbox]").bind("click", function () {
+
+	                //Is Parent CheckBox
+	                var isChecked = $(this).is(":checked");
+	                  $(this).parent().find("input[type=checkbox]").each(function () {
+	                    if (isChecked) {
+	                        $(this).prop( "checked", true );
+	                    } else {
+	                        $(this).removeAttr("checked");
+	                    }
+	                });
+
+	        });
+
 </script>
 <!-- jQuery 3 -->
 <script async="" src="//www.google-analytics.com/analytics.js"></script>

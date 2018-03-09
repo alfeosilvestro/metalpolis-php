@@ -123,11 +123,11 @@
 										          }else{
 										             $sql = "Update `m_user` Set Confirmed = 1  where 	EmailAddress = '".$email . "'";
 										             $result = $conn->query($sql);
-										             echo "Your account has been already verified. <a href='../index.php'>Click here</a> to login.";
+										             echo "Your account has been verified. <a href='../index.php'>Click here</a> to login.";
 										             break;
 										          }
 										        }else{
-										          echo "Your account has been already verified. <a href='../index.php'>Click here</a> to login.";
+										          echo "Your account has been verified. <a href='../index.php'>Click here</a> to login.";
 										        }
 													}
 												}else{
